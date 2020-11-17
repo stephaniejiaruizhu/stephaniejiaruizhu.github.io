@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Contact Page</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+   <h1> Contact </h1>
+   <!-- navigation bar -->
+    <ul class = "navbar">
+        <li><a href = "index.html">WORK</a></li>
+        <li><a href = "about.html">ABOUT</a></li>
+        <li><a href = "contact.html" class = "active">CONTACT</a></li>
+        <li><a href = "https://drive.google.com/file/d/1XCxwlCmNGu6fACWSeDhTXGbFl-VsVc-s/view?usp=sharing" target = "_blank">RESUME</a></li>
+    </ul>
+    <!-- contact form -->
+    <div class = "form">
+      <form action="mailto:stephaniez2000@gmail.com" method="post" enctype="text/plain">
+         <label for = "fname"> NAME: </label><br>
+         <input name = "First Name" id = "firstname" type="text" class = "firstname" placeholder="First" maxlength = "12" size = "13" tabindex= "1">
+         <input name = "Last Name" id = "lastname" type="text" class = "lastname" placeholder="Last" maxlength = "12" size = "13" tabindex= "2"><br>
+         <label> EMAIL: </label><br>
+         <input pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name = "Email" type = "email" class = "email" placeholder = "johndoe@gmail.com" tabindex = "3"><br>
+         <label for = "Phone"> PHONE: </label><br>
+         <input type = "tel" id = "phone" name = "Phone" class = "phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "XXX-XXX-XXXX" tabindex= "4"><br>
+         <label> CONTACT PREFERENCE: </label><br><br>
+         <input type = "checkbox" id = "text2" name = "Text?" value = "Text" tabindex = "5">
+         <label for = "Text"> Text </label><br>
+         <input type ="checkbox" id = "call" name = "Call?" value = "Call" tabindex = "6">
+         <label for ="Call"> Call </label><br>
+         <input type = "checkbox" id = "email" name = "Email?" value = "Email" tabindex = "7">
+         <label for = "Email"> Email </label><br>
+         <label> MESSAGE: </label><br>
+         <textarea name = "Message" class = "message" placeholder = "Message" tabindex = "8"></textarea><br>
+         <button type = "submit" name = "Submit" class = "button1" value = "Submit" onclick="return confirm('Are you sure?')"> SUBMIT </button>
+      </form>
+      <hr>
+      <p id = "text"> Don't want to fill out the form? Email me at jiaruizhu2022@u.northwestern.edu!</p>
+   </div>
+   </body>
+</html>
