@@ -3,5 +3,5 @@ module.exports = {
     title: `stephaniejiaruizhu`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-less`],
 }
