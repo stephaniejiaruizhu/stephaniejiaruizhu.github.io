@@ -2,7 +2,7 @@ import React from "react";
 import * as rightStyles from "../styles/modules/right.module.less";
 import SFCover from "../images/sfchronicle.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Right () {
     return(
@@ -17,15 +17,15 @@ function Right () {
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={SFCover} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <a href="./sfchronicle"><p className={rightStyles.projectName}>San Francisco Chronicle → </p></a>
+                <p className={rightStyles.projectName}><a href="./sfchronicle">San Francisco Chronicle → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={SFCover} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <a href="./sfchronicle"><p className={rightStyles.projectName}>The Boston Globe → </p></a>
+                <p className={rightStyles.projectName}><a href="./sfchronicle">The Boston Globe → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={SFCover} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <a href="./sfchronicle"><p className={rightStyles.projectName}>Student Health Leaders → </p></a>
+                <p className={rightStyles.projectName}><a href="./sfchronicle">Student Health Leaders → </a></p>
             </div>
         </div>
     )

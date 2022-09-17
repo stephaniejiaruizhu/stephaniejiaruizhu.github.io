@@ -87,14 +87,18 @@
 }
 
 .projectName {
-    color: black;
+    text-decoration: none;
     font-family: @sans-serif;
     font-size: @medium-small;
     font-style: italic;
     margin-left: 100px;
 
-    &:hover {
-        color: @accent;
+    a {
+        color: black;
+
+        &:hover {
+            color: @accent;
+        }
     }
 
     @media @mobile {
@@ -103,5 +107,9 @@
 
     @media @tablet {
         margin-left: 50px;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
