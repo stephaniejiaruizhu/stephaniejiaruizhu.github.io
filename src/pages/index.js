@@ -4,6 +4,7 @@ import * as menuStyles from "../styles/modules/menu.module.less"
 import Menu from "./menu"
 import Right from "./homeRight"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         </div>
         <div className={menuStyles.rightContainer}>
           <Right/>
+          <Footer/>
         </div>
       </div>
     </main>

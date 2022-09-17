@@ -5,6 +5,36 @@
     font-family: @serif;
     margin-left: 100px;
     max-width: 80%;
+    margin-top: 100px;
+
+    @media @mobile {
+        margin-left: 20px;
+        max-width: 90%;
+        font-size: @medium-large;
+    }
+}
+
+.subintro {
+    font-size: @medium;
+    font-family: @sans-serif;
+    font-weight: 300;
+    margin-left: 100px;
+    max-width: 80%;
+
+    @media @mobile {
+        margin-left: 20px;
+        max-width: 85%;
+        font-size: @medium-small;
+    }
+}
+
+.subintro a {
+    font-style: italic;
+    color: black;
+
+    &:hover {
+        color:@accent2;
+    }
 }
 
 .transition {
@@ -13,4 +43,9 @@
     font-size: @small;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-top: @large;
+}
+
+.name {
+    color: @accent2;
 }

@@ -5,9 +5,12 @@ function Right () {
     return(
         <div>
             <h1 className={rightStyles.intro}>
-                Hey there! I'm Stephanie– welcome to my little corner of the internet.
+                Hey there! I'm <span className={rightStyles.name}>Stephanie</span>– I tell stories through design and code.
             </h1>
-            <p className={rightStyles.transition}> selected work </p>
+            <h2 className={rightStyles.subintro}>
+                Currently tinkering at <a href="https://www.sfchronicle.com/author/stephanie-zhu/" target="_blank" rel="noreferrer">San Francisco Chronicle.</a>
+            </h2>
+            <p className={rightStyles.transition}> selected projects </p>
         </div>
     )
 }
