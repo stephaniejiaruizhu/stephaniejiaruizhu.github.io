@@ -2,19 +2,18 @@ import React from "react";
 import Logo from "../images/logo.png"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
-import {faTwitter} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 function Menu () {
     return(
         <div>
             <img src={Logo} className={menuStyles.logo} alt="handwritten logo"/>
-            <p className={menuStyles.intro}> Welcome to my little corner of the internet.</p>
+            <p className={menuStyles.intro}> (she/her). Welcome to my little corner of the internet.</p>
             <div className={menuStyles.iconContainer}>
-                <FontAwesomeIcon icon={faGithub} />
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faEnvelope} />
+                <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                <a className={menuStyles.icon} aria-label="Twitter" href="https://twitter.com/stephzhu_" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
+                <a className={menuStyles.icon} aria-label="Email" href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
         </div>
     )

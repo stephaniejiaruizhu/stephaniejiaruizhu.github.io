@@ -9,8 +9,12 @@
 
     @media @mobile {
         margin-left: 20px;
-        max-width: 90%;
+        max-width: 85%;
         font-size: @medium-large;
+    }
+
+    @media @tablet {
+        margin-left: 50px;
     }
 }
 
@@ -26,6 +30,10 @@
         max-width: 85%;
         font-size: @medium-small;
     }
+
+    @media @tablet {
+        margin-left: 50px;
+    }
 }
 
 .subintro a {
@@ -33,7 +41,7 @@
     color: black;
 
     &:hover {
-        color:@accent2;
+        color:@accent;
     }
 }
 
@@ -46,6 +54,54 @@
     margin-top: @large;
 }
 
-.name {
-    color: @accent2;
+.arrow {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.projectSection {
+    margin-bottom: 100px;
+
+    @media @mobile {
+        margin-bottom: 50px;
+    }
+}
+
+.cover {
+    max-width: 80%;
+    display: block;
+    margin-top: @large;
+    margin-left: 100px;
+
+    @media @mobile {
+        max-width: 90%;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+    @media @tablet {
+        max-width: 85%;
+        margin-left: 50px;
+    }
+}
+
+.projectName {
+    color: black;
+    font-family: @sans-serif;
+    font-size: @medium-small;
+    font-style: italic;
+    margin-left: 100px;
+
+    &:hover {
+        color: @accent;
+    }
+
+    @media @mobile {
+        font-size: @small;
+    }
+
+    @media @tablet {
+        margin-left: 50px;
+    }
 }
