@@ -1,12 +1,14 @@
 import React from "react";
 import * as rightStyles from "../styles/modules/right.module.less";
 import SFCover from "../images/sfchronicle.png"
+import Dropdown from "./dropdown";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Right () {
     return(
         <div>
+            <Dropdown/>
             <h1 className={rightStyles.intro}>
                 Hey there! I'm Stephanie– I tell stories through design and code.
             </h1>
@@ -31,4 +33,4 @@ function Right () {
     )
 }
 
-export default Right;
+export default Right
