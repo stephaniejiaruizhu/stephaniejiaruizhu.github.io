@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-js-2e4c507a0a05ef8761b1.js","mappings":"kJAQA,UANA,WACI,OACI,iCAEP,C","sources":["webpack://stephaniejiaruizhu/./src/pages/about.js"],"sourcesContent":["import React from \"react\";\n\nfunction About () {\n    return(\n        <p>Hello</p>\n    )\n}\n\nexport default About"],"names":[],"sourceRoot":""}

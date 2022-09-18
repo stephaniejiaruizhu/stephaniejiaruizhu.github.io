@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-play-js-8e7334438fa4e72899a0.js","mappings":"kJAQA,UANA,WACI,OACI,iCAEP,C","sources":["webpack://stephaniejiaruizhu/./src/pages/play.js"],"sourcesContent":["import React from \"react\";\n\nfunction Play () {\n    return(\n        <p>Hello</p>\n    )\n}\n\nexport default Play"],"names":[],"sourceRoot":""}
