@@ -1,0 +1,44 @@
+@import (less) "../values.less";
+
+.container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.aboutText {
+    font-family: @sans-serif;
+    font-weight: 300;
+    font-size: @medium-small;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    max-width: 800px;
+
+    @media @tablet{
+        max-width: 80% !important;
+    }
+}
+
+.aboutBold {
+    font-weight: 400;
+    font-size: @medium;
+}
+
+.photo {
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    &:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    @media @tablet {
+        max-width: 100%;
+    }
+}

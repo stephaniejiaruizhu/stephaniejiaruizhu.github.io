@@ -5,6 +5,7 @@ import Menu from "./menu"
 import Right from "./homeRight"
 import Navbar from "./navbar"
 import Footer from "./footer"
+import Dropdown from "./dropdown"
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
           <Menu/>
         </div>
         <div className={menuStyles.rightContainer}>
+          <Dropdown/>
           <Right/>
           <Footer/>
         </div>

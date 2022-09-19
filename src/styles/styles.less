@@ -5,6 +5,13 @@ body {
     font-family: @sans-serif;
 }
 
+/* Make sure menu doesn't show up on desktop */
+.menu {
+  @media @desktop {
+    display: none;
+  }
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: absolute;
@@ -32,7 +39,6 @@ body {
   .bm-cross-button {
     height: 24px;
     width: 24px;
-    margin-top: -108px;
   }
   
   /* Color/shape of close button cross */
@@ -54,7 +60,6 @@ body {
     background: black;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
-    margin-top: -108px;
     overflow: hidden !important;
   }
   
