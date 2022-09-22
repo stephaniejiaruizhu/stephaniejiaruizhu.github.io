@@ -1,9 +1,26 @@
 import React from "react";
+import * as playStyles from "../styles/modules/play.module.less"
+import * as menuStyles from "../styles/modules/menu.module.less"
+import Navbar from "./navbar";
+import Menu from "./menu";
+import Dropdown from "./dropdown";
+import Footer from "./footer";
 
 function Play () {
-    return(
-        <p>Hello</p>
-    )
+    return (
+        <main>
+          <div className={menuStyles.container}>
+            <div className={menuStyles.leftContainer}>
+              <Navbar/>
+              <Menu/>
+            </div>
+            <div className={menuStyles.rightContainer}>
+              <Dropdown/>
+              <Footer/>
+            </div>
+          </div>
+        </main>
+      )
 }
 
 export default Play

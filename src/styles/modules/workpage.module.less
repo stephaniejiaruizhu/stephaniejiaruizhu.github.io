@@ -1,0 +1,187 @@
+@import (less) "../values.less";
+
+//info section styling
+.title {
+    font-family: @serif;
+    font-size:  @large;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+        font-size: @medium-large;
+    }
+
+    @media only screen and (max-width: 1000px){
+        margin-left: 50px;
+    }
+}
+
+.infoContainer {
+    display: flex;
+    margin-left: 100px;
+    gap: 100px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        display: block;
+        margin-left: 50px;
+    }
+}
+
+.subTitle {
+    font-family: @serif2;
+    font-size: @medium;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.arrow {
+    font-family: @sans-serif;
+}
+
+.text {
+    font-family: @sans-serif;
+    font-size: @medium-small;
+    font-weight: 300;
+    margin-top: 0px;
+    line-height: 30px;
+}
+
+.leftContainer {
+    max-width: 550px;
+}
+
+.rightContainer {
+    max-width: 550px;
+}
+
+.divider {
+    border-top: 1px solid rgb(195, 195, 195);
+    max-width: 1000px;
+    margin-left: 100px;
+    margin-top: @large;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
+    }
+}
+
+// project styling
+.project {
+    margin-left: 100px;
+    margin-top: 80px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
+    }
+}
+
+.link {
+    color: black;
+
+    &:hover {
+        color: @accent;
+    }
+}
+
+.projectImg {
+    max-width: 400px;
+    display: block;
+
+    @media @mobile {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+}
+
+.projectImgTablet {
+    max-width: 600px;
+    display: block;
+
+    @media @mobile {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+.projectImgDesktop {
+    max-width: 700px;
+    display: block;
+
+    @media @mobile {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+.projectText {
+    font-family: @sans-serif;
+    font-size: @medium-small;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: @medium;
+    line-height: 30px;
+    max-width: 900px;
+}
+
+.spacer {
+    margin-top: 15px;
+}
+
+//other section styling
+.otherSection {
+    margin-left: 100px;
+    margin-top: 50px;
+
+    @media @tablet {
+        margin-left: 50px;
+    }
+
+    @media @mobile {
+        margin-left: 20px;
+    }
+}
+
+.subTitle2 {
+    font-family: @serif2;
+    font-size: @medium-small;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.otherLink {
+    font-family: @sans-serif;
+    font-style: italic;
+    font-size: @small;
+    font-weight: 300;
+    color: black;
+
+    &:hover {
+        color: @accent;
+    }
+}
+
+.otherLink:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 1px;
+    margin-bottom: 10px;
+}
