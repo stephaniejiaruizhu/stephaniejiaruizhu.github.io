@@ -1,5 +1,4 @@
 import React from "react";
-import * as playStyles from "../styles/modules/play.module.less"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import Navbar from "./navbar";
 import Menu from "./menu";

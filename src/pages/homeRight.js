@@ -21,11 +21,11 @@ function Right () {
             </div>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={SFCover} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <p className={rightStyles.projectName}><a href="./sfchronicle">The Boston Globe → </a></p>
+                <p className={rightStyles.projectName}><a href="./bostonglobe">The Boston Globe → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={SFCover} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <p className={rightStyles.projectName}><a href="./sfchronicle">Student Health Leaders → </a></p>
+                <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders → </a></p>
             </div>
         </div>
     )
