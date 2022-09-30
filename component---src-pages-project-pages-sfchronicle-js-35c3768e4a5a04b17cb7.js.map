@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-project-pages-sfchronicle-js-35c3768e4a5a04b17cb7.js","mappings":"4IAMA,UAJA,WACI,OAAO,IACV,C","sources":["webpack://stephaniejiaruizhu/./src/pages/project-pages/sfchronicle.js"],"sourcesContent":["import React from \"react\";\n\nfunction SF () {\n    return null\n}\n\nexport default SF"],"names":[],"sourceRoot":""}

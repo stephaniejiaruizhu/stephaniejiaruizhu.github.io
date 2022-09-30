@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkstephaniejiaruizhu=self.webpackChunkstephaniejiaruizhu||[]).push([[780],{7e3:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var r=n(7294);var i=function(){return r.createElement("div",null,r.createElement("h1",{className:"right-module--intro--p+gmB"},"Hey there! I'm Stephanie– welcome to my little corner of the internet."),r.createElement("p",{className:"right-module--transition--vOxcZ"}," selected work "))}}}]);
-//# sourceMappingURL=component---src-pages-home-right-js-080315fe4332990d944b.js.map
