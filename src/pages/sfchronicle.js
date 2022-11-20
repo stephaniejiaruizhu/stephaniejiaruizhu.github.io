@@ -5,9 +5,6 @@ import Navbar from "./navbar"
 import MenuProjects from "./menuProjects"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import Chaat from "../images/sfchronicle/chaat.png"
-import Landlords from "../images/sfchronicle/landlords.png"
-import Napa from "../images/sfchronicle/napa.png"
 
 function SF () {
     return (
@@ -46,8 +43,8 @@ function SF () {
                         </a>
                         <p className={pageStyles.projectText}> Using React, I wrote code to bring to life ideas I conceptualized and 
                         designed in Figma with the help of the data, design and development teams. </p>
-                    </h3>
-                    <img className={pageStyles.projectImgTablet} src={Landlords} alt="ipad mockup of housing project"/>
+                    </h3> 
+                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976935/landlords_nxzxdv.png"} alt="ipad mockup of housing project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -58,7 +55,7 @@ function SF () {
                         <p className={pageStyles.projectText}> Using React, I wrote code to bring to life ideas I conceptualized and 
                         designed in Figma with the help of the data, design and development teams. </p>
                     </h3>
-                    <img className={pageStyles.projectImgDesktop} src={Napa} alt="laptop mockup of napa power players project"/>
+                    <img className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976932/napa_llfxxh.png"} alt="laptop mockup of napa power players project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -69,7 +66,7 @@ function SF () {
                         <p className={pageStyles.projectText}> Using React, I wrote code to bring to life ideas I conceptualized and 
                         designed in Figma with the help of the data, design and development teams. </p>
                     </h3>
-                    <img className={pageStyles.projectImg} src={Chaat} alt="phone mockup of chaat project"/>
+                    <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976930/chaat_yvw1c3.png"} alt="phone mockup of chaat project"/>
                 </div>
 
                 <div className={pageStyles.divider}/>

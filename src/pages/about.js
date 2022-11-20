@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import Menu from "./menu"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import Headshot from "../images/headshot.jpg"
 
 function About () {
     return (
@@ -17,7 +16,7 @@ function About () {
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
                 <div className={aboutStyles.container}>
-                    <img className={aboutStyles.photo} src={Headshot} alt="headshot of Stephanie"/>
+                    <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
                     <p className={aboutStyles.aboutText}>
                         <span className={aboutStyles.aboutBold}>Hey there, I'm Stephanie— sometimes journalist, sometimes designer, sometimes developer.</span>
                         <br/><br/>
