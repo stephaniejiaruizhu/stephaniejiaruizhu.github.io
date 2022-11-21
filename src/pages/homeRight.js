@@ -19,7 +19,7 @@ function Right () {
                 <p className={rightStyles.projectName}><a href="/sfchronicle">San Francisco Chronicle → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976432/shlcover_saaqz3.jpg"} alt="cover showcasing various projects done at San Francisco Chronicle."/>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976432/misc/shlcover_saaqz3.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
                 <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders → </a></p>
             </div>
             <div className={rightStyles.divider}/>

@@ -20,7 +20,7 @@ function Print () {
                     <a href="./bostonglobe" className={pageStyles.link2}>The Boston Globe → </a>
                 </div>
                 <div className={pageStyles.project}>
-                    <img className={pageStyles.image2} src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976433/nuazncover_oredqi.jpg" alt="cover showcasing the fall 2020 nuazn magazine "/>
+                    <img className={pageStyles.image2} src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976433/misc/nuazncover_oredqi.jpg" alt="cover showcasing the fall 2020 nuazn magazine "/>
                     <a href="./nuazn" className={pageStyles.link2}> nuazn → </a>
                 </div>
                 <div className={pageStyles.project}>
