@@ -17,10 +17,10 @@ function Play () {
             <div className={menuStyles.rightContainer}>
               <Dropdown/>
               <div className={playStyles.imageContainer}>
-                <img className={playStyles.image1} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/painting_rmnsuh.jpg"} alt=""/>
-                <img className={playStyles.image2} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/sticker_hp4k5g.jpg"} alt=""/>
-                <img className={playStyles.image3} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/digitalart_cjetma.jpg"} alt=""/>
-                <img className={playStyles.image4} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/snapchat_gnu92q.jpg"} alt=""/>
+                <img className={playStyles.image1} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/painting_rmnsuh.jpg"} alt=""/>
+                <img className={playStyles.image2} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/sticker_hp4k5g.jpg"} alt=""/>
+                <img className={playStyles.image3} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/digitalart_cjetma.jpg"} alt=""/>
+                <img className={playStyles.image4} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/snapchat_gnu92q.jpg"} alt=""/>
               </div>
               <Footer/>
             </div>

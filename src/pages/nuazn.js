@@ -43,17 +43,39 @@ function NUAZN () {
                             A uniform style
                         </h3>
                         <p className={pageStyles.projectText}>
+                            Although the meaning of heritage differs for everyone, it is undoubtedly a part of all of us. 
+                            I wanted this magazine to reflect that similarity, so I created a style guide to establish the 
+                            design direction.
                         </p>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981580/nuazn/nuaznguide_un0xrb.png"} alt="cover of style guide created for the nuazn fall 2020 magazine"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981568/nuazn/font_tdpxuz.png"} alt="typography page of style guide"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981562/nuazn/color_wtwinm.png"} alt="color page of style guide"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
                             Parts of a whole
                         </h3>
+                        <p className={pageStyles.projectText}>
+                            This illustration I created for the cover represents 
+                            the different aspects of our heritage through puzzle 
+                            pieces. Only when these parts are pieced together,
+                            do we get a more complete view of such a complicated 
+                            part of our identity.
+                        </p>
+                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
                             Representing challenges
                         </h3>
+                        <p className={pageStyles.projectText}>
+                            Below is a spread I designed about poetry on the walls of prisons on Angel Island. 
+                            Through the ripped photographs, I expressed the challenge to their identities immigrants 
+                            to the United States faced. The bold text of the poems juxtapose these images to show the 
+                            strength that can also be found in struggle.
+                        </p>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="illustration showing hands holding puzzle pieces"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="illustration showing hands holding puzzle pieces"/>
                     </div>
                 <Footer/>
             </div>

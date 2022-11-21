@@ -40,10 +40,6 @@
     margin-top: 0px;
 }
 
-.arrow {
-    font-family: @sans-serif;
-}
-
 .text {
     font-family: @sans-serif;
     font-size: @medium-small;
@@ -90,11 +86,27 @@
     }
 }
 
+.arrow {
+    font-family: @sans-serif;
+}
+
 .link {
     color: black;
 
     &:hover {
         color: @accent;
+    }
+}
+
+.link2 {
+    color: black;
+    font-family: @sans-serif;
+    font-size: @medium-small;
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover {
+        color: @accent !important;
     }
 }
 
@@ -187,6 +199,7 @@
     margin-bottom: 10px;
 }
 
+// styling for magazine/newspaper pages
 .media {
     max-width: 500px;
     margin-top: @medium;
@@ -200,10 +213,33 @@
     }
 }
 
+// styling for images
 .image {
     max-width: 80%;
     display: block;
     margin-bottom: @large;
+
+    @media @tablet {
+        max-width: 95%;
+    }
+}
+
+.image2 {
+    max-width: 80%;
+    margin-bottom: @small;
+    display: block;
+
+    @media @tablet {
+        max-width: 95%;
+    }    
+}
+
+.imageshadow {
+    max-width: 80%;
+    display: block;
+    margin-top: @medium;
+    margin-bottom: @large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     @media @tablet {
         max-width: 95%;
