@@ -48,7 +48,7 @@ function NBN () {
                             something different for this issue. Inspired by The New Yorker magazine, I created an illustration 
                             in Procreate to use instead of the standard photo.
                         </p>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669011403/nbn/cover_ssdj7l.png"} alt="cover of North by Northwestern Fall 2019 issue"/>
+                        <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669011403/nbn/cover_ssdj7l.png"} alt="cover of North by Northwestern Fall 2019 issue"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
@@ -76,15 +76,15 @@ function NBN () {
                         <p className={pageStyles.projectText}>
                             I directed a photoshoot for the first time and this photo is my absolute favorite:
                         </p>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010905/nbn/hedgehog_pz4b31.jpg"} alt="a hedgehog"/>
+                        <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010905/nbn/hedgehog_pz4b31.jpg"} alt="a hedgehog"/>
                     </div>
 
                     <div className={pageStyles.divider}/>
 
                     <div className={pageStyles.otherSection}>
                         <p className={pageStyles.subTitle2}>pages from other issues</p>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010938/nbn/threewords_qi56xe.png"} alt="magazine page showing student responses to describing Northwestern in three words"/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010926/nbn/service_ngexsm.png"} alt="magazine page about campus workers that were laid off"/>
+                        <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010938/nbn/threewords_qi56xe.png"} alt="magazine page showing student responses to describing Northwestern in three words"/>
+                        <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010926/nbn/service_ngexsm.png"} alt="magazine page about campus workers that were laid off"/>
                         <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010995/nbn/tiktok_wibhmt.png"} alt="magazine page about TikTok"/>
                         <img className={pageStyles.imageshadow} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669010916/nbn/lacrosse_sd5lpz.png"} alt="magazine page about lacrosse"/>
                     </div>

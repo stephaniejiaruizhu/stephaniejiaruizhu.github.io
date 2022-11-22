@@ -53,13 +53,23 @@ function SHL () {
                         user feedback, we came up with the final site map shown on the right. For comparison, the 
                         left is the original site map for the SHL website.
                         </p>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/sitemap1_ggryeb.png"} alt=""/>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/sitemap2_lfzxax.png"} alt=""/>
+                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/shl/sitemap1_ggryeb.png"} alt=""/>
+                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/shl/sitemap2_lfzxax.png"} alt=""/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
                             Final mockups
                         </h3>
+                        <p className={pageStyles.projectText}>
+                        Although my team wanted to build mockups in Adobe XD or Figma, we decided using Squarespace 
+                        would make it easier for the SHL team to implement our designs. Below are some screenshots 
+                        from the final version of mockups we came up with.
+                        </p>
+                        <br/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089594/shl/home_qst3qs.png"} alt=""/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089627/shl/about_rspdxy.png"} alt=""/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089622/shl/support_shl_rq0zeu.png"} alt=""/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089624/shl/alumni_k90ux6.png"} alt=""/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>

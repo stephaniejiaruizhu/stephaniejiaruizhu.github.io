@@ -57,6 +57,19 @@
     max-width: 550px;
 }
 
+.introContainer {
+    margin-left: 100px;
+    max-width: 900px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
+    }
+}
+
 .divider {
     border-top: 1px solid rgb(195, 195, 195);
     max-width: 1000px;
@@ -107,6 +120,33 @@
 
     &:hover {
         color: @accent !important;
+    }
+}
+
+.link3 {
+    font-family: @sans-serif;
+    font-size: @medium-small !important;
+    font-style: italic;
+    color: black;
+    margin-top: @large;
+    margin-left: 100px;
+    text-decoration: none;
+
+    &:hover {
+        color: @accent;
+    }
+
+    @media @mobile {
+        display: block;
+        font-size: @small;
+        max-width: 90%;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+    @media @tablet {
+        max-width: 85%;
+        margin-left: 50px;
     }
 }
 
@@ -199,21 +239,22 @@
     margin-bottom: 10px;
 }
 
-// styling for magazine/newspaper pages
+// styling for images
 .media {
     max-width: 500px;
     margin-top: @medium;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: block;
 
+    @media @tablet {
+        max-width: 80%;
+    }
+
     @media @mobile {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 95%;
     }
 }
 
-// styling for images
 .image {
     max-width: 80%;
     display: block;
@@ -235,13 +276,16 @@
 }
 
 .imageshadow {
-    max-width: 80%;
+    max-width: 500px;
     display: block;
     margin-top: @medium;
-    margin-bottom: @large;
+    margin-bottom: @medium;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     @media @tablet {
+        max-width: 400px;
+    }
+    @media @mobile {
         max-width: 95%;
     }
 }
