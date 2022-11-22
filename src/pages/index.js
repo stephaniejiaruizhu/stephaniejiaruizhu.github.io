@@ -1,11 +1,15 @@
 import * as React from "react"
 import "../styles/styles.less"
 import * as menuStyles from "../styles/modules/menu.module.less"
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
 import Menu from "./menu"
 import Right from "./homeRight"
 import Navbar from "./navbar"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+
+config.autoAddCss = false;
 
 const IndexPage = () => {
   return (
