@@ -8,7 +8,7 @@ function PlayRight () {
                 My playground. . .
             </h1>
             <h2 className={rightStyles.subintro}>
-                a place for documenting the random things I try just for fun :)
+                a place for documenting the random things I try :)
             </h2>
             <div className={rightStyles.projectSection}>
                 <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/painting_rmnsuh.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>

@@ -70,6 +70,19 @@
     }
 }
 
+.intro {
+    margin-left: 100px;
+    margin-top: 30px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
+    }
+}
+
 .divider {
     border-top: 1px solid rgb(195, 195, 195);
     max-width: 1000px;
@@ -148,6 +161,10 @@
         max-width: 85%;
         margin-left: 50px;
     }
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }
 
 .projectImg {
@@ -259,6 +276,7 @@
     max-width: 80%;
     display: block;
     margin-bottom: @large;
+    margin-top: @medium-large;
 
     @media @tablet {
         max-width: 95%;
@@ -275,6 +293,20 @@
     }    
 }
 
+.imageSmall {
+    max-width: 500px;
+    margin-top: @medium;
+    display: block;
+
+    @media @tablet {
+        max-width: 80%;
+    }
+
+    @media @mobile {
+        max-width: 95%;
+    }
+}
+
 .imageshadow {
     max-width: 500px;
     display: block;
@@ -285,6 +317,20 @@
     @media @tablet {
         max-width: 400px;
     }
+    @media @mobile {
+        max-width: 95%;
+    }
+}
+
+.video {
+    max-width: 500px;
+    margin-top: @medium;
+    display: block;
+
+    @media @tablet {
+        max-width: 70%;
+    }
+
     @media @mobile {
         max-width: 95%;
     }
