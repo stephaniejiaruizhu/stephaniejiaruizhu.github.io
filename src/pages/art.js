@@ -2,7 +2,7 @@ import React from "react"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import * as pageStyles from "../styles/modules/workpage.module.less"
 import Navbar from "./navbar"
-import MenuProjects from "./menuProjects"
+import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
 
@@ -11,7 +11,7 @@ function Art () {
         <div className={menuStyles.container}>
             <div className={menuStyles.leftContainer}>
                 <Navbar/>
-                <MenuProjects/>
+                <MenuPlay/>
             </div>
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
@@ -58,3 +58,4 @@ function Art () {
 }
 
 export default Art
+export const Head = () => <><title>Play/Digital Art– Stephanie Zhu</title> <link rel="icon" href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"></link></>

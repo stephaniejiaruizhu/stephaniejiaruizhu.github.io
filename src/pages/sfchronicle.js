@@ -38,6 +38,17 @@ function SF () {
 
                 <div className={pageStyles.project}>
                     <h3 className={pageStyles.subTitle}>
+                        <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/sf-transamerica-pyramid/" target="_blank" rel="noreferrer">
+                        The Future of the Transamerica Pyramid <span className={pageStyles.arrow}>→</span>
+                        </a>
+                    </h3>
+                    <p className={pageStyles.projectText}> Using React, I wrote code to bring to life ideas I conceptualized and 
+                    designed in Figma with the help of the data, design and development teams. </p>
+                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669271808/sfchronicle/Pyramid_jtojwk.png"} alt="ipad mockup Transamerica Pyramid"/>
+                </div>
+
+                <div className={pageStyles.project}>
+                    <h3 className={pageStyles.subTitle}>
                         <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/bay-area-housing-power-players/" target="_blank" rel="noreferrer">
                         Who Owns All the Housing in the Bay Area? <span className={pageStyles.arrow}>→</span>
                         </a>
@@ -67,6 +78,12 @@ function SF () {
                     <p className={pageStyles.projectText}> Using React, I wrote code to bring to life ideas I conceptualized and 
                     designed in Figma with the help of the data, design and development teams. </p>
                     <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976930/sfchronicle/chaat_yvw1c3.png"} alt="phone mockup of chaat project"/>
+                </div>
+
+                <div className={pageStyles.project}>
+                    <p className={pageStyles.projectText}>Check out this <a className={pageStyles.link} href="https://drive.google.com/drive/folders/180de8yEG0FSO4yGBgwI-xh9QIz9iyrc1?usp=sharing" target="_blank" rel="noreferrer">folder</a>
+                    with screen recordings of each project if the paywall can't be bypassed. 
+                    </p>
                 </div>
 
                 <div className={pageStyles.divider}/>
@@ -103,3 +120,4 @@ function SF () {
 }
 
 export default SF
+export const Head = () => <><title>Work/SF Chronicle– Stephanie Zhu</title> <link rel="icon" href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"></link></>

@@ -5,13 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
-function MenuProjects () {
+function MenuPlay () {
     return(
         <div>
             <img src={Logo} className={menuStyles.logo} alt="handwritten logo"/>
             <div className={menuStyles.list}>
-                <p className={menuStyles.listItem}> San Francisco Chronicle </p>
-                <p className={menuStyles.listItem}> Student Health Leaders </p>
+                <p className={menuStyles.listItem}> Pantone Paintings </p>
+                <p className={menuStyles.listItem}> Stickers </p>
+                <p className={menuStyles.listItem}> Digital Art </p>
+                <p className={menuStyles.listItem}> Snapchat Geofilters </p>
             </div>
             <div className={menuStyles.iconContainer}>
                 <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
@@ -23,4 +25,4 @@ function MenuProjects () {
     )
 }
 
-export default MenuProjects
+export default MenuPlay

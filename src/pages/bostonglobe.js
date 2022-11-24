@@ -2,7 +2,7 @@ import React from "react"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import * as pageStyles from "../styles/modules/workpage.module.less"
 import Navbar from "./navbar"
-import MenuProjects from "./menuProjects"
+import MenuPrint from "./menuPrint"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
 
@@ -11,7 +11,7 @@ function BG () {
         <div className={menuStyles.container}>
             <div className={menuStyles.leftContainer}>
                 <Navbar/>
-                <MenuProjects/>
+                <MenuPrint/>
             </div>
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
@@ -80,3 +80,4 @@ function BG () {
 }
 
 export default BG
+export const Head = () => <><title>Work/The Boston Globe– Stephanie Zhu</title> <link rel="icon" href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"></link></>

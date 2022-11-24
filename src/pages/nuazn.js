@@ -2,7 +2,7 @@ import React from "react"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import * as pageStyles from "../styles/modules/workpage.module.less"
 import Navbar from "./navbar"
-import MenuProjects from "./menuProjects"
+import MenuPrint from "./menuPrint"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
 
@@ -11,7 +11,7 @@ function NUAZN () {
         <div className={menuStyles.container}>
             <div className={menuStyles.leftContainer}>
                 <Navbar/>
-                <MenuProjects/>
+                <MenuPrint/>
             </div>
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
@@ -62,7 +62,7 @@ function NUAZN () {
                             do we get a more complete view of such a complicated 
                             part of our identity.
                         </p>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
@@ -84,3 +84,4 @@ function NUAZN () {
 }
 
 export default NUAZN
+export const Head = () => <><title>Work/nuazn– Stephanie Zhu</title> <link rel="icon" href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"></link></>

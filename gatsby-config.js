@@ -4,4 +4,5 @@ module.exports = {
     siteUrl: `https://www.stephaniejiaruizhu.com`,
   },
   plugins: [`gatsby-plugin-less`],
+  
 }
