@@ -23,7 +23,7 @@ function NUAZN () {
                         something so nuanced in 46 pages?  </h3>
                         <p className={pageStyles.text}>
                         As creative director of nuazn, an Asian-interest publication at Northwestern University, I was responsible for 
-                        art-directing and designing parts of the fall 2020 magazine. The theme for this issue was heritage as a bond to the past.
+                        art-directing the fall 2020 magazine as well as designing parts of it. The theme for this issue was heritage as a bond to the past.
                         </p>
                     </div>
                     <div className={pageStyles.rightContainer}>
@@ -66,16 +66,13 @@ function NUAZN () {
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
-                            Representing challenges
+                            Putting it all together
                         </h3>
                         <p className={pageStyles.projectText}>
-                            Below is a spread I designed about poetry on the walls of prisons on Angel Island. 
-                            Through the ripped photographs, I expressed the challenge to their identities immigrants 
-                            to the United States faced. The bold text of the poems juxtapose these images to show the 
-                            strength that can also be found in struggle.
+                            some pages of the magazine
                         </p>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="illustration showing hands holding puzzle pieces"/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="illustration showing hands holding puzzle pieces"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="letter from the editor, masthead and table of contents pages"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="layout of a piece about poetry on Angel Island"/>
                     </div>
                 <Footer/>
             </div>

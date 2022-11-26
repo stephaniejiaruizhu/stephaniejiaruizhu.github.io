@@ -118,7 +118,7 @@
 
 .link {
     color: black;
-    margin-right: 3px;
+    margin-right: 5px;
 
     &:hover {
         color: @accent;
@@ -177,6 +177,10 @@
         margin-right: auto;
         width: 200px;
     }
+
+    @media (max-width: 650px) {
+        width: 300px;
+    }
 }
 
 .projectImgTablet {
@@ -186,6 +190,10 @@
     @media @mobile {
         margin-left: auto;
         margin-right: auto;
+        width: 90%;
+    }
+
+    @media (max-width: 650px) {
         width: 90%;
     }
 }
@@ -198,6 +206,10 @@
         margin-left: auto;
         margin-right: auto;
         width: 90%;
+    }
+
+    @media (max-width: 750px) {
+        width: 95%;
     }
 }
 

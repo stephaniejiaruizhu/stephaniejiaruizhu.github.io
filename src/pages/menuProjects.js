@@ -10,8 +10,8 @@ function MenuProjects () {
         <div>
             <img src={Logo} className={menuStyles.logo} alt="handwritten logo"/>
             <div className={menuStyles.list}>
-                <p className={menuStyles.listItem}> San Francisco Chronicle </p>
-                <p className={menuStyles.listItem}> Student Health Leaders </p>
+                <p className={menuStyles.listItem}><a href="../sfchronicle">San Francisco Chronicle</a></p>
+                <p className={menuStyles.listItem}><a href = "../shl">Student Health Leaders</a></p>
             </div>
             <div className={menuStyles.iconContainer}>
                 <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>

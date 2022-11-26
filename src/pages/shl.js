@@ -18,7 +18,7 @@ function SHL () {
                 <h2 className={pageStyles.title}> Student Health Leaders</h2>
                 <div className={pageStyles.project}>
                 <p className={pageStyles.text}><b>Client:</b> Northwestern Feinberg School of Medicine + Chicago Public Schools</p>
-                <p className={pageStyles.text}><b>Challenge:</b> Find and address ways to improve their Student Health Leaders program 
+                <p className={pageStyles.text}><b>Challenge:</b> Find and address ways to improve the Student Health Leaders program 
                 (designed for Chicago public school students interested in healthcare)</p>
                 </div>
 
@@ -45,31 +45,41 @@ function SHL () {
                 <div className={pageStyles.divider}/>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
+                            Our findings
+                        </h3>
+                        <p className={pageStyles.projectText}>
+                        • Because there's so much information on the site, many stakeholders find it difficult to find information they need <br/>
+                        • CPS students (for the most part) want generalized information about the program whereas healthcare industry professionals want ways to support the program. <br/>
+                        • There's an interest from students in hearing testimonials and stories about the program from past attendees
+                        </p>
+                    </div>
+                    <div className={pageStyles.project}>
+                        <h3 className={pageStyles.subTitle}>
                             Navigation made easy
                         </h3>
                         <p className={pageStyles.projectText}>
-                        Based on our findings, we narrowed down the focus into reorganizing the content of the 
+                        Based on our findings, my team narrowed down our focus into reorganizing the content of the 
                         site and building a better navigation system. After making several site maps and getting 
-                        user feedback, we came up with the final site map shown on the right. For comparison, the 
-                        left is the original site map for the SHL website.
+                        user feedback, we came up with the final site map shown on the bottom. For comparison, the 
+                        top is the original site map for the SHL website.
                         </p>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/shl/sitemap1_ggryeb.png"} alt=""/>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/shl/sitemap2_lfzxax.png"} alt=""/>
+                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/shl/sitemap1_ggryeb.png"} alt="site map for the original Student Health Leaders website"/>
+                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/shl/sitemap2_lfzxax.png"} alt="new site map for the SHL website after user research and testing"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
                             Final mockups
                         </h3>
                         <p className={pageStyles.projectText}>
-                        Although my team wanted to build mockups in Adobe XD or Figma, we decided using Squarespace 
-                        would make it easier for the SHL team to implement our designs. Below are some screenshots 
-                        from the final version of mockups we came up with.
+                        Although my team wanted to build mockups in Adobe XD or Figma, we decided directly using Squarespace 
+                        would make it easier for the SHL team to implement our work. Below are some screenshots 
+                        from the final version of what we came up with.
                         </p>
                         <br/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089594/shl/home_qst3qs.png"} alt=""/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089627/shl/about_rspdxy.png"} alt=""/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089622/shl/support_shl_rq0zeu.png"} alt=""/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089624/shl/alumni_k90ux6.png"} alt=""/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089594/shl/home_qst3qs.png"} alt="Home page of new SHL site"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089627/shl/about_rspdxy.png"} alt="About the program page of the SHL site"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089622/shl/support_shl_rq0zeu.png"} alt="Support SHL page of the SHL site"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089624/shl/alumni_k90ux6.png"} alt="Alumni page of the SHL site"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>

@@ -10,10 +10,10 @@ function MenuPlay () {
         <div>
             <img src={Logo} className={menuStyles.logo} alt="handwritten logo"/>
             <div className={menuStyles.list}>
-                <p className={menuStyles.listItem}> Pantone Paintings </p>
-                <p className={menuStyles.listItem}> Stickers </p>
-                <p className={menuStyles.listItem}> Digital Art </p>
-                <p className={menuStyles.listItem}> Snapchat Geofilters </p>
+                <p className={menuStyles.listItem}><a href = "../paintings">Pantone Paintings</a></p>
+                <p className={menuStyles.listItem}><a href = "../stickers">Stickers</a></p>
+                <p className={menuStyles.listItem}><a href = "../art">Digital Art</a></p>
+                <p className={menuStyles.listItem}><a href = "../geofilters">Snapchat Geofilters</a></p>
             </div>
             <div className={menuStyles.iconContainer}>
                 <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>

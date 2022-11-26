@@ -15,12 +15,12 @@ function Right () {
             <p className={rightStyles.transition}> selected projects </p>
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>
             <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976726/misc/sfchronicle_mogiyl.png"} alt="cover showcasing various projects done at San Francisco Chronicle."/>
-                <p className={rightStyles.projectName}><a href="/sfchronicle">San Francisco Chronicle → </a></p>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976726/misc/sfchronicle_mogiyl.png"} alt="various projects done at San Francisco Chronicle."/>
+                <p className={rightStyles.projectName}><a href="/sfchronicle">San Francisco Chronicle (digital design + web development) → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669175644/misc/shlcover_vacvge.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
-                <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders → </a></p>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669175644/misc/shlcover_vacvge.jpg"} alt="mockups of a website done for Northwestern Feinberg's Student Health Leaders program."/>
+                <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders (service design + ui/ux) → </a></p>
             </div>
             <div className={rightStyles.divider}/>
             <a href="./print" className={rightStyles.seeMore}> see print work <span className={rightStyles.arrow}>→</span></a>

@@ -11,8 +11,8 @@ function MenuPrint () {
             <img src={Logo} className={menuStyles.logo} alt="handwritten logo"/>
             <div className={menuStyles.list}>
                 <p className={menuStyles.listItem}><a href = "../bostonglobe">The Boston Globe</a></p>
-                <p className={menuStyles.listItem}> nuazn </p>
-                <p className={menuStyles.listItem}> North by Northwestern </p>
+                <p className={menuStyles.listItem}><a href = "../nuazn">nuazn</a></p>
+                <p className={menuStyles.listItem}><a href = "../nbn">North by Northwestern</a></p>
             </div>
             <div className={menuStyles.iconContainer}>
                 <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
