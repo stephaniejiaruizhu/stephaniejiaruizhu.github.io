@@ -6,11 +6,13 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 function PrintRight () {
     return(
         <div>
-            <h1 className={rightStyles.intro}>
-                Hey there! I'm Stephanie– sometimes journalist, sometimes designer, sometimes developer.
-            </h1>
-            <h2 className={rightStyles.subintro}>
-                Always a storyteller. Currently tinkering at <a href="https://www.sfchronicle.com/author/stephanie-zhu/" target="_blank" rel="noreferrer">San Francisco Chronicle.</a>
+            <h3 className={rightStyles.kicker}>
+                PRINT
+            </h3 >
+            <h2 className={rightStyles.subintro2}>
+                I spent most of college doing print design– working with stakeholders to create cohesive layouts that capture the 
+                essence of a story. Although I have shifted away from print, I hope to carry what I learned about typography, illustration and 
+                working on interdisciplinary teams into my digital work.
             </h2>
             <p className={rightStyles.transition}> selected projects </p>
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>

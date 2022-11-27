@@ -22,6 +22,26 @@
     }
 }
 
+.kicker {
+    margin-left: 100px;
+    font-size: @medium-small;
+    font-family: @serif;
+    margin-top: 100px;
+
+    @media @mobile {
+        display: block;
+        font-size: @small;
+        max-width: 90%;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+    @media @tablet {
+        max-width: 85%;
+        margin-left: 50px;
+    }
+}
+
 .subintro {
     font-size: @medium;
     font-family: @sans-serif;
@@ -32,6 +52,28 @@
     @media @mobile {
         max-width: 90%;
         font-size: @medium-small;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+    @media @tablet {
+        max-width: 85%;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+}
+
+.subintro2 {
+    font-size: @medium-small;
+    font-family: @sans-serif;
+    font-weight: 300;
+    margin-left: 100px;
+    max-width: 80%;
+
+    @media @mobile {
+        max-width: 90%;
+        font-size: @small;
         display: block;
         margin-left: auto !important;
         margin-right: auto;

@@ -25,7 +25,7 @@ function Art () {
 
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
-                            Static images
+                            Static illustrations
                         </h3>
                         <p className={pageStyles.projectText}>
                         </p>

@@ -20,12 +20,9 @@ function NBN () {
 
                 <div className={pageStyles.infoContainer}>
                     <div className={pageStyles.leftContainer}>
-                        <h3 className={pageStyles.subTitle}> Heritage– how do we represent 
-                        something so nuanced in 46 pages?  </h3>
                         <p className={pageStyles.text}>
                             I was creative director for North by Northwestern in the fall of 2019, where I led an eight-person 
-                            creative team consisting of designers, illustrators and photographers. I also did the design work 
-                            shown below.
+                            creative team consisting of designers, illustrators and photographers. With the editorial team and online staff, we put together a 64-page print magazine and a digital version.
                         </p>
                     </div>
                     <div className={pageStyles.rightContainer}>

@@ -24,7 +24,8 @@ function NUAZN () {
                         something so nuanced in 46 pages?  </h3>
                         <p className={pageStyles.text}>
                         As creative director of nuazn, an Asian-interest publication at Northwestern University, I was responsible for 
-                        art-directing the fall 2020 magazine as well as designing parts of it. The theme for this issue was heritage as a bond to the past.
+                        art-directing the fall 2020 magazine as well as designing parts of it. The theme for this issue was heritage– a topic
+                        that holds a different meaning for different people.
                         </p>
                     </div>
                     <div className={pageStyles.rightContainer}>
@@ -69,9 +70,7 @@ function NUAZN () {
                         <h3 className={pageStyles.subTitle}>
                             Putting it all together
                         </h3>
-                        <p className={pageStyles.projectText}>
-                            some pages of the magazine
-                        </p>
+                        <br/>
                         <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="letter from the editor, masthead and table of contents pages"/>
                         <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="layout of a piece about poetry on Angel Island"/>
                     </div>
