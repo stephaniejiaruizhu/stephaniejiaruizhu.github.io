@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Geofilters () {
     return (
@@ -25,12 +26,12 @@ function Geofilters () {
                 </div>
 
                     <div className={pageStyles.project}>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182978/play/snap/Lombard3_si8zpc.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182978/play/snap/Evanston2_ieriwj.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182976/play/snap/Monterey2_eanv3o.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182980/play/snap/Santa_Monica_q3ehyn.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182978/play/snap/Chicago2_agrysl.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182976/play/snap/Gold_Beach2_tpfxu4.jpg"} alt="cover of North by Northwestern Fall 2019 issue"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Lombard2_u4bvv7.jpg"} alt="geofilter of Lombard street"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Evanston_hrsyik.jpg"} alt="geofilter of Evanston featuring Grosse Point Lighthouse"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Monterey_yh3srq.jpg"} alt="geofilter of Monterey featuring jellyfish"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Santa_Monica_ipbyb5.jpg"} alt="geofilter of Santa Monica Pier"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Chicago_vxgzv3.jpg"} alt="geofiter of Chicago featuring the Navy Pier Centennial Wheel"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Gold_Beach_zbaya5.jpg"} alt="geofilter of Gold Beach featuring Isaac Lee Patterson Bridge"/>
                     </div>
                 <Footer/>
             </div>

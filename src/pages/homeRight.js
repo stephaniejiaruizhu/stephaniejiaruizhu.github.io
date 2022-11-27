@@ -1,8 +1,8 @@
-import React from "react";
-import * as rightStyles from "../styles/modules/right.module.less";
+import React from "react"
+import * as rightStyles from "../styles/modules/right.module.less"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Right () {
     return(

@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import MenuProjects from "./menuProjects"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function SHL () {
     return (
@@ -63,8 +64,8 @@ function SHL () {
                         user feedback, we came up with the final site map shown on the bottom. For comparison, the 
                         top is the original site map for the SHL website.
                         </p>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/shl/sitemap1_ggryeb.png"} alt="site map for the original Student Health Leaders website"/>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/shl/sitemap2_lfzxax.png"} alt="new site map for the SHL website after user research and testing"/>
+                        <LazyLoadImage className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976964/shl/sitemap1_ggryeb.png"} alt="site map for the original Student Health Leaders website"/>
+                        <LazyLoadImage className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976963/shl/sitemap2_lfzxax.png"} alt="new site map for the SHL website after user research and testing"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
@@ -76,10 +77,10 @@ function SHL () {
                         from the final version of what we came up with.
                         </p>
                         <br/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089594/shl/home_qst3qs.png"} alt="Home page of new SHL site"/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089627/shl/about_rspdxy.png"} alt="About the program page of the SHL site"/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089622/shl/support_shl_rq0zeu.png"} alt="Support SHL page of the SHL site"/>
-                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669089624/shl/alumni_k90ux6.png"} alt="Alumni page of the SHL site"/>
+                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669505336/shl/home_rfww9q.png"} alt="Home page of new SHL site"/>
+                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669505337/shl/about_mg4mxk.png"} alt="About the program page of the SHL site"/>
+                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669505336/shl/support_shl_r9cttf.png"} alt="Support SHL page of the SHL site"/>
+                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669505337/shl/alumni_saekuo.png"} alt="Alumni page of the SHL site"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>

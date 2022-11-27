@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import Menu from "./menu"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function About () {
     return (
@@ -16,7 +17,7 @@ function About () {
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
                 <div className={aboutStyles.container}>
-                    <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
+                    <LazyLoadImage className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
                     <p className={aboutStyles.aboutText}>
                         <span className={aboutStyles.aboutBold}>Hey there, I'm Stephanie.</span>
                         <br/><br/>
@@ -28,7 +29,7 @@ function About () {
                         <br/><br/>
                         Currently: reading <a className={aboutStyles.link} href = "https://www.goodreads.com/book/show/20518872-the-three-body-problem" target="_blank" rel="noreferrer">The Three-Body Problem</a>, making <a className={aboutStyles.link} href="https://drive.google.com/file/d/1-X4GVwfTkegKZvFFuy3Nk88jiwTaLDUk/view?usp=sharing" target="_blank" rel="noreferrer">crepe cakes</a> and trying to avoid the wrath of my pet <a className={aboutStyles.link} href="https://drive.google.com/file/d/1Hz77t3LvaCYS1mAWo_BP4tAe2HhB8W3L/view?usp=sharing" target="_blank" rel="noreferrer">bird</a>.
                         <br/><br/>
-                        Let's Chat! :)
+                        Let's chat! :)
                     </p>
                 </div>
                 <Footer/>

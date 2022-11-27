@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import MenuProjects from "./menuProjects"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function SF () {
     return (
@@ -47,7 +48,7 @@ function SF () {
                     <p className={pageStyles.projectText}> The Transamerica Pyramid had its 50th anniversary recently. This piece takes a look at the past, and more importantly, the
                     future of the iconic structure. The focus of the design is on drone footage and photographs from the newsroom's visual team as well as the contrast between past and
                     present.</p>
-                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669271808/sfchronicle/Pyramid_jtojwk.png"} alt="ipad mockup of the Transamerica Pyramid project"/>
+                    <LazyLoadImage className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669271808/sfchronicle/Pyramid_jtojwk.png"} alt="ipad mockup of the Transamerica Pyramid project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -59,7 +60,7 @@ function SF () {
                     <p className={pageStyles.projectText}> The Chronicle combed through millions of unique property records and found which power players control the Bay 
                     Area's real estate. Because there's so much content to present, I designed and developed a navigation bar as well as other features to make the dense 
                     information more digestible.</p>
-                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976935/sfchronicle/landlords_nxzxdv.png"} alt="ipad mockup of the Bay Area landlord project"/>
+                    <LazyLoadImage className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976935/sfchronicle/landlords_nxzxdv.png"} alt="ipad mockup of the Bay Area landlord project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -70,7 +71,7 @@ function SF () {
                     </h3>
                     <p className={pageStyles.projectText}> New power players join already established ones in Napa's changing wine industry. For this project,
                     I created illustrations and a flipcard for each power player in addition to the topper image.</p>
-                    <img className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976932/sfchronicle/napa_llfxxh.png"} alt="laptop mockup of Napa power players project"/>
+                    <LazyLoadImage className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976932/sfchronicle/napa_llfxxh.png"} alt="laptop mockup of Napa power players project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -81,7 +82,7 @@ function SF () {
                     </h3>
                     <p className={pageStyles.projectText}>I created a template for restaurant guides that can be used by those without any coding experience– change settings
                     and text in a Google Spreadsheet and the changes will be reflected on a webpage. I also made the animated gifs on the Chaat iteration of the template.</p>
-                    <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976930/sfchronicle/chaat_yvw1c3.png"} alt="phone mockup of the chaat project"/>
+                    <LazyLoadImage className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976930/sfchronicle/chaat_yvw1c3.png"} alt="phone mockup of the chaat project"/>
                 </div>
 
                 <div className={pageStyles.project}>

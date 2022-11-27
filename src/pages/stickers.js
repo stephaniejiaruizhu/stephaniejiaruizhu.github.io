@@ -5,6 +5,7 @@ import Navbar from "./navbar"
 import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Stickers () {
     return (
@@ -34,7 +35,7 @@ function Stickers () {
                             After doing some research <span className={pageStyles.strikethrough}>spending hours scrolling through Instagram</span>, I realized I needed a mascot to help my shop stand out.
                             Dinosaurs happened to be one of the only animals I could draw mildly well from memory so. . .
                         </p>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182796/play/dino2_vj7w13.jpg"} alt="stickers of the dinosaur mascot for the sticker shop"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494879/play/stickers/dino_a8qlip.jpg"} alt="stickers of the dinosaur mascot for the sticker shop"/>
                     </div>
 
                     <div className={pageStyles.project}>
@@ -44,10 +45,10 @@ function Stickers () {
                         <p className={pageStyles.projectText}>
                             The one-man show: illustrating, printing and cutting all of the stickers. In order to keep engagement for my sticker shop up, I released new designs every two weeks. These are some of my favorites.
                         </p>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182167/play/stickers/RamenTaiyaki_nlyst9.jpg"} alt="stickers featuring ramen and taiyaki"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182183/play/stickers/Space_Drink_vqjiat.jpg"} alt="stickers featuring asian drinks with a space theme"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/sticker_hp4k5g.jpg"} alt="stickers featuring the nintendo switch"/>
-                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182210/play/stickers/FullSizeRender_2_bkgu0p.jpg"} alt="stickers featuring dinosaur mascot in a jar"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494879/play/stickers/ramentaiyaki_xpwcrd.jpg"} alt="stickers featuring ramen and taiyaki"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494879/play/stickers/spacedrinks_dehw4i.jpg"} alt="stickers featuring asian drinks with a space theme"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/sticker_hp4k5g.jpg"} alt="stickers featuring the nintendo switch"/>
+                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494880/play/stickers/vacation_ewtaug.jpg"} alt="stickers featuring dinosaur mascot in a jar"/>
                     </div>
 
                     <div className={pageStyles.project}>
@@ -58,7 +59,7 @@ function Stickers () {
                             Although I could've done better on the art and the marketing, I was able to learn a lot from this experience from both a business and artistic
                             standpoint. Over the course of its lifetime, the sticker shop got around 700 sales (500 on Etsy and 200 elsewhere) and the Etsy bestseller designation.
                         </p>
-                        <img className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182747/play/dino_yum9cs.png"} alt="the dinosupplyco Etsy shop page"/>
+                        <LazyLoadImage className={pageStyles.image} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669182747/play/stickers/dino_yum9cs.png"} alt="the dinosupplyco Etsy shop page"/>
                     </div>
 
                 <Footer/>
