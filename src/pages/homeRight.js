@@ -21,7 +21,7 @@ function Right () {
             </div>
             <div className={rightStyles.projectSection}>
                 <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669175644/misc/shlcover_vacvge.jpg"} alt="mockups of a website done for Northwestern Feinberg's Student Health Leaders program."/>
-                <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders (service design + ui/ux) → </a></p>
+                <p className={rightStyles.projectName}><a href="./shl">Student Health Leaders (service + ui/ux design) → </a></p>
             </div>
             <div className={rightStyles.divider}/>
             <a href="./print" className={rightStyles.seeMore}> see print work <span className={rightStyles.arrow}>→</span></a>

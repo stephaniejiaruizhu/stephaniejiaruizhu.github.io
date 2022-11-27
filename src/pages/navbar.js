@@ -7,7 +7,7 @@ function Navbar () {
             <a href="/" className={navbarStyles.link}>work</a>
             <a href="/play" className={navbarStyles.link}>play</a>
             <a href="/about" className={navbarStyles.link}>about</a>
-            <a href="https://drive.google.com/file/d/1sXXvIjqpciXud7wQvtqfMNJxJBrDALyS/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1evqpBjXvP3PMiLBkHbCa7S0T6n_EwS8f/view?usp=sharing"
                target="_blank"
                rel="noreferrer"
                className={navbarStyles.link}>

@@ -32,7 +32,7 @@ function NUAZN () {
                         <p className={pageStyles.text}>
                             Type: student publication
                             <div className={pageStyles.spacer}/>
-                            Role: art direction, layout, illustration      
+                            Role: art direction, editorial design, illustration      
                             <div className={pageStyles.spacer}/>
                             Time Frame: Fall 2020
                         </p>

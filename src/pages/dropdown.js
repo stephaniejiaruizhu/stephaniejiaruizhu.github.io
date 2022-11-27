@@ -9,7 +9,7 @@ function Dropdown () {
                 <a id="play" className="menu-item" href="/play">play</a>
                 <a id="about" className="menu-item" href="/about">about</a>
                 <a id="resumer" className="menu-item" 
-                href="https://drive.google.com/file/d/1sXXvIjqpciXud7wQvtqfMNJxJBrDALyS/view?usp=sharing"
+                href="https://drive.google.com/file/d/1evqpBjXvP3PMiLBkHbCa7S0T6n_EwS8f/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer">
                 resume</a>

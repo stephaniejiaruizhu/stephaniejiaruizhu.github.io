@@ -29,7 +29,7 @@ function NBN () {
                         <p className={pageStyles.text}>
                             Type: student publication
                             <div className={pageStyles.spacer}/>
-                            Role: creative direction, illustration, layout    
+                            Role: creative direction, editorial design, illustration   
                             <div className={pageStyles.spacer}/>
                             Time Frame: Fall 2019
                         </p>
