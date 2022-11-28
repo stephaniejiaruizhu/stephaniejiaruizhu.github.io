@@ -11,7 +11,7 @@ function Right () {
                 Hey there! I'm Stephanie– sometimes journalist, sometimes designer, sometimes developer.
             </h1>
             <h2 className={rightStyles.subintro}>
-                Always a storyteller. Currently tinkering at <a href="https://www.sfchronicle.com/author/stephanie-zhu/" target="_blank" rel="noreferrer">San Francisco Chronicle.</a>
+                Always a storyteller. Currently making things at <a href="https://www.sfchronicle.com/author/stephanie-zhu/" target="_blank" rel="noreferrer">San Francisco Chronicle.</a>
             </h2>
             <p className={rightStyles.transition}> selected projects </p>
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>

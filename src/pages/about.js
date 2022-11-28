@@ -23,7 +23,7 @@ function About () {
                         <br/><br/>
                         Like every journalist ever, I tell people that I love telling stories.
                         <br/><br/>
-                        But more specifically, I want to take the interviewing and narrative crafting skills I have learned to create experiences that evoke thought and emotion.
+                        But more specifically, I want to take the interviewing and narrative crafting skills I have learned to create experiences that evoke thought and bring joy.
                         <br/><br/>
                         I'm a designer/developer at San Francisco Chronicle and a recent grad of Northwestern University where I studied journalism, computer science and design.
                         <br/><br/>

@@ -50,7 +50,7 @@ function SHL () {
                         </h3>
                         <p className={pageStyles.projectText}>
                         • Because there's so much information on the site, many stakeholders find it difficult to find information they need <br/>
-                        • CPS students (for the most part) want generalized information about the program whereas healthcare industry professionals want ways to support the program. <br/>
+                        • CPS students (for the most part) want generalized information about the program whereas healthcare industry professionals want ways to support the program<br/>
                         • There's an interest from students in hearing testimonials and stories about the program from past attendees
                         </p>
                     </div>

@@ -58,10 +58,10 @@ function NUAZN () {
                             Parts of a whole
                         </h3>
                         <p className={pageStyles.projectText}>
-                            This illustration I created for the cover represents 
-                            the different aspects of our heritage through puzzle 
+                            This illustration I created for the cover represents
+                            the different aspects of our heritage through puzzle
                             pieces. Only when these parts are pieced together,
-                            do we get a more complete view of such a complicated 
+                            do we get a more complete view of such a complicated
                             part of our identity.
                         </p>
                         <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
