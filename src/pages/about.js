@@ -29,7 +29,7 @@ function About () {
                         <br/><br/>
                         Currently: reading <a className={aboutStyles.link} href = "https://www.goodreads.com/book/show/20518872-the-three-body-problem" target="_blank" rel="noreferrer">The Three-Body Problem</a>, making <a className={aboutStyles.link} href="https://drive.google.com/file/d/1-X4GVwfTkegKZvFFuy3Nk88jiwTaLDUk/view?usp=sharing" target="_blank" rel="noreferrer">crepe cakes</a> and trying to avoid the wrath of my pet <a className={aboutStyles.link} href="https://drive.google.com/file/d/1Hz77t3LvaCYS1mAWo_BP4tAe2HhB8W3L/view?usp=sharing" target="_blank" rel="noreferrer">bird</a>.
                         <br/><br/>
-                        Let's chat! :)
+                        Let's <a className={aboutStyles.link} href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer">chat</a>! :)
                     </p>
                 </div>
                 <Footer/>

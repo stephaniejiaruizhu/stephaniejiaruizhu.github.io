@@ -41,6 +41,17 @@ function SF () {
 
                 <div className={pageStyles.project}>
                     <h3 className={pageStyles.subTitle}>
+                        <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/" target="_blank" rel="noreferrer">
+                            Overdose Deaths in SF's Housing Program  <span className={pageStyles.arrow}>→</span>
+                        </a>
+                    </h3>
+                    <p className={pageStyles.projectText}>One San Francisco minister keeps memorial books where friends and family can leave messages for those who died in the city's supportive housing program.
+                    I digitalized actual messages written in these memorial books and animated them for this piece on SF's overdose crisis.</p>
+                    <LazyLoadImage className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1671248598/sfchronicle/sros_t4u7ov.png"} alt="laptop mockup of the overdose deaths project"/>
+                </div>
+
+                <div className={pageStyles.project}>
+                    <h3 className={pageStyles.subTitle}>
                         <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/sf-transamerica-pyramid/" target="_blank" rel="noreferrer">
                         The Future of the Transamerica Pyramid <span className={pageStyles.arrow}>→</span>
                         </a>
