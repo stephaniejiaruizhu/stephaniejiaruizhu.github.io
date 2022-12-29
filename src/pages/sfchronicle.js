@@ -118,6 +118,9 @@ function SF () {
                     <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/san-francisco-sros/" target="_blank" rel="noreferrer">
                         Broken Homes
                     </a>
+                    <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/hamid-hayat/" target="_blank" rel="noreferrer">
+                        Wrongly Convicted
+                    </a>
 
                     <br/>
                     <p className={pageStyles.subTitle2}>reporting:</p>

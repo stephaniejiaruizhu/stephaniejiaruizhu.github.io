@@ -16,7 +16,7 @@ function Right () {
             <p className={rightStyles.transition}> selected projects </p>
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>
             <div className={rightStyles.projectSection}>
-                <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976726/misc/sfchronicle_mogiyl.png"} alt="various projects done at San Francisco Chronicle."/>
+                <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1672345068/misc/sfchronicle_g9wo2f.png"} alt="various projects done at San Francisco Chronicle."/>
                 <p className={rightStyles.projectName}><a href="/sfchronicle">San Francisco Chronicle (digital design + web development) → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
