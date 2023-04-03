@@ -32,7 +32,7 @@ function About () {
                         Let's <a className={aboutStyles.link} href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer">chat</a>! :)
                     </p>
                 </div>
-                <div className={aboutStyles.container2}>
+                {/* <div className={aboutStyles.container2}>
                     <p className={aboutStyles.aboutAwards}>
                         <span className={aboutStyles.aboutBold}>awards</span>
                         <br/><br/>
@@ -40,7 +40,7 @@ function About () {
                         <br></br>
                         <span className={aboutStyles.awardBold}>Finalist</span>– Al Neuharth Innovation in Investigative Journalism <i>(ONA Online Journalism Awards)</i>
                     </p>
-                </div>
+                </div> */}
                 <Footer/>
             </div>
         </div>
