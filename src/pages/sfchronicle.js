@@ -41,13 +41,23 @@ function SF () {
 
                 <div className={pageStyles.project}>
                     <h3 className={pageStyles.subTitle}>
+                        <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2023/flour-water-pasta/" target="_blank" rel="noreferrer">
+                            Pasta Dictionary  <span className={pageStyles.arrow}>→</span>
+                        </a>
+                    </h3>
+                    <p className={pageStyles.projectText}>A browseable encyclopedia of 50 pasta shapes (with pop-up cards and an interactive map of Italy) and a deeper look into six of them</p>
+                    <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499287/sfchronicle/pasta_risxcj.png"} alt="phone mockup of the pasta dictionary project"/>
+                </div>
+
+                <div className={pageStyles.project}>
+                    <h3 className={pageStyles.subTitle}>
                         <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/" target="_blank" rel="noreferrer">
                             Overdose Deaths in SF's Housing Program  <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
                     <p className={pageStyles.projectText}>One San Francisco minister keeps memorial books where friends and family can leave messages for those who died in the city's supportive housing program.
                     I digitalized actual messages written in these memorial books and animated them for this piece on SF's overdose crisis.</p>
-                    <LazyLoadImage className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1671248598/sfchronicle/sros_t4u7ov.png"} alt="laptop mockup of the overdose deaths project"/>
+                    <img className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1671248598/sfchronicle/sros_t4u7ov.png"} alt="laptop mockup of the overdose deaths project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -86,17 +96,6 @@ function SF () {
                 </div>
 
                 <div className={pageStyles.project}>
-                    <h3 className={pageStyles.subTitle}>
-                        <a className={pageStyles.link} href="https://www.sfchronicle.com/projects/2022/chaat/" target="_blank" rel="noreferrer">
-                            Bay Area Chaat Guide <span className={pageStyles.arrow}>→</span>
-                        </a>
-                    </h3>
-                    <p className={pageStyles.projectText}>I created a template for restaurant guides that can be used by those without any coding experience– change settings
-                    and text in a Google Spreadsheet and the changes will be reflected on a webpage. I also made the animated gifs on the Chaat iteration of the template.</p>
-                    <LazyLoadImage className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976930/sfchronicle/chaat_yvw1c3.png"} alt="phone mockup of the chaat project"/>
-                </div>
-
-                <div className={pageStyles.project}>
                     <p className={pageStyles.projectText}>Check out this <a className={pageStyles.link} href="https://drive.google.com/drive/folders/180de8yEG0FSO4yGBgwI-xh9QIz9iyrc1?usp=sharing" target="_blank" rel="noreferrer">folder</a>
                     with screen recordings of each project if the paywall can't be bypassed. 
                     </p>
@@ -106,23 +105,28 @@ function SF () {
 
                 <div className={pageStyles.otherSection}>
                     <p className={pageStyles.subTitle2}>other projects:</p>
+                    <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2023/sf-bay-area-rain-storm/" target="_blank" rel="noreferrer">
+                        Bay Area Storm Map
+                    </a>
                     <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/california-wildfire-severity-map/" target="_blank" rel="noreferrer">
                         Fire Burn Severity
                     </a>
                     <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/sfnext-downtown-vision/" target="_blank" rel="noreferrer">
                         Reimagining San Francisco
                     </a>
-                    <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/good-good-culture-club-san-francisco-restaurants/" target="_blank" rel="noreferrer">
-                        Good Good Culture Club
-                    </a>
                     <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/san-francisco-sros/" target="_blank" rel="noreferrer">
                         Broken Homes
                     </a>
-                    <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/hamid-hayat/" target="_blank" rel="noreferrer">
-                        Wrongly Convicted
+                    <a className={pageStyles.otherLink} href="https://www.sfchronicle.com/projects/2022/chaat/" target="_blank" rel="noreferrer">
+                        Bay Area Chaat Guide
                     </a>
 
                     <br/>
+                    <p className={pageStyles.subTitle2}>illustrations:</p>
+                    <LazyLoadImage className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499653/sfchronicle/doomloop0330_gr_zkxb3t.jpg"} alt="illustration of cars driving along a road spiraling downwards around SF buildings"/>
+                    <LazyLoadImage className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680500000/sfchronicle/Empire_Builders_uydh97.jpg"} alt="illustration of a glass of wine with a cork stabbed by a flag floating in it"/>
+
+                    <br/><br/>
                     <p className={pageStyles.subTitle2}>reporting:</p>
                     <a className={pageStyles.otherLink} href="https://datebook.sfchronicle.com/entertainment/crunchyroll-expo-2022-brings-characters-to-life-and-in-person-after-2-year-hiatus" target="_blank" rel="noreferrer">
                         Crunchyroll Expo 2022

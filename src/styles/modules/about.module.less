@@ -2,17 +2,22 @@
 
 .container {
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     
     @media @tablet {
         width: 100vw;
     }
 }
 
+.container2 {
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
 .aboutText {
     font-family: @sans-serif;
     font-weight: 300;
-    font-size: @medium-small;
+    font-size: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,6 +32,24 @@
 .aboutBold {
     font-weight: 400;
     font-size: @medium;
+}
+
+.aboutAwards {
+    font-family: @sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+
+    @media @tablet{
+        max-width: 80% !important;
+    }
+}
+
+.awardBold {
+    font-weight: 400;
 }
 
 .photo {

@@ -320,6 +320,26 @@
     }
 }
 
+.illo {
+    max-width: 300px;
+    height: 500px;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-right: 10px;
+
+    @media @tablet {
+        display: block;
+        margin-top: 10px;
+        margin-right: none;
+    }
+
+    @media @mobile {
+        max-width: 80%;
+        height: 400px;
+    }
+}
+
 .imageshadow {
     max-width: 500px;
     display: block;

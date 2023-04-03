@@ -95,6 +95,10 @@
     }
 }
 
+.menu {
+    text-align: center;
+}
+
 .transition {
     text-align: center;
     font-family: @sans-serif;
@@ -121,11 +125,18 @@
 }
 
 .cover {
-    max-width: 80%;
+    max-width: 75%;
     height: auto;
     display: block;
     margin-top: @large;
     margin-left: 100px;
+    // -webkit-filter: grayscale(100%);
+    // filter: grayscale(100%);
+
+    &:hover {
+        -webkit-filter: none;
+        filter: none;
+    }
 
     @media @mobile {
         max-width: 90%;

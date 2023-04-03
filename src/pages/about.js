@@ -32,6 +32,15 @@ function About () {
                         Let's <a className={aboutStyles.link} href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer">chat</a>! :)
                     </p>
                 </div>
+                <div className={aboutStyles.container2}>
+                    <p className={aboutStyles.aboutAwards}>
+                        <span className={aboutStyles.aboutBold}>awards</span>
+                        <br/><br/>
+                        <span className={aboutStyles.awardBold}>3rd place</span>– Portfolio, Online Visual Presentation <i>(NPPA Best of Photojournalism)</i>
+                        <br></br>
+                        <span className={aboutStyles.awardBold}>Finalist</span>– Al Neuharth Innovation in Investigative Journalism <i>(ONA Online Journalism Awards)</i>
+                    </p>
+                </div>
                 <Footer/>
             </div>
         </div>
