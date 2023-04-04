@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Art () {
     return (
@@ -29,11 +28,11 @@ function Art () {
                         </h3>
                         <p className={pageStyles.projectText}>
                         </p>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669175775/play/digital/pokemon_gtjrop.jpg"} alt="illustration showing various water-themed Pokemon"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/SF2_jn7opd.jpg"} alt="illustration showing San Francisco during the day"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/SF1_h1mdkc.jpg"} alt="illustration showing San Francisco during the night"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/Spiderman1_aaoyt2.jpg"} alt="illustration showing San Francisco during the night"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/Spiderman2_najdkw.jpg"} alt="illustration showing San Francisco during the night"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669175775/play/digital/pokemon_gtjrop.jpg"} alt="illustration showing various water-themed Pokemon"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/SF2_jn7opd.jpg"} alt="illustration showing San Francisco during the day"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/SF1_h1mdkc.jpg"} alt="illustration showing San Francisco during the night"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/Spiderman1_aaoyt2.jpg"} alt="illustration showing San Francisco during the night"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495186/play/digital/Spiderman2_najdkw.jpg"} alt="illustration showing San Francisco during the night"/>
                     </div>
 
                     <div className={pageStyles.project}>

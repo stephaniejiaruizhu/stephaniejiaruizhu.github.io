@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import MenuProjects from "./menuProjects"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function SF () {
     return (
@@ -45,7 +44,7 @@ function SF () {
                             Pasta Dictionary  <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
-                    <p className={pageStyles.projectText}>A browseable encyclopedia of 50 pasta shapes (with pop-up cards and an interactive map of Italy) and a deeper look into six of them</p>
+                    <p className={pageStyles.projectText}>A browseable encyclopedia of 50 pasta shapes. I took part in the design process and built the interface for the gallery and popup cards using a combination of React and D3.</p>
                     <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499287/sfchronicle/pasta_risxcj.png"} alt="phone mockup of the pasta dictionary project"/>
                 </div>
 
@@ -55,8 +54,8 @@ function SF () {
                             Overdose Deaths in SF's Housing Program  <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
-                    <p className={pageStyles.projectText}>One San Francisco minister keeps memorial books where friends and family can leave messages for those who died in the city's supportive housing program.
-                    I digitalized actual messages written in these memorial books and animated them for this piece on SF's overdose crisis.</p>
+                    <p className={pageStyles.projectText}>A look into the lives lost to SF's overdose crisis– part of a larger investigative series on permanent supportive housing. I digitalized
+                    messages written by friends and family of the deceased and animated them using code.</p>
                     <img className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1671248598/sfchronicle/sros_t4u7ov.png"} alt="laptop mockup of the overdose deaths project"/>
                 </div>
 
@@ -66,10 +65,9 @@ function SF () {
                         The Future of the Transamerica Pyramid <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
-                    <p className={pageStyles.projectText}> The Transamerica Pyramid had its 50th anniversary recently. This piece takes a look at the past, and more importantly, the
-                    future of the iconic structure. The focus of the design is on drone footage and photographs from the newsroom's visual team as well as the contrast between past and
-                    present.</p>
-                    <LazyLoadImage className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669271808/sfchronicle/Pyramid_jtojwk.png"} alt="ipad mockup of the Transamerica Pyramid project"/>
+                    <p className={pageStyles.projectText}> A visual presentation of the past, present and future of the Transamerica Pyramid. I designed and built a photo grid system to display photos and footage captured by
+                    the visuals team.</p>
+                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669271808/sfchronicle/Pyramid_jtojwk.png"} alt="ipad mockup of the Transamerica Pyramid project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -78,10 +76,9 @@ function SF () {
                         Who Owns All the Housing in the Bay Area? <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
-                    <p className={pageStyles.projectText}> The Chronicle combed through millions of unique property records and found which power players control the Bay 
-                    Area's real estate. Because there's so much content to present, I designed and developed a navigation bar as well as other features to make the dense 
+                    <p className={pageStyles.projectText}> A longform piece on millions of unique property records and 12 powerful Bay Area landlords. I designed and built a navigation bar as well as other features to make the dense
                     information more digestible.</p>
-                    <LazyLoadImage className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976935/sfchronicle/landlords_nxzxdv.png"} alt="ipad mockup of the Bay Area landlord project"/>
+                    <img className={pageStyles.projectImgTablet} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976935/sfchronicle/landlords_nxzxdv.png"} alt="ipad mockup of the Bay Area landlord project"/>
                 </div>
 
                 <div className={pageStyles.project}>
@@ -90,14 +87,14 @@ function SF () {
                         Napa Power Players <span className={pageStyles.arrow}>→</span>
                         </a>
                     </h3>
-                    <p className={pageStyles.projectText}> New power players join already established ones in Napa's changing wine industry. For this project,
-                    I created illustrations and a flipcard for each power player in addition to the topper image.</p>
-                    <LazyLoadImage className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976932/sfchronicle/napa_llfxxh.png"} alt="laptop mockup of Napa power players project"/>
+                    <p className={pageStyles.projectText}> A collection of flipcards detailing the careers of power players in the Napa wine industry. I made the illustrations and 
+                    did most of the design and development work for this piece.</p>
+                    <img className={pageStyles.projectImgDesktop} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976932/sfchronicle/napa_llfxxh.png"} alt="laptop mockup of Napa power players project"/>
                 </div>
 
                 <div className={pageStyles.project}>
-                    <p className={pageStyles.projectText}>Check out this <a className={pageStyles.link} href="https://drive.google.com/drive/folders/180de8yEG0FSO4yGBgwI-xh9QIz9iyrc1?usp=sharing" target="_blank" rel="noreferrer">folder</a>
-                    with screen recordings of each project if the paywall can't be bypassed. 
+                    <p className={pageStyles.paywallmessage}>
+                        Can't get past the paywall? <a className={pageStyles.otherLink} href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer">Shoot me a message.</a>
                     </p>
                 </div>
 
@@ -123,8 +120,8 @@ function SF () {
 
                     <br/>
                     <p className={pageStyles.subTitle2}>illustrations:</p>
-                    <LazyLoadImage className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499653/sfchronicle/doomloop0330_gr_zkxb3t.jpg"} alt="illustration of cars driving along a road spiraling downwards around SF buildings"/>
-                    <LazyLoadImage className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680500000/sfchronicle/Empire_Builders_uydh97.jpg"} alt="illustration of a glass of wine with a cork stabbed by a flag floating in it"/>
+                    <img className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499653/sfchronicle/doomloop0330_gr_zkxb3t.jpg"} alt="illustration of cars driving along a road spiraling downwards around SF buildings"/>
+                    <img className={pageStyles.illo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680500000/sfchronicle/Empire_Builders_uydh97.jpg"} alt="illustration of a glass of wine with a cork stabbed by a flag floating in it"/>
 
                     <br/><br/>
                     <p className={pageStyles.subTitle2}>reporting:</p>

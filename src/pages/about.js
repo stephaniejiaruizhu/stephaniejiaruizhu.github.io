@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import Menu from "./menu"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function About () {
     return (
@@ -17,7 +16,7 @@ function About () {
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
                 <div className={aboutStyles.container}>
-                    <LazyLoadImage className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
+                    <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
                     <p className={aboutStyles.aboutText}>
                         <span className={aboutStyles.aboutBold}>Hey there, I'm Stephanie.</span>
                         <br/><br/>

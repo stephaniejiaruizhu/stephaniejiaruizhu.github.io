@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import MenuPrint from "./menuPrint"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from "react-lazy-load-image-component"
 
 function NUAZN () {
     return (
@@ -49,9 +48,9 @@ function NUAZN () {
                             I wanted this magazine to reflect that similarity, so I created a style guide to establish the 
                             design direction.
                         </p>
-                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981580/nuazn/nuaznguide_un0xrb.png"} alt="cover of style guide created for the nuazn fall 2020 magazine"/>
-                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981568/nuazn/font_tdpxuz.png"} alt="typography page of style guide"/>
-                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981562/nuazn/color_wtwinm.png"} alt="color page of style guide"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981580/nuazn/nuaznguide_un0xrb.png"} alt="cover of style guide created for the nuazn fall 2020 magazine"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981568/nuazn/font_tdpxuz.png"} alt="typography page of style guide"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981562/nuazn/color_wtwinm.png"} alt="color page of style guide"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
@@ -64,15 +63,15 @@ function NUAZN () {
                             do we get a more complete view of such a complicated
                             part of our identity.
                         </p>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668981641/nuazn/nuazn-cover_uhqmzr.png"} alt="illustration showing hands holding puzzle pieces"/>
                     </div>
                     <div className={pageStyles.project}>
                         <h3 className={pageStyles.subTitle}>
                             Putting it all together
                         </h3>
                         <br/>
-                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="letter from the editor, masthead and table of contents pages"/>
-                        <LazyLoadImage className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="layout of a piece about poetry on Angel Island"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996677/nuazn/nuazncontents_lzxjjg.png"} alt="letter from the editor, masthead and table of contents pages"/>
+                        <img className={pageStyles.media} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668996679/nuazn/angelisland_o4pqmz.png"} alt="layout of a piece about poetry on Angel Island"/>
                     </div>
                 <Footer/>
             </div>

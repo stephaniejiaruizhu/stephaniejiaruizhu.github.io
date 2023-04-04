@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Geofilters () {
     return (
@@ -26,12 +25,12 @@ function Geofilters () {
                 </div>
 
                     <div className={pageStyles.project}>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Lombard2_u4bvv7.jpg"} alt="geofilter of Lombard street"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Evanston_hrsyik.jpg"} alt="geofilter of Evanston featuring Grosse Point Lighthouse"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Monterey_yh3srq.jpg"} alt="geofilter of Monterey featuring jellyfish"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Santa_Monica_ipbyb5.jpg"} alt="geofilter of Santa Monica Pier"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Chicago_vxgzv3.jpg"} alt="geofiter of Chicago featuring the Navy Pier Centennial Wheel"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Gold_Beach_zbaya5.jpg"} alt="geofilter of Gold Beach featuring Isaac Lee Patterson Bridge"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Lombard2_u4bvv7.jpg"} alt="geofilter of Lombard street"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Evanston_hrsyik.jpg"} alt="geofilter of Evanston featuring Grosse Point Lighthouse"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Monterey_yh3srq.jpg"} alt="geofilter of Monterey featuring jellyfish"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Santa_Monica_ipbyb5.jpg"} alt="geofilter of Santa Monica Pier"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Chicago_vxgzv3.jpg"} alt="geofiter of Chicago featuring the Navy Pier Centennial Wheel"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669495611/play/snap/Gold_Beach_zbaya5.jpg"} alt="geofilter of Gold Beach featuring Isaac Lee Patterson Bridge"/>
                     </div>
                 <Footer/>
             </div>

@@ -8,7 +8,7 @@ function Dropdown () {
                 <a id="work" className="menu-item" href="/">work</a>
                 <a id="play" className="menu-item" href="/play">play</a>
                 <a id="about" className="menu-item" href="/about">about</a>
-                <a id="resumer" className="menu-item" 
+                <a id="resume" className="menu-item" 
                 href="https://drive.google.com/file/d/1evqpBjXvP3PMiLBkHbCa7S0T6n_EwS8f/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer">

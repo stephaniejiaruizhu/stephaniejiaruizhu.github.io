@@ -44,7 +44,7 @@
     font-family: @sans-serif;
     font-size: @medium-small;
     font-weight: 300;
-    margin-top: 0px;
+    margin-top: 5px;
     line-height: 30px;
     max-width: 900px;
 }
@@ -221,6 +221,20 @@
     margin-top: @medium;
     line-height: 32px;
     max-width: 900px;
+
+    @media @mobile {
+        font-size: @small;
+        line-height: 28px;
+    }
+}
+
+.paywallmessage {
+    font-family: @sans-serif;
+    font-size: @small;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: @medium;
+    max-width: 900px;   
 }
 
 .spacer {
@@ -335,7 +349,7 @@
     }
 
     @media @mobile {
-        max-width: 80%;
+        width: 300px;
         height: 400px;
     }
 }

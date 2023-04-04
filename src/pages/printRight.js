@@ -2,7 +2,6 @@ import React from "react";
 import * as rightStyles from "../styles/modules/right.module.less";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function PrintRight () {
     return(
@@ -18,15 +17,15 @@ function PrintRight () {
             <p className={rightStyles.transition}> selected projects </p>
             <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown}/>
             <div className={rightStyles.projectSection}>
-                <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976432/misc/bgcover_xhrtn5.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976432/misc/bgcover_xhrtn5.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
                 <p className={rightStyles.projectName}><a href="../bostonglobe">The Boston Globe → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
-                <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976433/misc/nuazncover_oredqi.jpg"} alt="cover showcasing various projects done at San Francisco Chronicle."/>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976433/misc/nuazncover_oredqi.jpg"} alt="cover showcasing various projects done at San Francisco Chronicle."/>
                 <p className={rightStyles.projectName}><a href="../nuazn">nuazn → </a></p>
             </div>
             <div className={rightStyles.projectSection}>
-                <LazyLoadImage className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669000283/misc/nbn_u4df8i.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
+                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669000283/misc/nbn_u4df8i.jpg"} alt="cover showcasing a project done for Northwestern Feinberg School of Medicine"/>
                 <p className={rightStyles.projectName}><a href="../nbn">North by Northwestern → </a></p>
             </div>
             <div className={rightStyles.divider}/>

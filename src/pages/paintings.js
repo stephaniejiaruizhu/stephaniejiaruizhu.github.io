@@ -5,7 +5,6 @@ import Navbar from "./navbar"
 import MenuPlay from "./menuPlay"
 import Footer from "./footer"
 import Dropdown from "./dropdown"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Paintings () {
     return (
@@ -25,16 +24,16 @@ function Paintings () {
                     </div>
 
                     <div className={pageStyles.project}>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/beach_ceszfe.jpg"} alt="painting of sand and waves on a beach"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494152/play/painting/cherryblossom_onmsaj.jpg"} alt="painting of cherry blossoms and torii gate"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/cali_ve8zlv.jpg"} alt="painting of Califoria coast with poppies"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494160/play/painting/atla_bfdhmh.jpg"} alt="painting of the Southern Air Temple from the cartoon Avatar the Last Airbender"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/rain_frtied.jpg"} alt="painting of rain on the window"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/celestial_ltl1gn.jpg"} alt="painting of stars in the sky"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/lilypad_uqu1nq.jpg"} alt="painting of lake and lily pads"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494146/play/painting/boardwalk_m2o9m3.jpg"} alt="painting of boardwalk by a river"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494153/play/painting/umbrella_zb9fvg.jpg"} alt="painting of barefoot girl holding an umbrella"/>
-                        <LazyLoadImage className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/aspen_tpzzin.jpg"} alt="painting of aspen trees in the fall"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/beach_ceszfe.jpg"} alt="painting of sand and waves on a beach"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494152/play/painting/cherryblossom_onmsaj.jpg"} alt="painting of cherry blossoms and torii gate"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/cali_ve8zlv.jpg"} alt="painting of Califoria coast with poppies"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494160/play/painting/atla_bfdhmh.jpg"} alt="painting of the Southern Air Temple from the cartoon Avatar the Last Airbender"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/rain_frtied.jpg"} alt="painting of rain on the window"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/celestial_ltl1gn.jpg"} alt="painting of stars in the sky"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494151/play/painting/lilypad_uqu1nq.jpg"} alt="painting of lake and lily pads"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494146/play/painting/boardwalk_m2o9m3.jpg"} alt="painting of boardwalk by a river"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494153/play/painting/umbrella_zb9fvg.jpg"} alt="painting of barefoot girl holding an umbrella"/>
+                        <img className={pageStyles.imageSmall} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1669494150/play/painting/aspen_tpzzin.jpg"} alt="painting of aspen trees in the fall"/>
                     </div>
                 <Footer/>
             </div>
