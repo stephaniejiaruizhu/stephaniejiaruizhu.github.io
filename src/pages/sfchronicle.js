@@ -45,7 +45,7 @@ function SF () {
                         </a>
                     </h3>
                     <p className={pageStyles.projectText}>A browseable encyclopedia of 50 pasta shapes. I took part in the design process and built the interface for the gallery and popup cards using a combination of React and D3.</p>
-                    <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680499287/sfchronicle/pasta_risxcj.png"} alt="phone mockup of the pasta dictionary project"/>
+                    <img className={pageStyles.projectImg} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1680895271/sfchronicle/pasta_r7kzkt.png"} alt="phone mockup of the pasta dictionary project"/>
                 </div>
 
                 <div className={pageStyles.project}>
