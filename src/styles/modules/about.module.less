@@ -14,66 +14,98 @@
     margin-bottom: 80px;
 }
 
+
+// main section
 .aboutText {
     font-family: @sans-serif;
     font-weight: 300;
     font-size: 18px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
+    margin: 50px 0 0 100px;
     max-width: 800px;
+    line-height: 30px;
+
+    .aboutSubhead {
+        font-family: @serif2;
+        font-size: @medium-large;
+    }
+
+    .graf {
+        margin-bottom: @medium;
+
+        .bulletSection {
+            padding-left: 10px;
+        }
+
+        .highlight {
+            color: @accent2;
+            font-weight: 600;
+        }
+    }
+
+    .graf2 {
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .subGraf {
+        font-size: 15px;
+        margin-top: 0;
+    }
 
     @media @tablet{
         max-width: 80% !important;
     }
-}
 
-.aboutBold {
-    font-weight: 400;
-    font-size: @medium;
-}
-
-.aboutAwards {
-    font-family: @sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-
-    @media @tablet{
-        max-width: 80% !important;
+    @media @mobile {
+        margin-left: 20px !important;
     }
-}
 
-.awardBold {
-    font-weight: 400;
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
+    }
 }
 
 .photo {
     max-width: 800px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    // filter: grayscale(100%);
-    // -webkit-filter: grayscale(100%);
-
-    // &:hover {
-        // filter: none;
-        // -webkit-filter: grayscale(0);
-    // }
+    margin-left: 100px;
 
     @media @tablet {
-        max-width: 100%;
+        max-width: 80%;
+    }
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
     }
 }
 
 .link {
     color: black;
+    cursor: pointer;
+    text-decoration: underline;
 
     &:hover {
         color: @accent;
+    }
+}
+
+.divider {
+    border-top: 1px solid rgb(195, 195, 195);
+    max-width: 800px;
+    margin-left: 100px;
+    margin-top: @large;
+    margin-bottom: @large;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin-left: 50px;
     }
 }

@@ -17,29 +17,65 @@ function About () {
                 <Dropdown/>
                 <div className={aboutStyles.container}>
                     <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
-                    <p className={aboutStyles.aboutText}>
-                        <span className={aboutStyles.aboutBold}>Hey there, I'm Stephanie.</span>
-                        <br/><br/>
-                        Like every journalist ever, I tell people that I love telling stories.
-                        <br/><br/>
-                        But more specifically, I want to take the interviewing and narrative crafting skills I have learned to create experiences that evoke thought and bring joy.
-                        <br/><br/>
-                        I'm a designer/developer at San Francisco Chronicle and a recent grad of Northwestern University where I studied journalism, computer science and design.
-                        <br/><br/>
-                        Currently: reading <a className={aboutStyles.link} href = "https://www.goodreads.com/book/show/20518872-the-three-body-problem" target="_blank" rel="noreferrer">The Three-Body Problem</a>, making <a className={aboutStyles.link} href="https://drive.google.com/file/d/1-X4GVwfTkegKZvFFuy3Nk88jiwTaLDUk/view?usp=sharing" target="_blank" rel="noreferrer">crepe cakes</a>, learning <a href="https://www.blender.org/download/" className={aboutStyles.link} rel="noreferrer" target="_blank">3D modeling</a> and trying to avoid the wrath of my pet <a className={aboutStyles.link} href="https://drive.google.com/file/d/1Hz77t3LvaCYS1mAWo_BP4tAe2HhB8W3L/view?usp=sharing" target="_blank" rel="noreferrer">bird</a>.
-                        <br/><br/>
-                        Let's <a className={aboutStyles.link} href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer">chat</a>! :)
-                    </p>
+                    <div className={aboutStyles.aboutText}>
+                        <span className={aboutStyles.aboutSubhead}>Hey there, I'm Stephanie.</span>
+                        <p className={aboutStyles.graf}>
+                            I’m a digital designer/developer making things at San Francisco Chronicle. 
+                            Before that, I studied journalism, computer science and design at 
+                            Northwestern University. I’ve also designed for The Boston Globe and CalMatters.
+                        </p>
+                        <p className={aboutStyles.graf}>
+                            Like every journalist ever, I tell people I love telling stories. But more
+                            specifically, I want to combine narrative-crafting with design and technology 
+                            to create thoughtful experiences.
+                        </p>
+                        <p className={aboutStyles.graf}>
+                            Currently:
+                                <div className={aboutStyles.bulletSection}>
+                                    • obsessing over sumo citruses and <span className={aboutStyles.highlight}>this shade</span> of green
+                                    <br/>
+                                    • reading <i>The Paper Menagerie and other stories</i> by Ken Liu
+                                    <br/>
+                                    • trying to avoid the wrath of my pet bird
+                                    <br/>
+                                    • attempting to be a runner
+                                </div>
+                        </p>
+                        <p className={aboutStyles.graf}>
+                            Let's <a className={aboutStyles.link}>chat!</a> :-)
+                        </p>
+                    </div>
+
+                    <div className={aboutStyles.divider}/>
+
+                    <div className={aboutStyles.aboutText}>
+                        <span className={aboutStyles.aboutSubhead}>Recognition</span>
+                        <p className={aboutStyles.graf2}>Award of Excellence • Design: Regional/Local</p>
+                        <p className={aboutStyles.subGraf}>Society for News Design • Creative Competition 2022</p>
+
+                        <p className={aboutStyles.graf2}>Award of Excellence • Infographics: Environment</p>
+                        <p className={aboutStyles.subGraf}>Society for News Design • Creative Competition 2022</p>
+
+                        <p className={aboutStyles.graf2}>Award of Excellence • Elements: Data Visualization</p>
+                        <p className={aboutStyles.subGraf}>Society for News Design • Creative Competition 2022</p>
+
+                        <p className={aboutStyles.graf2}>Lead Developer/Designer</p>
+                        <p className={aboutStyles.subGraf}>Was lead developer and designer for a 2022 Pulitzer finalist piece</p>
+
+                        <p className={aboutStyles.graf2}>Finalist • Al Neuharth Innovation in Investigative Journalism</p>
+                        <p className={aboutStyles.subGraf}>Online News Association • Online Journalism Awards 2022</p>
+                    </div>
+
+                    <div className={aboutStyles.aboutText}>
+                        <span className={aboutStyles.aboutSubhead}>Speaking</span>
+                        <p className={aboutStyles.graf2}>Too much change, too fast. How can we avoid innovation burnout in newsrooms?</p>
+                        <p className={aboutStyles.subGraf}>October 2023, SRCCON</p>
+
+                        <p className={aboutStyles.graf2}>How to tell a story with more than just words</p>
+                        <p className={aboutStyles.subGraf}>July 2023, AAJA National Convention</p>
+
+                    </div>
                 </div>
-                {/* <div className={aboutStyles.container2}>
-                    <p className={aboutStyles.aboutAwards}>
-                        <span className={aboutStyles.aboutBold}>awards</span>
-                        <br/><br/>
-                        <span className={aboutStyles.awardBold}>3rd place</span>– Portfolio, Online Visual Presentation <i>(NPPA Best of Photojournalism)</i>
-                        <br></br>
-                        <span className={aboutStyles.awardBold}>Finalist</span>– Al Neuharth Innovation in Investigative Journalism <i>(ONA Online Journalism Awards)</i>
-                    </p>
-                </div> */}
                 <Footer/>
             </div>
         </div>
