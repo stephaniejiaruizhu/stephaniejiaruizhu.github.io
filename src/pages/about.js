@@ -16,7 +16,7 @@ function About () {
             <div className={menuStyles.rightContainer}>
                 <Dropdown/>
                 <div className={aboutStyles.container}>
-                    <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976957/misc/headshot_ocpspr.jpg"} alt="headshot of Stephanie"/>
+                    <img className={aboutStyles.photo} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1696997775/misc/headshot_sgnfdt.jpg"} alt="headshot of Stephanie"/>
                     <div className={aboutStyles.aboutText}>
                         <span className={aboutStyles.aboutSubhead}>Hey there, I'm Stephanie.</span>
                         <p className={aboutStyles.graf}>
@@ -34,15 +34,13 @@ function About () {
                                 <div className={aboutStyles.bulletSection}>
                                     • obsessing over sumo citruses and <span className={aboutStyles.highlight}>this shade</span> of green
                                     <br/>
-                                    • reading <i>The Paper Menagerie and other stories</i> by Ken Liu
+                                    • reading <i>The Paper Menagerie and Other Stories</i> by Ken Liu
                                     <br/>
                                     • trying to avoid the wrath of my pet bird
-                                    <br/>
-                                    • attempting to be a runner
                                 </div>
                         </p>
                         <p className={aboutStyles.graf}>
-                            Let's <a className={aboutStyles.link}>chat!</a> :-)
+                            Let's <a className={aboutStyles.link} href="mailto:stephaniejiaruizhu@gmail.com" target="_blank" rel="noreferrer">chat!</a> :-)
                         </p>
                     </div>
 
@@ -68,10 +66,12 @@ function About () {
 
                     <div className={aboutStyles.aboutText}>
                         <span className={aboutStyles.aboutSubhead}>Speaking</span>
-                        <p className={aboutStyles.graf2}>Too much change, too fast. How can we avoid innovation burnout in newsrooms?</p>
+                        <p className={aboutStyles.graf2}><a href="https://docs.google.com/presentation/d/1viQfhsgAFj4AW-KXsWcSRDhNpnZysZbCyZImqKVq5PU/edit?usp=sharing"
+                        className={aboutStyles.link} target="_blank" rel="noreferrer">Too much change, too fast. How can we avoid innovation burnout in newsrooms?</a></p>
                         <p className={aboutStyles.subGraf}>October 2023, SRCCON</p>
 
-                        <p className={aboutStyles.graf2}>How to tell a story with more than just words</p>
+                        <p className={aboutStyles.graf2}><a href="https://docs.google.com/presentation/d/1Q0kJheJ6pjtvJOdBeuTUgu9h2iLSCWPMqU-b47vgBgc/edit?usp=sharing"
+                        className={aboutStyles.link} target="_blank" rel="noreferrer">How to tell a story with more than just words</a></p>
                         <p className={aboutStyles.subGraf}>July 2023, AAJA National Convention</p>
 
                     </div>
