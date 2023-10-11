@@ -15,8 +15,8 @@ function Right () {
             </h2>
 
             <div className={rightStyles.menu}>
-                <div className={`${rightStyles.menuButton} ${rightStyles.active}`}><a a href="./">Digital</a></div>
-                <div className={rightStyles.menuButton}><a a href="./">Print</a></div>
+                <div className={`${rightStyles.menuButton} ${rightStyles.active}`}><a href="./">Digital</a></div>
+                <div className={rightStyles.menuButton}><a href="./">Print</a></div>
                 <div className={rightStyles.menuButton}><a href="./">Illustration</a></div>
             </div>
 
