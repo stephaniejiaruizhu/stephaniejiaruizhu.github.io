@@ -1,33 +1,60 @@
-import React from "react";
-import * as rightStyles from "../styles/modules/right.module.less";
+import React from 'react'
+import * as rightStyles from '../styles/modules/right.module.less'
 
-function PlayRight () {
-    return(
-        <div>
-            <h1 className={rightStyles.intro}>
-                My playground. . .
-            </h1>
-            <h2 className={rightStyles.subintro}>
-                a place for documenting the random things I try :)
-            </h2>
-            <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/painting_rmnsuh.jpg"} alt="pantone paintings"/>
-                <p className={rightStyles.projectName}><a href="../paintings">Pantone Paintings (Summer 2021) → </a></p>
-            </div>
-            <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/sticker_hp4k5g.jpg"} alt="switch stickers"/>
-                <p className={rightStyles.projectName}><a href="../stickers">Stickers (Summer 2020) → </a></p>
-            </div>
-            <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/digitalart_cjetma.jpg"} alt="digital illustration of San Francisco inspired by the vaporwave aesthetic"/>
-                <p className={rightStyles.projectName}><a href="../art">Digital Illustrations (Winter 2020) → </a></p>
-            </div>
-            <div className={rightStyles.projectSection}>
-                <img className={rightStyles.cover} src={"https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/snapchat_gnu92q.jpg"} alt="snapchat geolfilters"/>
-                <p className={rightStyles.projectName}><a href="../geofilters">Snapchat Geofilters (Winter 2019) → </a></p>
-            </div>
+function PlayRight() {
+  return (
+    <div className={rightStyles.wrapper}>
+      <h2 className={`${rightStyles.subintro} ${rightStyles.playIntro}`}>
+        My playground for...
+      </h2>
+      <h3 className={`${rightStyles.subintro} ${rightStyles.playIntro2}`}>
+        documenting the random things I try.
+        In college I started a challenge for myself: work on something fun every year.
+        It's been five years since then and we're still going! This page is my way of staying
+        creatively motivated and a reminder that it's ok to take risks and fail.
+      </h3>
+      <div className={rightStyles.projectSection}>
+        <div className={rightStyles.project}>
+          <div className={rightStyles.playProjectContainer}>
+            <p className={rightStyles.year}>2023</p>
+            <a className={rightStyles.otherLink} href="">
+              Polymer clay keycaps
+            </a>
+            <a className={rightStyles.otherLink} href="">
+              52 books in 52 weeks
+            </a>
+          </div>
+          <div className={rightStyles.playProjectContainer}>
+            <p className={rightStyles.year}>2022</p>
+            <a className={rightStyles.otherLink} href="">
+              52 books in 52 weeks
+            </a>
+          </div>
+          <div className={rightStyles.playProjectContainer}>
+            <p className={rightStyles.year}>2021</p>
+            <a className={rightStyles.otherLink} href="">
+              Pantone paintings
+            </a>
+          </div>
+          <div className={rightStyles.playProjectContainer}>
+            <p className={rightStyles.year}>2020</p>
+            <a className={rightStyles.otherLink} href="">
+              Sticker shop
+            </a>
+            <a className={rightStyles.otherLink} href="">
+              Digital art
+            </a>
+          </div>
+          <div className={rightStyles.playProjectContainer}>
+            <p className={rightStyles.year}>2019</p>
+            <a className={rightStyles.otherLink} href="">
+              Snapchat geofilters
+            </a>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default PlayRight
