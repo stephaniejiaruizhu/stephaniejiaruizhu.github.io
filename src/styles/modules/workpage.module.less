@@ -2,7 +2,8 @@
 
 //info section styling
 .title {
-    font-family: @serif;
+    font-family: @serif2;
+    font-weight: 300;
     font-size:  @large;
     margin-top: 100px;
     margin-left: 100px;
@@ -33,11 +34,13 @@
 }
 
 .subTitle {
-    font-family: @serif2;
+    font-family: @sans-serif;
     font-size: @medium;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0px;
+    background: linear-gradient(to top, @accent2 40%, transparent 40%);
+    width: fit-content;
 }
 
 .text {
@@ -54,7 +57,8 @@
 }
 
 .rightContainer {
-    max-width: 550px;
+    max-width: 400px;
+    padding-right: @medium;
 }
 
 .introContainer {
@@ -99,7 +103,7 @@
 }
 
 // project styling
-.project {
+.projectSection {
     margin-left: 100px;
     margin-top: 80px;
 
@@ -168,51 +172,6 @@
     text-decoration: line-through;
 }
 
-.projectImg {
-    max-width: 400px;
-    display: block;
-
-    @media @mobile {
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-    }
-
-    @media (max-width: 650px) {
-        width: 300px;
-    }
-}
-
-.projectImgTablet {
-    max-width: 600px;
-    display: block;
-
-    @media @mobile {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-
-    @media (max-width: 650px) {
-        width: 90%;
-    }
-}
-
-.projectImgDesktop {
-    max-width: 700px;
-    display: block;
-
-    @media @mobile {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-
-    @media (max-width: 750px) {
-        width: 95%;
-    }
-}
-
 .projectText {
     font-family: @sans-serif;
     font-size: @medium-small;
@@ -239,146 +198,4 @@
 
 .spacer {
     margin-top: 15px;
-}
-
-//other section styling
-.otherSection {
-    margin-left: 100px;
-    margin-top: 50px;
-
-    @media @tablet {
-        margin-left: 50px;
-    }
-
-    @media @mobile {
-        margin-left: 20px;
-    }
-}
-
-.subTitle2 {
-    font-family: @serif2;
-    font-size: @medium-small;
-    font-style: italic;
-    font-weight: 300;
-    margin-top: 0px;
-}
-
-.otherLink {
-    font-family: @sans-serif;
-    font-style: italic;
-    font-size: @small;
-    font-weight: 300;
-    color: black;
-
-    &:hover {
-        color: @accent;
-    }
-}
-
-.otherLink:after {
-    content: "";
-    display: block;
-    height: 0;
-    width: 1px;
-    margin-bottom: 10px;
-}
-
-// styling for images
-.media {
-    max-width: 500px;
-    margin-top: @medium;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: block;
-
-    @media @tablet {
-        max-width: 80%;
-    }
-
-    @media @mobile {
-        max-width: 95%;
-    }
-}
-
-.image {
-    max-width: 80%;
-    display: block;
-    margin-bottom: @large;
-    margin-top: @medium-large;
-
-    @media @tablet {
-        max-width: 95%;
-    }
-}
-
-.image2 {
-    max-width: 80%;
-    margin-bottom: @small;
-    display: block;
-
-    @media @tablet {
-        max-width: 95%;
-    }    
-}
-
-.imageSmall {
-    max-width: 500px;
-    margin-top: @medium;
-    display: block;
-
-    @media @tablet {
-        max-width: 80%;
-    }
-
-    @media @mobile {
-        max-width: 95%;
-    }
-}
-
-.illo {
-    max-width: 300px;
-    height: 500px;
-    object-fit:cover;
-    object-position: center;
-    border-radius: 10px;
-    margin-right: 10px;
-
-    @media @tablet {
-        display: block;
-        margin-top: 10px;
-        margin-right: none;
-    }
-
-    @media @mobile {
-        width: 300px;
-        height: 400px;
-    }
-}
-
-.imageshadow {
-    max-width: 500px;
-    display: block;
-    margin-top: @medium;
-    margin-bottom: @medium;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    @media @tablet {
-        max-width: 400px;
-    }
-    @media @mobile {
-        max-width: 95%;
-    }
-}
-
-.video {
-    max-width: 500px;
-    margin-top: @medium;
-    display: block;
-
-    @media @tablet {
-        max-width: 70%;
-    }
-
-    @media @mobile {
-        max-width: 95%;
-    }
 }

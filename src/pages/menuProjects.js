@@ -15,10 +15,7 @@ function MenuProjects() {
       <img src={Logo} className={menuStyles.logo} alt="handwritten logo" />
       <div className={menuStyles.list}>
         <p className={menuStyles.listItem}>
-          <a href="../sfchronicle">San Francisco Chronicle</a>
-        </p>
-        <p className={menuStyles.listItem}>
-          <a href="../shl">Student Health Leaders</a>
+          <a href="/oakes">The Killing of Richard Oakes</a>
         </p>
       </div>
       <div className={menuStyles.iconContainer}>

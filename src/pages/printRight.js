@@ -24,7 +24,7 @@ function PrintRight() {
       <div className={rightStyles.menu}>
           <a className={`${rightStyles.menuButton}`} href="/home">Digital</a>
           <a className={`${rightStyles.menuButton} ${rightStyles.active}`} href="./">Print</a>
-          <a className={`${rightStyles.menuButton}`} href="./">Other</a>
+          <a className={`${rightStyles.menuButton}`} href="/other">Other</a>
       </div>
 
       <div className={rightStyles.transition}>

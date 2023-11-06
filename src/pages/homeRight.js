@@ -24,7 +24,7 @@ function Right() {
       <div className={rightStyles.menu}>
           <a className={`${rightStyles.menuButton} ${rightStyles.active}`} href="./">Digital</a>
           <a className={`${rightStyles.menuButton}`} href="/print">Print</a>
-          <a className={`${rightStyles.menuButton}`} href="./">Other</a>
+          <a className={`${rightStyles.menuButton}`} href="/other">Other</a>
       </div>
 
       <div className={rightStyles.projectSection}>
@@ -42,9 +42,7 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="https://www.sfchronicle.com/projects/2023/richard-oakes-killing/"
-              target="_blank"
-              rel="noreferrer"
+              href="./oakes"
             >
               {' '}
               The Killing of Richard Oakes{' '}
@@ -134,7 +132,7 @@ function Right() {
       <div className={rightStyles.divider} />
 
       <div className={rightStyles.otherSection}>
-        <p className={rightStyles.subTitle2}>Other projects:</p>
+        <p className={rightStyles.subTitle}>Other projects:</p>
         <a
           className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/2023/california-stunt-cheerleading/"
