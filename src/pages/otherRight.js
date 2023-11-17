@@ -11,14 +11,7 @@ function OtherRight() {
         sometimes developer.
       </h1>
       <h2 className={rightStyles.subintro}>
-        Always a storyteller. Currently making things at{' '}
-        <a
-          href="https://www.sfchronicle.com/author/stephanie-zhu/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          San Francisco Chronicle.
-        </a>
+        And sometimes I do other things around the newsroom!
       </h2>
 
       <div className={rightStyles.menu}>

@@ -17,6 +17,15 @@ function MenuProjects() {
         <p className={menuStyles.listItem}>
           <a href="/oakes">The Killing of Richard Oakes</a>
         </p>
+        <p className={menuStyles.listItem}>
+          <a href="/clothing">Clothing and Gender Euphoria</a>
+        </p>
+        <p className={menuStyles.listItem}>
+          <a href="/pasta">Pasta Dictionary</a>
+        </p>
+        <p className={menuStyles.listItem}>
+          <a href="/sros">Overdose Deaths</a>
+        </p>
       </div>
       <div className={menuStyles.iconContainer}>
         <a
