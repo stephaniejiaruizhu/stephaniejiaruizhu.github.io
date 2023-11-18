@@ -77,7 +77,17 @@ function Oakes() {
 
         <div className={pageStyles.projectSection}>
           <h3 className={pageStyles.subTitle}>Reflection</h3>
-          <p className={pageStyles.projectText}></p>
+          <p className={pageStyles.projectText}>
+            • This is definitely one of my more developmentally heavy projects
+            to date and challenged me to not only think about how the animations
+            looked, but also resource-efficient they are.
+            <br /> • Animated images take up A LOT of bandwidth. Using next-gen
+            image formats like WebP instead of traditional formats line PNG
+            helps (but there’s also less support across browsers).
+            <br /> • Coding all the animations by hand (even though that is not
+            the most efficient way to do things) helped me understand how some
+            of the existing animation libraries for React work.
+          </p>
         </div>
 
         <div className={pageStyles.projectSection}>
@@ -96,15 +106,15 @@ function Oakes() {
 
         <div className={pageStyles.divider} />
         <p className={pageStyles.paywallmessage}>
-            Can't get past the paywall?{' '}
-            <a
-              className={pageStyles.link}
-              href="mailto:stephaniejiaruizhu.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Shoot me a message.
-            </a>
+          Can't get past the paywall?{' '}
+          <a
+            className={pageStyles.link}
+            href="mailto:stephaniejiaruizhu.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Shoot me a message.
+          </a>
         </p>
 
         <Footer />

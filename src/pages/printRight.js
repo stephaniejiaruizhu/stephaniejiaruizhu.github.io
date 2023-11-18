@@ -11,7 +11,7 @@ function PrintRight() {
         sometimes developer.
       </h1>
       <h2 className={rightStyles.subintro}>
-        I did a lot of print design in college.
+        I spent most of college doing print design.
       </h2>
 
       <div className={rightStyles.menu}>

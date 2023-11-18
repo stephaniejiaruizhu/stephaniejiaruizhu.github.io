@@ -15,7 +15,9 @@ function SROS() {
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />
-        <h2 className={pageStyles.title}>Overdose Deaths in SF's Housing Program</h2>
+        <h2 className={pageStyles.title}>
+          Overdose Deaths in SF's Housing Program
+        </h2>
 
         <div className={pageStyles.infoContainer}>
           <div className={pageStyles.leftContainer}>
@@ -41,91 +43,84 @@ function SROS() {
         <div className={pageStyles.divider} />
 
         <div className={pageStyles.projectSection}>
-          <video className={`${pageStyles.image} ${pageStyles.borderimage}`} autoPlay loop muted>
+          <video
+            className={`${pageStyles.image} ${pageStyles.borderimage}`}
+            autoPlay
+            loop
+            muted
+          >
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700091174/sros/srosvid_i4w9j0.mp4"
               type="video/mp4"
             />
+            Your video player does not support this format.
           </video>
         </div>
 
         <div className={pageStyles.projectSection}>
-          <h3 className={pageStyles.subTitle}>Changing the process up</h3>
+          <h3 className={pageStyles.subTitle}>
+            A ton of messages
+          </h3>
           <p className={pageStyles.projectText}>
-            News tends to move quickly, so my team doesn’t usually have the time
-            to go through a full design process– meaning we miss out a lot when
-            it comes to gathering ideas and feedback. Luckily, this project had
-            a looser deadline, so I pitched the idea of a design sprint (our
-            first ever one!) to my manager.
+            We started with a pile of books. In these books were hundreds of
+            messages written to those who died from overdoses. We knew we wanted
+            to use these messages in some capacity, but weren’t sure how to
+            present them in an emotionally impactful way.
           </p>
           <p className={pageStyles.projectText}>
-            Three other designers and I made wireframes to present how we
-            thought the story could look. We then gathered the food and visuals
-            teams for a critique session where we used post-it notes to comment
-            on each wireframe.
+            There were also a couple of problems: <br />
+            • sorting through so many messages and picking out the ones to
+            people who specifically died from Fentanyl (that’s what this piece
+            focuses on) would <b>take time</b>.
+            <br /> • simple scans won’t be the best image quality and also
+            <b> wouldn’t stand out</b> on a page that’s already mostly white.
           </p>
-          <img
-            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1699852750/pasta/pasta_ujxw5o.jpg"
-            alt="paper wireframes of project taped onto a wall"
-            className={pageStyles.image}
-          />
-        </div>
-
-        <div className={pageStyles.projectSection}>
-          <h3 className={pageStyles.subTitle}>Consolidating ideas</h3>
-          <p className={pageStyles.projectText}>
-            Through the critique session, we decided a <b>clickable grid</b> of
-            pasta photos, a <b>“surprise me” button</b> that selects a random
-            pasta shape and
-            <b> custom illustrations</b> were the top features we wanted to
-            include in the final design. I then combined these ideas into some
-            sketches the developers could follow when building the project page.
-          </p>
-          <div className={pageStyles.imagecontainer}>
-            <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1699852749/pasta/pasta3_feh5km.jpg"
-              alt="paper wireframes of project taped onto a wall"
-              className={pageStyles.imageflex}
-            />
-            <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1699852749/pasta/pasta2_emp9bu.jpg"
-              alt="paper wireframes of project taped onto a wall"
-              className={pageStyles.imageflex}
-            />
-          </div>
         </div>
 
         <div className={pageStyles.projectSection}>
           <h3 className={pageStyles.subTitle}>Turning design to code</h3>
           <p className={pageStyles.projectText}>
-            Although this project is developmentally-heavy, turning the design
-            into code was straightforward for the most part. I was in charge of
-            building the main part of the project– the pasta photo grid and the
-            clickable cards. Luckily, most of it involved functions similar to
-            ones I had written for previous projects and a lot of the challenge
-            was just making sure there were no bugs or memory leaks.
+            Luckily, the writers roughly knew which books contained which
+            messages, so we were quickly able to pick out the notes that were
+            relevant and the strongest.
           </p>
           <p className={pageStyles.projectText}>
-            Because this project involves a lot of clicking and a ton of
-            information, we added keyboard accessibility and navigation buttons
-            to help with the browsing experience. I also decided to be a little
-            ambitious and learned how to make interactive maps in D3.js to show
-            which regions of Italy each pasta shape comes from.
+            To capture the emotion that goes into writing these messages, I
+            wanted to simulate the motion of writing by hand. After poking
+            around the internet, I decided the easiest way was to turn scans of
+            the books into SVGs and then animate the strokes.
           </p>
+          <p className={pageStyles.projectText}>
+            I traced over each scan in Adobe Illustrator using the pen tool,
+            exported them as SVGs and then animated them using a React library.
+          </p>
+          <video
+            className={`${pageStyles.image} ${pageStyles.borderimage}`}
+            autoPlay
+            loop
+            muted
+          >
+            <source
+              src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700292631/sros/animation1_xtnoly.mp4"
+              type="video/mp4"
+            />
+            Your video player does not support this format.
+          </video>
         </div>
 
         <div className={pageStyles.projectSection}>
           <h3 className={pageStyles.subTitle}>Reflection</h3>
           <p className={pageStyles.projectText}>
-            • This was my first time using D3 and I didn’t realize how tricky it
-            could be to use it in conjunction with React which also handles the
-            DOM! <br /> • This was also my first time helping manage an intern
-            on a project and it was a good learning experience into delegating
-            tasks and making sure everyone is on the same page. <br /> •
-            Bouncing off ideas off of each other leads to some cool things!
-            There’s a lot of features I never would’ve thought of by myself and
-            it’s helpful to get confirmation a design makes sense from a user
-            experience standpoint.
+            • I originally wanted the messages to animate as the user scrolls
+            instead of them looping, but couldn’t get it to work in time. A year
+            and many projects later, I can say I know how to do it now. :’){' '}
+            <br /> • A big part of this project was learning to tone down overly
+            flamboyant ideas and think about how to enhance a project’s
+            narrative instead of overwhelming it. Not every project needs to
+            have an over-the-top, eye-catching design. <br /> • Working and
+            becoming more comfortable with manipulating SVG code opens up a lot
+            of potential in animation. I’m excited to do more of that in the
+            future.
           </p>
         </div>
 
@@ -134,7 +129,7 @@ function SROS() {
             Read the full story{' '}
             <a
               className={pageStyles.link}
-              href="https://www.sfchronicle.com/projects/2023/flour-water-pasta/"
+              href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses//"
               target="_blank"
               rel="noreferrer"
             >
