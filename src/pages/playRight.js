@@ -11,7 +11,7 @@ function PlayRight() {
         documenting the random things I try. In college I started a challenge
         for myself: work on something fun every year. It's been five years since
         then and we're still going! This page is my way of staying creatively
-        motivated and a reminder that it's ok to take risks and fail.
+        motivated and a reminder to keep learning.
       </h3>
       <div className={rightStyles.projectSection}>
         <div className={rightStyles.project}>
@@ -29,7 +29,7 @@ function PlayRight() {
             <a
               className={rightStyles.otherLink}
               href="https://radial-earthquake-1a6.notion.site/52-Books-in-52-Weeks-2022-a7c4fe2d9a554c029bd4af725a22a592?pvs=4"
-              target='_blank'
+              target="_blank"
               rel="noreferrer"
             >
               52 books in 52 weeks
@@ -37,7 +37,12 @@ function PlayRight() {
           </div>
           <div className={rightStyles.playProjectContainer}>
             <p className={rightStyles.year}>2021</p>
-            <a className={rightStyles.otherLink} href="">
+            <a
+              className={rightStyles.otherLink}
+              href="https://radial-earthquake-1a6.notion.site/Pantone-Paintings-e74fedab965a485d9e46390b004c121f?pvs=4"
+              target='_blank'
+              rel="noreferrer"
+            >
               Pantone paintings
             </a>
           </div>

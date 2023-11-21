@@ -11,7 +11,7 @@ function Pasta() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects />
+        <MenuProjects active="pasta"/>
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />

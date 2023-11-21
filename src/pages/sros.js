@@ -11,7 +11,7 @@ function SROS() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects />
+        <MenuProjects active="sros"/>
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />

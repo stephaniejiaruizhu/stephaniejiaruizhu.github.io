@@ -165,7 +165,7 @@ function PrintRight() {
         </div>
       </div>
 
-      <p className={rightStyles.note}>Note: all illustrations on the page are done by me</p>
+      <p className={rightStyles.note}>Note: all illustrations and designs on the page are done by me</p>
     </div>
   )
 }

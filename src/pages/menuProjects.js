@@ -9,22 +9,22 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-function MenuProjects() {
+function MenuProjects({active}) {
   return (
     <div>
       <img src={Logo} className={menuStyles.logo} alt="handwritten logo" />
       <div className={menuStyles.list}>
         <p className={menuStyles.listItem}>
-          <a href="/oakes">The Killing of Richard Oakes</a>
+          <a href="/oakes"><span className={active === "Oakes" ? menuStyles.strikethrough : null}>The Killing of Richard Oakes</span></a>
         </p>
         <p className={menuStyles.listItem}>
-          <a href="/clothing">Clothing and Gender Euphoria</a>
+          <a href="/clothing"><span className={active === "clothing" ? menuStyles.strikethrough : null}>Clothing and Gender Euphoria</span></a>
         </p>
         <p className={menuStyles.listItem}>
-          <a href="/pasta">Pasta Dictionary</a>
+          <a href="/pasta"><span className={active === "pasta" ? menuStyles.strikethrough : null}>Pasta Dictionary</span></a>
         </p>
         <p className={menuStyles.listItem}>
-          <a href="/sros">Overdose Deaths</a>
+          <a href="/sros"><span className={active === "sros" ? menuStyles.strikethrough : null}>Overdose Deaths</span></a>
         </p>
       </div>
       <div className={menuStyles.iconContainer}>

@@ -11,7 +11,7 @@ function Clothing() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects />
+        <MenuProjects active="clothing"/>
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />

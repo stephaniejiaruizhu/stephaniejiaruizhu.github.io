@@ -11,7 +11,7 @@ function Oakes() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects />
+        <MenuProjects active="Oakes"/>
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />

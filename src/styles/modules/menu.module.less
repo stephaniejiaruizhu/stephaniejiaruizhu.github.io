@@ -41,14 +41,23 @@
 .listItem {
     margin-top: 0px;
     margin-bottom: 10px;
-    cursor: pointer;
 
     a {
         color: black;
         text-decoration: none;
-
+        cursor: pointer;
+    
         &:hover {
             color: @accent;
+        }
+    
+        .strikethrough {
+            text-decoration: line-through !important;
+            cursor: default;
+    
+            &:hover {
+                color: black;
+            }
         }
     }
 }

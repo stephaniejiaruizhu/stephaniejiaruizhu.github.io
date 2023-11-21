@@ -14,7 +14,7 @@ function Navbar() {
         about
       </a>
       <a
-        href="https://drive.google.com/file/d/1gApbNryTiHD6kqaznraUhDZMCGaBifmY/view?usp=sharing"
+        href="https://drive.google.com/file/d/14UqsEhm815lGi23B1u8bk2DYyUGS-Cgh/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className={navbarStyles.link}

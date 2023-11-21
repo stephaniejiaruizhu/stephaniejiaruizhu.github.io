@@ -46,6 +46,11 @@ function OtherRight() {
           src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1697430819/illos/doomloop2_wppdks.jpg"
           alt="illustration of San Francisco on a hill with another hill full of wilted grass in front of it"
         />
+         <img
+          className={rightStyles.illustration2}
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1700206637/illos/napa_tsuof8.jpg"
+          alt="illustration of a wine glass with a flagpole stuck in cork"
+        />
       </div>
 
       <div className={rightStyles.project}>

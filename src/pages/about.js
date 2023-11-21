@@ -19,7 +19,7 @@ function About() {
           <img
             className={aboutStyles.photo}
             src={
-              'https://res.cloudinary.com/dvjavf8xh/image/upload/v1696997775/misc/headshot_sgnfdt.jpg'
+              'https://res.cloudinary.com/dvjavf8xh/image/upload/v1700551847/misc/headshot_yxdnsw.png'
             }
             alt="headshot of Stephanie"
           />
@@ -28,10 +28,18 @@ function About() {
               Hey there, I'm Stephanie.
             </span>
             <p className={aboutStyles.graf}>
-              I’m a digital designer/developer making things at San Francisco
-              Chronicle. Before that, I studied journalism, computer science and
-              design at Northwestern University. I’ve also designed for The
-              Boston Globe and CalMatters.
+              I’m a digital designer/developer making{' '}
+              <a
+                className={aboutStyles.link}
+                href="https://www.sfchronicle.com/author/stephanie-zhu/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                things
+              </a>{' '}
+              at San Francisco Chronicle. Before that, I studied journalism,
+              computer science and design at Northwestern University. I’ve also
+              designed for The Boston Globe and CalMatters.
             </p>
             <p className={aboutStyles.graf}>
               Like every journalist ever, I tell people I love telling stories.
@@ -41,12 +49,27 @@ function About() {
             <p className={aboutStyles.graf}>
               Currently:
               <div className={aboutStyles.bulletSection}>
-                • obsessing over sumo citruses and{' '}
-                <span className={aboutStyles.highlight}>this shade</span> of
+                • obsessing over{' '}
+                <a
+                  className={aboutStyles.link}
+                  href="https://sumocitrus.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  sumo citruses
+                </a>{' '}
+                and <span className={aboutStyles.highlight}>this shade</span> of
                 green
-                <br />• reading <i>The Paper Menagerie and Other Stories</i> by
-                Ken Liu
-                <br />• trying to avoid the wrath of my pet bird
+                <br />• reading <i>Breasts and Eggs</i> by Mieko Kawakami
+                <br />• trying to avoid the wrath of my{' '}
+                <a
+                  className={aboutStyles.link}
+                  href="https://drive.google.com/file/d/1Hz77t3LvaCYS1mAWo_BP4tAe2HhB8W3L/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  pet bird
+                </a>
               </div>
             </p>
             <p className={aboutStyles.graf}>
@@ -105,7 +128,7 @@ function About() {
             <span className={aboutStyles.aboutSubhead}>Speaking</span>
             <p className={aboutStyles.graf2}>
               <a
-                href="https://docs.google.com/presentation/d/1viQfhsgAFj4AW-KXsWcSRDhNpnZysZbCyZImqKVq5PU/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1rR8gSye8QcOMYWtd65rCWEzRvPx6b7-L7vKD5slBXH0/edit?usp=sharing"
                 className={aboutStyles.link}
                 target="_blank"
                 rel="noreferrer"
