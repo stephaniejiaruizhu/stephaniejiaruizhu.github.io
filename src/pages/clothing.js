@@ -77,7 +77,7 @@ function Clothing() {
             an interactive version that flips over and shows more information
             when clicked.
           </p>
-          <video className={pageStyles.image} autoPlay loop muted>
+          <video className={pageStyles.image} autoPlay loop muted playsInline>
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700091171/transgender/transgendervid_farzqw.mp4"
               type="video/mp4"

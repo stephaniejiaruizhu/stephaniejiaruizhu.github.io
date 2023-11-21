@@ -10,7 +10,7 @@ function About() {
   return (
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
-        <Navbar />
+        <Navbar active="about"/>
         <Menu />
       </div>
       <div className={menuStyles.rightContainer}>

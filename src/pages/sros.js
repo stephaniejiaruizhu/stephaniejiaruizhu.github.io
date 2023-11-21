@@ -48,6 +48,7 @@ function SROS() {
             autoPlay
             loop
             muted
+            playsInline
           >
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700091174/sros/srosvid_i4w9j0.mp4"
@@ -99,6 +100,7 @@ function SROS() {
             autoPlay
             loop
             muted
+            playsInline
           >
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700292631/sros/animation1_xtnoly.mp4"

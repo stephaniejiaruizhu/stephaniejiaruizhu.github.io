@@ -11,7 +11,7 @@ function Oakes() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects active="Oakes"/>
+        <MenuProjects active="Oakes" />
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />
@@ -40,7 +40,7 @@ function Oakes() {
         <div className={pageStyles.divider} />
 
         <div className={pageStyles.projectSection}>
-          <video className={pageStyles.image} autoPlay loop muted>
+          <video className={pageStyles.image} autoPlay loop muted playsInline>
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1699855830/oakes/oakes1_dvateo.mp4"
               type="video/mp4"
@@ -49,15 +49,14 @@ function Oakes() {
         </div>
 
         <div className={pageStyles.projectSection}>
-          <h3 className={pageStyles.subTitle}>Experimenting with Animation</h3>
+          <h3 className={pageStyles.subTitle}>Animating with code</h3>
           <p className={pageStyles.projectText}>
             Prior to this project, we had never done any complicated animations
             using only code, so I was tasked with doing research and building
-            out a basic framework for these animations (cue the panicked
-            internal screaming). I originally intended to use a React library,
-            but opted to hard-code the animations instead because the library
-            didn’t work well with our development rig and lacked certain
-            features we wanted.
+            out a <b>basic framework</b> for these animations. I originally intended to
+            use a React library, but opted to hard-code the animations instead
+            because the library didn’t work well with our development rig and
+            lacked certain features we wanted.
           </p>
           <p className={pageStyles.projectText}>
             After a ton of poking around, refining and existing in debugging
@@ -67,7 +66,7 @@ function Oakes() {
         </div>
 
         <div className={pageStyles.projectSection}>
-          <video className={pageStyles.image} autoPlay loop muted>
+          <video className={pageStyles.image} autoPlay loop muted playsInline>
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1700095429/oakes/oakes2vid_dlrrzr.mp4"
               type="video/mp4"
