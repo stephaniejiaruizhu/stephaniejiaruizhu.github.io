@@ -96,7 +96,7 @@ function SROS() {
             exported them as SVGs and then animated them using a React library.
           </p>
           <video
-            className={`${pageStyles.image} ${pageStyles.borderimage}`}
+            className={`${pageStyles.image}`}
             autoPlay
             loop
             muted

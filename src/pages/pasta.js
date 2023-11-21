@@ -41,7 +41,7 @@ function Pasta() {
         <div className={pageStyles.divider} />
 
         <div className={pageStyles.projectSection}>
-          <video className={`${pageStyles.image} ${pageStyles.borderimage}`} autoPlay loop muted playsInline>
+          <video className={`${pageStyles.image}`} autoPlay loop muted playsInline>
             <source
               src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1699857963/pasta/pastavid_egazkm.mp4"
               type="video/mp4"
