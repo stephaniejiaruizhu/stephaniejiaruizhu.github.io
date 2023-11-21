@@ -44,7 +44,7 @@ function SROS() {
 
         <div className={pageStyles.projectSection}>
           <video
-            className={`${pageStyles.image} ${pageStyles.borderimage}`}
+            className={`${pageStyles.image}`}
             autoPlay
             loop
             muted

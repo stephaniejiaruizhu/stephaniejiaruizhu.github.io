@@ -33,7 +33,7 @@ function Pasta() {
               <div className={pageStyles.spacer} />
               Role: design, front-end development
               <div className={pageStyles.spacer} />
-              Tools: React, Gatsby, D3.js
+              Tools: React, D3.js
             </p>
           </div>
         </div>

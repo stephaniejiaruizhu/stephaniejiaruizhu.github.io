@@ -32,7 +32,7 @@ function Oakes() {
               <div className={pageStyles.spacer} />
               Role: Animation, design, front-end development
               <div className={pageStyles.spacer} />
-              Tools: React, Gatsby
+              Tools: React
             </p>
           </div>
         </div>

@@ -31,7 +31,7 @@ function Clothing() {
               <div className={pageStyles.spacer} />
               Role: Design, front-end development
               <div className={pageStyles.spacer} />
-              Tools: React, Figma, Gatsby
+              Tools: React, Figma
             </p>
           </div>
         </div>
