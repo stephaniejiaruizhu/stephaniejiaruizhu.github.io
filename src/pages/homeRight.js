@@ -129,6 +129,14 @@ function Right() {
         <p className={rightStyles.subTitle}>Other projects:</p>
         <a
           className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2023/california-voting-law/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Voting Rights
+        </a>
+        <a
+          className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/"
           target="_blank"
           rel="noreferrer"

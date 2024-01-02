@@ -60,7 +60,7 @@ function About() {
                 </a>{' '}
                 and <span className={aboutStyles.highlight}>this shade</span> of
                 green
-                <br />• reading <i>Breasts and Eggs</i> by Mieko Kawakami
+                <br />• reading <i>The Razor's Edge</i> by W. Somerset Maugham
                 <br />• trying to avoid the wrath of my{' '}
                 <a
                   className={aboutStyles.link}
