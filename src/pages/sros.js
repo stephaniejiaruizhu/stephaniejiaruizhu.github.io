@@ -11,7 +11,7 @@ function SROS() {
     <div className={menuStyles.container}>
       <div className={menuStyles.leftContainer}>
         <Navbar />
-        <MenuProjects active="sros"/>
+        <MenuProjects active="sros" />
       </div>
       <div className={menuStyles.rightContainer}>
         <Dropdown />
@@ -22,11 +22,10 @@ function SROS() {
         <div className={pageStyles.infoContainer}>
           <div className={pageStyles.leftContainer}>
             <p className={pageStyles.text}>
-              San Francisco restaurant Flour + Water has 83 pasta shapes on
-              their menu. This piece highlights 50 of these shapes and does a
-              deeper dive into how six of them are made. I took part in the
-              design process and built the interface for the gallery and popup
-              cards using a combination of React and D3.
+              A look into the lives lost to SF's overdose crisis– part of a
+              larger investigative series on permanent supportive housing. I
+              digitalized messages written by friends and family of the deceased
+              and animated them using code.
             </p>
           </div>
           <div className={pageStyles.rightContainer}>
@@ -59,9 +58,7 @@ function SROS() {
         </div>
 
         <div className={pageStyles.projectSection}>
-          <h3 className={pageStyles.subTitle}>
-            A ton of messages
-          </h3>
+          <h3 className={pageStyles.subTitle}>A ton of messages</h3>
           <p className={pageStyles.projectText}>
             We started with a pile of books. In these books were hundreds of
             messages written to those who died from overdoses. We knew we wanted
@@ -69,10 +66,10 @@ function SROS() {
             present them in an emotionally impactful way.
           </p>
           <p className={pageStyles.projectText}>
-            There were also a couple of problems: <br />
-            • sorting through so many messages and picking out the ones to
-            people who specifically died from Fentanyl (that’s what this piece
-            focuses on) would <b>take time</b>.
+            There were also a couple of problems: <br />• sorting through so
+            many messages and picking out the ones to people who specifically
+            died from Fentanyl (that’s what this piece focuses on) would{' '}
+            <b>take time</b>.
             <br /> • simple scans won’t be the best image quality and also
             <b> wouldn’t stand out</b> on a page that’s already mostly white.
           </p>
