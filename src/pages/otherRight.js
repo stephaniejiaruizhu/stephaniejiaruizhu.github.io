@@ -11,14 +11,7 @@ function OtherRight() {
         sometimes developer.
       </h1>
       <h2 className={rightStyles.subintro}>
-        Always a storyteller. Currently making things at{' '}
-        <a
-          href="https://www.sfchronicle.com/author/stephanie-zhu/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          San Francisco Chronicle.
-        </a>
+        And sometimes I do other things around the newsroom!
       </h2>
 
       <div className={rightStyles.menu}>
@@ -52,6 +45,11 @@ function OtherRight() {
           className={rightStyles.illustration}
           src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1697430819/illos/doomloop2_wppdks.jpg"
           alt="illustration of San Francisco on a hill with another hill full of wilted grass in front of it"
+        />
+         <img
+          className={rightStyles.illustration2}
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1700206637/illos/napa_tsuof8.jpg"
+          alt="illustration of a wine glass with a flagpole stuck in cork"
         />
       </div>
 

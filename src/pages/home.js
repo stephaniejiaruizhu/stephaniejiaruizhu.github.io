@@ -12,7 +12,7 @@ const Home = () => {
       <main>
         <div className={menuStyles.container}>
           <div className={menuStyles.leftContainer}>
-            <Navbar/>
+            <Navbar active="work"/>
             <Menu/>
           </div>
           <div className={menuStyles.rightContainer}>

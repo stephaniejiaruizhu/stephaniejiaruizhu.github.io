@@ -15,8 +15,17 @@
     font-family: @sans-serif;
     font-weight: bold;
     text-decoration: none;
-}
 
-.link:hover {
-    color: @accent;
+    &:hover {
+        color: @accent2
+    }
+
+    .strikethrough {
+        text-decoration: line-through !important;
+        cursor: default;
+
+        &:hover {
+            color: black;
+        }
+    }
 }

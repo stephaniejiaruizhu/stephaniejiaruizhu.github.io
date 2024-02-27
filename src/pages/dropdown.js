@@ -17,7 +17,7 @@ function Dropdown() {
         <a
           id="resume"
           className="menu-item"
-          href="https://drive.google.com/file/d/1evqpBjXvP3PMiLBkHbCa7S0T6n_EwS8f/view?usp=sharing"
+          href="https://drive.google.com/file/d/14UqsEhm815lGi23B1u8bk2DYyUGS-Cgh/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >

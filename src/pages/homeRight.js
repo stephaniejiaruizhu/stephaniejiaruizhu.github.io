@@ -42,7 +42,7 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="./oakes"
+              href="/oakes"
             >
               {' '}
               The Killing of Richard Oakes{' '}
@@ -65,9 +65,7 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="https://www.sfchronicle.com/projects/2023/sf-trans-clothing/"
-              target="_blank"
-              rel="noreferrer"
+              href="/clothing"
             >
               {' '}
               Clothing and Gender Euphoria{' '}
@@ -89,9 +87,7 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="https://www.sfchronicle.com/projects/2023/flour-water-pasta/"
-              target="_blank"
-              rel="noreferrer"
+              href="/pasta"
             >
               {' '}
               Pasta Dictionary <span className={rightStyles.arrow}>→</span>
@@ -112,9 +108,7 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/"
-              target="_blank"
-              rel="noreferrer"
+              href="/sros"
             >
               {' '}
               Overdose Deaths in SF’s Housing Program{' '}
@@ -133,6 +127,22 @@ function Right() {
 
       <div className={rightStyles.otherSection}>
         <p className={rightStyles.subTitle}>Other projects:</p>
+        <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2023/california-voting-law/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Voting Rights
+        </a>
+        <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tahoe Snow Tracker
+        </a>
         <a
           className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/2023/california-stunt-cheerleading/"

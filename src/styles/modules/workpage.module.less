@@ -7,6 +7,7 @@
     font-size:  @large;
     margin-top: 100px;
     margin-left: 100px;
+    max-width: 80%;
 
     @media @mobile {
         margin-left: 20px !important;
@@ -50,6 +51,15 @@
     margin-top: 5px;
     line-height: 30px;
     max-width: 900px;
+
+    @media @tablet {
+        max-width: 90%;
+    }
+
+    @media @mobile {
+        font-size: @small;
+        line-height: 23px;
+    }
 }
 
 .leftContainer {
@@ -120,51 +130,56 @@
     font-family: @sans-serif;
 }
 
+.imagecontainer {
+    display: flex;
+    gap: @medium;
+    max-width: 700px;
+
+    @media only screen and (max-width: 800px) {
+       display: block;
+       max-width: 100%;
+    }
+}
+
+.imageflex {
+   max-width: 350px;
+
+   @media only screen and (max-width: 800px) {
+    max-width: 90%;
+    }
+}
+
+.image {
+    margin-top: @medium;
+    max-width: 700px;
+    height: auto;
+
+    @media only screen and (max-width: 800px) {
+        max-width: 90%;
+    }
+}
+
+.borderimage {
+    border: 1px solid gray !important;
+    height: fit-content !important;
+}
+
+.halfimage {
+    margin-top: @medium;
+    max-width: 350px;
+    height: auto;
+
+    @media only screen and (max-width: 800px) {
+        max-width: 90%;
+    } 
+}
+
 .link {
     color: black;
     margin-right: 5px;
 
     &:hover {
         color: @accent;
-    }
-}
-
-.link2 {
-    color: black;
-    font-family: @sans-serif;
-    font-size: @medium-small;
-    font-style: italic;
-    text-decoration: none;
-
-    &:hover {
-        color: @accent !important;
-    }
-}
-
-.link3 {
-    font-family: @sans-serif;
-    font-size: @medium-small !important;
-    font-style: italic;
-    color: black;
-    margin-top: @large;
-    margin-left: 100px;
-    text-decoration: none;
-
-    &:hover {
-        color: @accent;
-    }
-
-    @media @mobile {
-        display: block;
-        font-size: @small;
-        max-width: 90%;
-        margin-left: auto !important;
-        margin-right: auto;
-    }
-
-    @media @tablet {
-        max-width: 85%;
-        margin-left: 50px;
     }
 }
 
@@ -181,6 +196,9 @@
     line-height: 32px;
     max-width: 900px;
 
+    @media @tablet {
+        max-width: 90%;
+    }
     @media @mobile {
         font-size: @small;
         line-height: 28px;
@@ -193,7 +211,16 @@
     font-style: normal;
     font-weight: 300;
     margin-top: @medium;
-    max-width: 900px;   
+    margin-left: 100px;
+    max-width: 900px;
+
+    @media @mobile {
+        margin-left: 20px !important;
+    }
+
+    @media only screen and (max-width: 1000px){
+        margin-left: 50px;
+    }
 }
 
 .spacer {

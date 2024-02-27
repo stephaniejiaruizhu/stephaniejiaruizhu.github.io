@@ -41,11 +41,21 @@
             color: @accent2;
             font-weight: 600;
         }
+
+        @media @mobile {
+            font-size: @small;
+            line-height: 23px;
+        }
     }
 
     .graf2 {
         font-weight: 400;
         margin-bottom: 0px;
+
+        @media @mobile {
+            font-size: @small;
+            line-height: 23px;
+        }
     }
 
     .subGraf {
@@ -67,16 +77,17 @@
 }
 
 .photo {
-    max-width: 200px;
+    max-width: 220px;
     display: block;
     margin-left: 100px;
 
     @media @tablet {
-        max-width: 80%;
+        max-width: 200px;
     }
 
     @media @mobile {
         margin-left: 20px !important;
+        max-width: 200px;
     }
 
     @media only screen and (max-width: 1000px) {

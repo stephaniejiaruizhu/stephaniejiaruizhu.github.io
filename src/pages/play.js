@@ -11,7 +11,7 @@ function Play() {
     <main>
       <div className={menuStyles.container}>
         <div className={menuStyles.leftContainer}>
-          <Navbar />
+          <Navbar active="play"/>
           <Menu />
         </div>
         <div className={menuStyles.rightContainer}>
