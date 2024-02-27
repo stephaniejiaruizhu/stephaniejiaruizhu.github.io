@@ -1,10 +1,10 @@
-import React from 'react'
-import * as menuStyles from '../styles/modules/menu.module.less'
-import * as aboutStyles from '../styles/modules/about.module.less'
-import Navbar from './navbar'
-import Menu from './menu'
-import Footer from './footer'
-import Dropdown from './dropdown'
+import React from "react";
+import * as menuStyles from "../styles/modules/menu.module.less";
+import * as aboutStyles from "../styles/modules/about.module.less";
+import Navbar from "./navbar";
+import Menu from "./menu";
+import Footer from "./footer";
+import Dropdown from "./dropdown";
 
 function About() {
   return (
@@ -19,7 +19,7 @@ function About() {
           <img
             className={aboutStyles.photo}
             src={
-              'https://res.cloudinary.com/dvjavf8xh/image/upload/v1696997775/misc/headshot_sgnfdt.jpg'
+              "https://res.cloudinary.com/dvjavf8xh/image/upload/v1696997775/misc/headshot_sgnfdt.jpg"
             }
             alt="headshot of Stephanie"
           />
@@ -41,7 +41,7 @@ function About() {
             <p className={aboutStyles.graf}>
               Currently:
               <div className={aboutStyles.bulletSection}>
-                • obsessing over sumo citruses and{' '}
+                • obsessing over sumo citruses and{" "}
                 <span className={aboutStyles.highlight}>this shade</span> of
                 green
                 <br />• reading <i>The Paper Menagerie and Other Stories</i> by
@@ -50,7 +50,7 @@ function About() {
               </div>
             </p>
             <p className={aboutStyles.graf}>
-              Let's{' '}
+              Let's{" "}
               <a
                 className={aboutStyles.link}
                 href="mailto:stephaniejiaruizhu@gmail.com"
@@ -58,7 +58,7 @@ function About() {
                 rel="noreferrer"
               >
                 chat!
-              </a>{' '}
+              </a>{" "}
               :-)
             </p>
           </div>
@@ -67,6 +67,24 @@ function About() {
 
           <div className={aboutStyles.aboutText}>
             <span className={aboutStyles.aboutSubhead}>Recognition</span>
+            <p className={aboutStyles.graf2}>
+              2nd Place • Online Video, Presentation and Innovation | Portfolio:
+              Presentation
+            </p>
+            <p className={aboutStyles.subGraf}>
+              National Press Photographers Association • Best of Photojournalism
+              2024
+            </p>
+
+            <p className={aboutStyles.graf2}>
+              2nd Place • Online Video, Presentation and Innovation | Race and
+              Identity in America: Online Visual Presentation
+            </p>
+            <p className={aboutStyles.subGraf}>
+              National Press Photographers Association • Best of Photojournalism
+              2024
+            </p>
+
             <p className={aboutStyles.graf2}>
               Award of Excellence • Design: Regional/Local
             </p>
@@ -134,17 +152,17 @@ function About() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
 
 export const Head = () => (
   <>
-    <title>About</title>{' '}
+    <title>About</title>{" "}
     <link
       rel="icon"
       href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"
     ></link>
   </>
-)
+);
