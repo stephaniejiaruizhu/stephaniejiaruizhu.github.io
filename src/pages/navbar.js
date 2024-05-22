@@ -20,7 +20,7 @@ function Navbar({active}) {
       </span>
       </a>
       <a
-        href="https://drive.google.com/file/d/14UqsEhm815lGi23B1u8bk2DYyUGS-Cgh/view?usp=sharing"
+        href="https://drive.google.com/file/d/18M70mnP8zwlaeYKT_OTHmuGL10dkL5Vi/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className={navbarStyles.link}

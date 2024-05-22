@@ -43,8 +43,8 @@ function About() {
             </p>
             <p className={aboutStyles.graf}>
               Like every journalist ever, I tell people I love telling stories.
-              But more specifically, I want to combine narrative-crafting with
-              design and technology to create thoughtful experiences.
+              But more specifically, I want to combine storytelling with
+              design and technology to create thoughtful interactive experiences.
             </p>
             <p className={aboutStyles.graf}>
               Currently:
@@ -60,7 +60,21 @@ function About() {
                 </a>{" "}
                 and <span className={aboutStyles.highlight}>this shade</span> of
                 green
-                <br />• reading <i>The Razor's Edge</i> by W. Somerset Maugham
+                <br />• reading {" "} 
+                <a
+                className={aboutStyles.link}
+                href="https://www.goodreads.com/book/show/31684925-chemistry"
+                target="_blank"
+                rel="noreferrer"
+                ><i>{" "}Chemistry</i></a> by Weike Wang
+                <br />• playing through {" "}
+                <i> Stardew Valley</i>
+                {" "}<a 
+                className={aboutStyles.link}
+                href="https://drive.google.com/file/d/1QuP5hdK6nCdS9Wp3AQetJ6lo5VUJGUyg/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                >once again</a>
                 <br />• trying to avoid the wrath of my{" "}
                 <a
                   className={aboutStyles.link}
@@ -70,6 +84,16 @@ function About() {
                 >
                   pet bird
                 </a>
+                <br/>
+                •{" "}
+                <a
+                className={aboutStyles.link}
+                href="https://www.yelp.com/user_details?userid=wDQlvv8Ww65JdKZ9591Lrw&utm_source=ishare"
+                target="_blank"
+                rel="noreferrer">
+                  Eating
+                </a> 
+                {" "} my way through the Bay Area
               </div>
             </p>
             <p className={aboutStyles.graf}>
@@ -90,8 +114,15 @@ function About() {
 
           <div className={aboutStyles.aboutText}>
             <span className={aboutStyles.aboutSubhead}>Recognition</span>
+              <p className={aboutStyles.graf2}>
+              Award of Excellence • Design: Regional/Local
+            </p>
+            <p className={aboutStyles.subGraf}>
+              Society for News Design • Creative Competition 2023
+            </p>
+
             <p className={aboutStyles.graf2}>
-              2nd Place • Online Video, Presentation and Innovation | Portfolio:
+              2nd Place • Portfolio:
               Presentation
             </p>
             <p className={aboutStyles.subGraf}>
@@ -100,7 +131,7 @@ function About() {
             </p>
 
             <p className={aboutStyles.graf2}>
-              2nd Place • Online Video, Presentation and Innovation | Race and
+              2nd Place • Race and
               Identity in America: Online Visual Presentation
             </p>
             <p className={aboutStyles.subGraf}>
@@ -132,6 +163,15 @@ function About() {
             <p className={aboutStyles.graf2}>Lead Developer/Designer</p>
             <p className={aboutStyles.subGraf}>
               Was lead developer and designer for a 2022 Pulitzer finalist piece
+            </p>
+
+               <p className={aboutStyles.graf2}>
+              3rd Place • Portfolio:
+              Presentation
+            </p>
+            <p className={aboutStyles.subGraf}>
+              National Press Photographers Association • Best of Photojournalism
+              2023
             </p>
 
             <p className={aboutStyles.graf2}>

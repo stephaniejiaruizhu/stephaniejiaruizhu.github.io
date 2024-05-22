@@ -55,9 +55,14 @@ function OtherRight() {
 
       <div className={rightStyles.project}>
         <p className={rightStyles.subTitle}>Reporting</p>
-        <p className={rightStyles.otherText}>
-          Taiwanese Food Guide (coming soon)
-        </p>
+        <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Taiwanese Food Guide
+        </a>
         <a
           className={rightStyles.otherLink}
           href="https://datebook.sfchronicle.com/entertainment/crunchyroll-expo-2022-brings-characters-to-life-and-in-person-after-2-year-hiatus"

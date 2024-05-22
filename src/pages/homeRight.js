@@ -32,6 +32,29 @@ function Right() {
           <p> selected projects </p>
           <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown} />
         </div>
+                <div className={rightStyles.project}>
+          <img
+            className={rightStyles.cover}
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1715621181/japantown/cover_gzj0rx.jpg"
+            target="_blank"
+            rel="noreferrer"
+            alt="japantown incarceration project cover"
+          />
+          <p className={rightStyles.projectName}>
+            <a
+              href="https://www.sfchronicle.com/projects/2024/sf-japantown-incarceration/"
+              target="_blank"
+              rel='noreferrer'
+            >
+              {' '}
+              Japantown incarceration{' '}
+              <span className={rightStyles.arrow}>→</span>
+            </a>
+          </p>
+          <p className={rightStyles.projectDescription}>
+            (design + development). An analysis and visualization of how Franklin D. Roosevelt's Executive Order 9066 affected San Francisco's Japantown.
+          </p>
+        </div>
         <div className={rightStyles.project}>
           <img
             className={rightStyles.cover}
@@ -42,7 +65,9 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="/oakes"
+              href="https://www.sfchronicle.com/projects/2023/richard-oakes-killing/"
+              target="_blank"
+              rel='noreferrer'
             >
               {' '}
               The Killing of Richard Oakes{' '}
@@ -65,7 +90,9 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="/clothing"
+              href="https://www.sfchronicle.com/projects/2023/sf-trans-clothing/"
+              target="_blank"
+              rel="noreferrer"
             >
               {' '}
               Clothing and Gender Euphoria{' '}
@@ -87,7 +114,9 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="/pasta"
+              href="https://www.sfchronicle.com/projects/2023/flour-water-pasta/"
+              target='_blank'
+              rel="noreferrer"
             >
               {' '}
               Pasta Dictionary <span className={rightStyles.arrow}>→</span>
@@ -108,7 +137,9 @@ function Right() {
           />
           <p className={rightStyles.projectName}>
             <a
-              href="/sros"
+              href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/"
+              target="_blank"
+              rel="noreferrer"
             >
               {' '}
               Overdose Deaths in SF’s Housing Program{' '}
@@ -129,11 +160,20 @@ function Right() {
         <p className={rightStyles.subTitle}>Other projects:</p>
         <a
           className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Taiwanese Food Guide
+        </a>
+        <a
+          className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/2023/california-voting-law/"
           target="_blank"
           rel="noreferrer"
         >
           California Voting Rights
+          
         </a>
         <a
           className={rightStyles.otherLink}
@@ -142,22 +182,6 @@ function Right() {
           rel="noreferrer"
         >
           Tahoe Snow Tracker
-        </a>
-        <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/2023/california-stunt-cheerleading/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Stunt Cheerleading
-        </a>
-        <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/2022/bay-area-housing-power-players/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Who Owns All the Housing in the Bay Area?
         </a>
         <a
           className={rightStyles.otherLink}
@@ -174,6 +198,14 @@ function Right() {
           rel="noreferrer"
         >
           Bay Area Storm Map
+        </a>
+              <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2022/bay-area-housing-power-players/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Who Owns All the Housing in the Bay Area?
         </a>
       </div>
     </div>
