@@ -63,10 +63,10 @@ function About() {
                 <br />• reading {" "} 
                 <a
                 className={aboutStyles.link}
-                href="https://www.goodreads.com/book/show/31684925-chemistry"
+                href="https://www.goodreads.com/book/show/41104077-invisible-women"
                 target="_blank"
                 rel="noreferrer"
-                ><i>{" "}Chemistry</i></a> by Weike Wang
+                ><i>{" "}Invisible Women</i></a> by Caroline Criado Perez
                 <br />• playing through {" "}
                 <i> Stardew Valley</i>
                 {" "}<a 
@@ -195,7 +195,7 @@ function About() {
                 in newsrooms?
               </a>
             </p>
-            <p className={aboutStyles.subGraf}>October 2023, SRCCON</p>
+            <p className={aboutStyles.subGraf}>SRCCON • October 2023</p>
 
             <p className={aboutStyles.graf2}>
               <a
@@ -208,7 +208,7 @@ function About() {
               </a>
             </p>
             <p className={aboutStyles.subGraf}>
-              July 2023, AAJA National Convention
+              AAJA National Convention • July 2023
             </p>
           </div>
         </div>

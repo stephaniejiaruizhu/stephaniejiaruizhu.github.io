@@ -1,5 +1,6 @@
 import React from 'react'
 import * as rightStyles from '../styles/modules/right.module.less'
+import * as pageStyles from '../styles/modules/workpage.module.less'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -154,10 +155,54 @@ function Right() {
         </div>
       </div>
 
+      <p className={pageStyles.paywallmessage}>
+          Can't get past the paywall?{' '}
+          <a
+            className={pageStyles.link}
+            href="mailto:stephaniejiaruizhu.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Shoot me a message.
+          </a>
+        </p>
+
       <div className={rightStyles.divider} />
 
       <div className={rightStyles.otherSection}>
         <p className={rightStyles.subTitle}>Other projects:</p>
+          <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2024/bay-area-fog-tracker/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Bay Area Fog Tracker
+        </a>
+         <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tahoe Snow Tracker
+        </a>
+              <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2022/california-wildfire-severity-map/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Fire Burn Severity Map
+        </a>
+        <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2023/sf-bay-area-rain-storm/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Bay Area Storm Map
+        </a>
         <a
           className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/"
@@ -174,38 +219,6 @@ function Right() {
         >
           California Voting Rights
           
-        </a>
-        <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tahoe Snow Tracker
-        </a>
-        <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/2022/california-wildfire-severity-map/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Fire Burn Severity
-        </a>
-        <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/2023/sf-bay-area-rain-storm/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bay Area Storm Map
-        </a>
-              <a
-          className={rightStyles.otherLink}
-          href="https://www.sfchronicle.com/projects/2022/bay-area-housing-power-players/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Who Owns All the Housing in the Bay Area?
         </a>
       </div>
     </div>
