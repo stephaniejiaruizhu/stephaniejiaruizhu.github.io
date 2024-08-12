@@ -128,14 +128,8 @@ function About() {
             <p className={aboutStyles.subGraf}>
               Online News Association • Online Journalism Awards 2024
             </p>
-              <p className={aboutStyles.graf2}>
-              Award of Excellence • Design: Regional/Local
-            </p>
-            <p className={aboutStyles.subGraf}>
-              Society for News Design • Creative Competition 2023
-            </p>
 
-            <p className={aboutStyles.graf2}>
+             <p className={aboutStyles.graf2}>
               2nd Place • Portfolio:
               Presentation
             </p>
@@ -151,6 +145,29 @@ function About() {
             <p className={aboutStyles.subGraf}>
               National Press Photographers Association • Best of Photojournalism
               2024
+            </p>
+
+            <p className={aboutStyles.graf2}>
+              Award of Excellence • Design: Regional/Local
+            </p>
+            <p className={aboutStyles.subGraf}>
+              Society for News Design • Creative Competition 2023
+            </p>
+
+            <p className={aboutStyles.graf2}>
+              Finalist • The University of Florida Award for Data Journalism
+            </p>
+            <p className={aboutStyles.subGraf}>
+              Online News Association • Online Journalism Awards 2023
+            </p>
+
+            <p className={aboutStyles.graf2}>
+              3rd Place • Portfolio:
+              Presentation
+            </p>
+            <p className={aboutStyles.subGraf}>
+              National Press Photographers Association • Best of Photojournalism
+              2023
             </p>
 
             <p className={aboutStyles.graf2}>
@@ -177,15 +194,6 @@ function About() {
             <p className={aboutStyles.graf2}>Lead Developer/Designer</p>
             <p className={aboutStyles.subGraf}>
               Was lead developer and designer for a 2022 Pulitzer finalist piece
-            </p>
-
-               <p className={aboutStyles.graf2}>
-              3rd Place • Portfolio:
-              Presentation
-            </p>
-            <p className={aboutStyles.subGraf}>
-              National Press Photographers Association • Best of Photojournalism
-              2023
             </p>
 
             <p className={aboutStyles.graf2}>
