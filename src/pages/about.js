@@ -119,11 +119,11 @@ function About() {
               Winner • Excellence in Visual Digital Storytelling
             </p>
             <p className={aboutStyles.subGraf}>
-              Winner • Online Journalism Awards 2024
+              Online News Association • Online Journalism Awards 2024
             </p>
 
              <p className={aboutStyles.graf2}>
-              Finalist • Topical Reporting: Race, Ethnicity, Gender and Identity
+              Winner • Topical Reporting: Race, Ethnicity, Gender and Identity
             </p>
             <p className={aboutStyles.subGraf}>
               Online News Association • Online Journalism Awards 2024
