@@ -116,10 +116,10 @@ function About() {
             <span className={aboutStyles.aboutSubhead}>Recognition</span>
 
             <p className={aboutStyles.graf2}>
-              Finalist • Excellence in Visual Digital Storytelling
+              Winner • Excellence in Visual Digital Storytelling
             </p>
             <p className={aboutStyles.subGraf}>
-              Online News Association • Online Journalism Awards 2024
+              Winner • Online Journalism Awards 2024
             </p>
 
              <p className={aboutStyles.graf2}>
