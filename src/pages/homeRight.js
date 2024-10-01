@@ -33,6 +33,29 @@ function Right() {
           <p> selected projects </p>
           <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown} />
         </div>
+         <div className={rightStyles.project}>
+          <img
+            className={rightStyles.cover}
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1727819920/projectcovers/collegeguide.png"
+            target="_blank"
+            rel="noreferrer"
+            alt="college guides incarceration project cover"
+          />
+          <p className={rightStyles.projectName}>
+            <a
+              href="https://www.sfchronicle.com/projects/california-college-admissions/"
+              target="_blank"
+              rel='noreferrer'
+            >
+              {' '}
+              California College Guide{' '}
+              <span className={rightStyles.arrow}>→</span>
+            </a>
+          </p>
+          <p className={rightStyles.projectDescription}>
+            (design + development). A data-driven guide to University of California, Cal State and California community college admissions.
+          </p>
+        </div>
                 <div className={rightStyles.project}>
           <img
             className={rightStyles.cover}

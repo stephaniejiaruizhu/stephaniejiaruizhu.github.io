@@ -16,9 +16,14 @@ function PlayRight() {
         <div className={rightStyles.project}>
           <div className={rightStyles.playProjectContainer}>
             <p className={rightStyles.year}>2024</p>
-            <p className={rightStyles.otherLink2}>
-              Crochet (coming soon)
-            </p>
+             <a
+              className={rightStyles.otherLink}
+              href="https://radial-earthquake-1a6.notion.site/Crochet-2de256b013e64a1e8135f194d8b3f7b9?pvs=4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Crochet
+            </a>
             <a
               className={rightStyles.otherLink}
               href="https://radial-earthquake-1a6.notion.site/4f24f0cebf75461790256bb8330e2d6e?v=14054b0e5cfa47bf8c1022fe3a2d2caa&pvs=4"

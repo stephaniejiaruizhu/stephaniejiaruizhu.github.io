@@ -63,10 +63,10 @@ function About() {
                 <br />• reading {" "} 
                 <a
                 className={aboutStyles.link}
-                href="https://www.goodreads.com/book/show/41104077-invisible-women"
+                href="https://www.goodreads.com/book/show/139400713-martyr"
                 target="_blank"
                 rel="noreferrer"
-                ><i>{" "}Invisible Women</i></a> by Caroline Criado Perez
+                ><i>{" "}Martyr!</i></a> by Kaveh Akbar
                 <br />• playing through {" "}
                 <i> Stardew Valley</i>
                 {" "}<a 
