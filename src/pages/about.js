@@ -68,7 +68,7 @@ function About() {
                 rel="noreferrer"
                 ><i>{" "}The Power Broker</i></a> by Robert Caro
                 <br/>
-                 • trying to perfect my {" "}
+                 • perfecting my {" "}
                 <a
                   className={aboutStyles.link}
                   href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
@@ -93,7 +93,7 @@ function About() {
                 href="https://www.yelp.com/user_details?userid=wDQlvv8Ww65JdKZ9591Lrw&utm_source=ishare"
                 target="_blank"
                 rel="noreferrer">
-                  Eating
+                  eating
                 </a> 
                 {" "} my way through the Bay Area
               </div>
@@ -116,6 +116,13 @@ function About() {
 
           <div className={aboutStyles.aboutText}>
             <span className={aboutStyles.aboutSubhead}>Recognition</span>
+
+            <p className={aboutStyles.graf2}>
+              Winner • Online Presentation
+            </p>
+            <p className={aboutStyles.subGraf}>
+              Best of the West • Newspaper, Magazine and Online Contest 2025
+            </p>
 
             <p className={aboutStyles.graf2}>
               Winner • Excellence in Visual Digital Storytelling

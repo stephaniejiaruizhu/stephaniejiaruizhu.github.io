@@ -8,9 +8,9 @@ function PlayRight() {
         My playground for...
       </h2>
       <h3 className={`${rightStyles.subintro} ${rightStyles.playIntro2}`}>
-        trying things (and maybe failing at them). In college I got really burnt out and 
-        design/coding didn't feel fun anymore. As a way to stay creatively motivated, I started a challenge for myself:
-        make or do something I care about every year and document it. It's been five years since then and we're still going!
+        trying things.  In college I got really burnt out and 
+        design/coding didn't feel fun anymore. As a way to regain motivation, I started a challenge for myself:
+        make or do something I care about every year and document it. Here's to the last six years!
       </h3>
       <div className={rightStyles.projectSection}>
         <div className={rightStyles.project}>
@@ -35,9 +35,13 @@ function PlayRight() {
           </div>
           <div className={rightStyles.playProjectContainer}>
             <p className={rightStyles.year}>2023</p>
-            <p className={rightStyles.otherLink2}>
-              Polymer clay keycaps (coming soon)
-            </p>
+             <a className={rightStyles.otherLink}
+            href="https://radial-earthquake-1a6.notion.site/Polymer-Clay-Keycaps-c655e2bbdbe7488ebed42f473065d373"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Polymer clay keycaps
+            </a>
             <a className={rightStyles.otherLink}
             href="https://radial-earthquake-1a6.notion.site/3cbedcb19ec54bc39bb4863ba478a73a?v=86324806df93400ba9c0379eac623a9e"
             target="_blank"

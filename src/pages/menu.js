@@ -12,7 +12,6 @@ function Menu () {
             <p className={menuStyles.intro}> (she/her). Welcome to my little corner of the internet.</p>
             <div className={menuStyles.iconContainer}>
                 <a className={menuStyles.icon} aria-label="Github" href="https://github.com/stephaniejiaruizhu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                <a className={menuStyles.icon} aria-label="Twitter" href="https://twitter.com/stephzhu_" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
                 <a className={menuStyles.icon} aria-label="LinkedIn" href="https://www.linkedin.com/in/stephaniez2000/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                 <a className={menuStyles.icon} aria-label="Email" href="mailto:stephaniejiaruizhu.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
