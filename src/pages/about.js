@@ -63,10 +63,21 @@ function About() {
                 <br />• reading {" "} 
                 <a
                 className={aboutStyles.link}
-                href="https://www.goodreads.com/book/show/139400713-martyr"
+                href="https://www.goodreads.com/book/show/1111.The_Power_Broker"
                 target="_blank"
                 rel="noreferrer"
-                ><i>{" "}Martyr!</i></a> by Kaveh Akbar
+                ><i>{" "}The Power Broker</i></a> by Robert Caro
+                <br/>
+                 • trying to perfect my {" "}
+                <a
+                  className={aboutStyles.link}
+                  href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  dumpling folds
+                </a>{" "}
+                <span style={{textDecoration: 'line-through'}}> so my mom doesn't laugh at me </span>
                 <br />• playing through {" "}
                 <i> Stardew Valley</i>
                 {" "}<a 
@@ -75,15 +86,6 @@ function About() {
                 target="_blank"
                 rel="noreferrer"
                 >once again</a>
-                <br />• trying to avoid the wrath of my{" "}
-                <a
-                  className={aboutStyles.link}
-                  href="https://drive.google.com/file/d/1Hz77t3LvaCYS1mAWo_BP4tAe2HhB8W3L/view?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  pet bird
-                </a>
                 <br/>
                 •{" "}
                 <a

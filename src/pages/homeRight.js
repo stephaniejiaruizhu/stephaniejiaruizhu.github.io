@@ -33,13 +33,36 @@ function Right() {
           <p> selected projects </p>
           <FontAwesomeIcon className={rightStyles.arrow} icon={faArrowDown} />
         </div>
+        <div className={rightStyles.project}>
+          <img
+            className={rightStyles.cover}
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1743466348/projectcovers/top100_esfvpo.jpg"
+            target="_blank"
+            rel="noreferrer"
+            alt="top 100 restaurants project cover"
+          />
+          <p className={rightStyles.projectName}>
+            <a
+              href="https://www.sfchronicle.com/projects/2025/top-100-best-restaurants-san-francisco-bay-area/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvdG9wLTEwMC1iZXN0LXJlc3RhdXJhbnRzLXNhbi1mcmFuY2lzY28tYmF5LWFyZWEv&time=MTc0MzUzMTY1NTkxOA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+              target="_blank"
+              rel='noreferrer'
+            >
+              {' '}
+              Top 100 Restaurants 2025{' '}
+              <span className={rightStyles.arrow}>→</span>
+            </a>
+          </p>
+          <p className={rightStyles.projectDescription}>
+            (design + development). A ranked list from Chronicle food critics on where to eat in the Bay Area. 
+          </p>
+        </div>
          <div className={rightStyles.project}>
           <img
             className={rightStyles.cover}
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1727819920/projectcovers/collegeguide.png"
             target="_blank"
             rel="noreferrer"
-            alt="college guides incarceration project cover"
+            alt="college guides project cover"
           />
           <p className={rightStyles.projectName}>
             <a
@@ -194,6 +217,14 @@ function Right() {
 
       <div className={rightStyles.otherSection}>
         <p className={rightStyles.subTitle}>Other projects:</p>
+         <a
+          className={rightStyles.otherLink}
+          href="https://www.sfchronicle.com/projects/2025/california-psychiatric-hospitals-crisis/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1wc3ljaGlhdHJpYy1ob3NwaXRhbHMtY3Jpc2lzLw==&time=MTc0MzUzNTE5Njk0NQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Mg=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Psychiatric Hospital Systems
+        </a>
           <a
           className={rightStyles.otherLink}
           href="https://www.sfchronicle.com/projects/2024/bay-area-fog-tracker/"

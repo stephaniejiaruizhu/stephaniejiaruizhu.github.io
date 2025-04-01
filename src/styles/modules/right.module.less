@@ -145,6 +145,7 @@
 .cover {
   width: 100%;
   margin-top: @small;
+  border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -158,10 +159,11 @@
 
   a {
     color: black;
-    text-decoration: none;
+    text-decoration-color: black;
 
     &:hover {
-      color: @accent;
+      color: @accent2;
+      text-decoration-color: @accent2 !important;
     }
   }
 
@@ -189,7 +191,7 @@
 
 .divider {
   border-top: 1px solid rgb(195, 195, 195);
-  max-width: 1000px;
+  max-width: 80%;
   margin-top: @large;
   margin-bottom: @large;
 
