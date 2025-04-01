@@ -30,7 +30,7 @@ function PlayRight() {
               target="_blank"
               rel="noreferrer"
             >
-              52 books in 52 weeks
+              52 books in 52 Weeks
             </a>
           </div>
           <div className={rightStyles.playProjectContainer}>
@@ -40,14 +40,14 @@ function PlayRight() {
             target="_blank"
             rel="noreferrer"
             >
-              Polymer clay keycaps
+              Polymer Clay Keycaps
             </a>
             <a className={rightStyles.otherLink}
             href="https://radial-earthquake-1a6.notion.site/3cbedcb19ec54bc39bb4863ba478a73a?v=86324806df93400ba9c0379eac623a9e"
             target="_blank"
             rel="noreferrer"
             >
-              52 books in 52 weeks
+              52 books in 52 Weeks
             </a>
           </div>
           <div className={rightStyles.playProjectContainer}>
@@ -58,7 +58,7 @@ function PlayRight() {
               target="_blank"
               rel="noreferrer"
             >
-              52 books in 52 weeks
+              52 books in 52 Weeks
             </a>
           </div>
           <div className={rightStyles.playProjectContainer}>
@@ -69,7 +69,7 @@ function PlayRight() {
               target='_blank'
               rel="noreferrer"
             >
-              Pantone paintings
+              Pantone Paintings
             </a>
           </div>
           <div className={rightStyles.playProjectContainer}>
@@ -80,7 +80,7 @@ function PlayRight() {
               target="_blank"
               rel="noreferrer"
             >
-              Sticker shop
+              Sticker Shop
             </a>
           </div>
           <div className={rightStyles.playProjectContainer}>
@@ -91,7 +91,7 @@ function PlayRight() {
               target="_blank"
               rel="noreferrer"
             >
-              Snapchat geofilters
+              Snapchat Geofilters
             </a>
           </div>
         </div>

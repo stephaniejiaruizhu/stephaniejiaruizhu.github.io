@@ -94,7 +94,7 @@ function Right() {
               rel='noreferrer'
             >
               {' '}
-              Japantown incarceration{' '}
+              Japantown Incarceration{' '}
               <span className={rightStyles.arrow}>→</span>
             </a>
           </p>
