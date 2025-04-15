@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../images/logo.png"
 import * as menuStyles from "../styles/modules/menu.module.less"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 function Menu () {

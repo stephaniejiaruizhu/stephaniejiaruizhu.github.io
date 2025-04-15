@@ -36,7 +36,7 @@ function Right() {
         <div className={rightStyles.project}>
           <img
             className={rightStyles.cover}
-            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1743466348/projectcovers/top100_esfvpo.jpg"
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744675355/projectcovers/Top100.jpg"
             target="_blank"
             rel="noreferrer"
             alt="top 100 restaurants project cover"
