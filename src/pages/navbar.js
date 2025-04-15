@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ToggleButton from "./toggle";
 import Logo from "../images/logo.png";
 import { stack as Menu } from "react-burger-menu";
 
-function Navbar() {
-  const [active, setActive] = useState("Work");
+function Navbar({ active }) {
   return (
     <div className="navbar">
       <a href="/">
@@ -23,11 +22,8 @@ function Navbar() {
         style={
           active === "Work"
             ? { textDecorationLine: "line-through !important" }
-            : { textDecoration: "none" }
+            : { textDecoration: "unset !important" }
         }
-        onClick={() => {
-          setActive("Work");
-        }}
       >
         Work
       </a>
@@ -40,9 +36,6 @@ function Navbar() {
             ? { textDecoration: "line-through !important" }
             : { textDecoration: "none" }
         }
-        onClick={() => {
-          setActive("Play");
-        }}
       >
         Play
       </a>
@@ -55,9 +48,6 @@ function Navbar() {
             ? { textDecoration: "line-through !important" }
             : { textDecoration: "none" }
         }
-        onClick={() => {
-          setActive("About");
-        }}
       >
         About
       </a>
@@ -67,13 +57,40 @@ function Navbar() {
       {/* burger menu */}
       <div className="menu-section-mobile">
         <Menu>
-          <a id="Work" className="navbar-item" href="/">
+          <a
+            id="Work"
+            className="navbar-item"
+            href="/"
+            style={
+              active === "Play"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
+          >
             Work
           </a>
-          <a id="Play" className="navbar-item" href="/play">
+          <a
+            id="Play"
+            className="navbar-item"
+            href="/play"
+            style={
+              active === "Play"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
+          >
             Play
           </a>
-          <a id="About" className="navbar-item" href="/about">
+          <a
+            id="About"
+            className="navbar-item"
+            href="/about"
+            style={
+              active === "About"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
+          >
             About
           </a>
         </Menu>

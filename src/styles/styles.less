@@ -46,8 +46,17 @@ body {
     color: black;
     text-decoration: line-through;
 
+    &:hover {
+      color: @neonpurple !important;
+      font-weight: 500;
+    }
+
     &:visited {
       color: black;
+
+      &:hover {
+        color: @neonpurple !important;
+      }
     }
   }
 
@@ -96,7 +105,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin: 100px auto;
+  margin: 100px auto 150px;
 
   @media @breakpoint {
     display: block;
@@ -123,7 +132,6 @@ body {
     font-family: @serif;
     font-size: @text-xlarge;
     font-weight: 100;
-    margin-bottom: 20px;
     max-width: 650px;
 
     @media @breakpoint {
@@ -137,10 +145,11 @@ body {
 
   .topper-intro-subtext {
     font-family: @sans-serif;
-    font-size: @text-small;
+    font-size: @text-reg;
     font-weight: 400;
     max-width: 650px;
     line-height: 28px;
+    margin-top: 35px;
 
     @media @breakpoint {
       max-width: 90%;
@@ -153,26 +162,145 @@ body {
 .project-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-items: center;
+  width: 85vw;
+  margin: auto;
+  gap: 70px;
+  margin-bottom: 100px;
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  @media @breakpoint {
+    display: block;
+    margin-left: 100px;
+    width: 100vw;
+  }
+
+  @media @breakpoint2 {
+    margin-left: 50px;
+  }
 
   .project-cover {
-    max-width: 550px;
+    max-width: 60%;
     border-radius: 10px;
     filter: drop-shadow(0px 2px 2px #d1d1d1);
+
+    @media @breakpoint {
+      max-width: 80%;
+      margin-bottom: 25px;
+    }
   }
 
   .project-text {
     font-family: @sans-serif;
     font-size: @text-small;
+    max-width: 30%;
+    margin: auto;
+
+    @media @breakpoint {
+      max-width: 80%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
 
     .project-title {
       font-family: @serif;
       font-size: @text-large;
 
+      @media @breakpoint {
+        margin-top: 20px;
+      }
+
       a {
         color: black;
         font-style: italic;
+
+        &:hover {
+          color: @neonpurple !important;
+        }
+      }
+    }
+
+    .project-date {
+      margin: 0px auto;
+    }
+
+    .project-description {
+      line-height: 25px;
+    }
+  }
+}
+
+// about page
+
+.about-wrapper {
+  margin: 100px 100px 150px;
+  font-family: @sans-serif;
+
+  @media @breakpoint2 {
+    margin: 100px 50px 150px;
+  }
+
+  .about-image {
+    max-width: 350px;
+  }
+
+  .about-text-wrapper {
+    max-width: 80%;
+    font-size: @text-reg;
+    .about-intro-text {
+      font-family: @serif;
+      font-size: @text-xlarge;
+      font-weight: 100;
+    }
+
+    .about-section {
+      margin-bottom: 50px;
+      .about-intro-subtitle {
+        font-family: @serif;
+        font-size: @text-large;
+        font-weight: 100;
+      }
+
+      .award {
+        line-height: 25px;
+        margin-bottom: 20px;
+        .award-title {
+          color: @black;
+          margin: 0px;
+
+          a {
+            color: black;
+            &:hover {
+              color: @neonpurple !important;
+            }
+            &:visited {
+              color: @black;
+            }
+          }
+        }
+        .award-giver {
+          color: @gray;
+          margin: 0px;
+        }
+      }
+    }
+
+    .about-intro-subtext {
+      line-height: 28px;
+
+      a {
+        color: black;
+
+        &:visited {
+          color: black;
+        }
+
+        &:hover {
+          color: @neonpurple !important;
+        }
       }
     }
   }
@@ -191,14 +319,50 @@ body {
   gap: 35px;
   margin-right: 30px;
 
-  .footer-link-item {
+  @media @breakpoint2 {
+    margin: auto;
+    width: fit-content;
+  }
+
+  a {
     cursor: pointer;
+    color: black;
+    text-decoration: none !important;
+
+    &:hover {
+      color: @neonpurple !important;
+      font-weight: 500;
+    }
+
+    &:visited {
+      color: black;
+    }
   }
 }
 
 .footer-explanation {
-  margin: auto;
+  margin: 50px auto;
   width: fit-content;
+}
+
+// section divider
+.section-divider-home {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  margin: 90px auto;
+  width: 85vw;
+
+  @media @breakpoint {
+    margin-left: 100px;
+  }
+
+  @media @breakpoint2 {
+    margin-left: 50px;
+  }
+}
+
+.section-divider {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  margin: 90px auto;
 }
 
 // burger menu
@@ -226,7 +390,7 @@ body {
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: @neongreen;
+  background: @neonpurple !important;
 }
 
 /* Position and sizing of clickable cross button */

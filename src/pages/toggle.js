@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MoonBlack from "../images/icons/moon-black.svg";
 import MoonWhite from "../images/icons/moon-white.png";
 import SunBlack from "../images/icons/sun-black.svg";
@@ -7,31 +7,45 @@ import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
 
 function ToggleButton() {
-  const [toggleView, setToggleView] = useState("day");
+  const [toggleView, setToggleView] = useState(() =>
+    localStorage.getItem("mode")
+  );
+
+  function ToggleMode() {
+    if (toggleView === "day") {
+      setToggleView("night");
+      document.body.style.backgroundColor = "black";
+      document.body.style.color = "white";
+      document
+        .querySelectorAll("a")
+        .forEach((link) => (link.style.color = "white"));
+      document
+        .querySelectorAll(".bm-burger-bars")
+        .forEach((bar) => (bar.style.background = "white"));
+      document.getElementById("navbar-logo").src = LogoWhite;
+      localStorage.setItem("mode", "night");
+      console.log(localStorage.getItem("mode"));
+    } else if (toggleView === "night") {
+      setToggleView("day");
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
+      document
+        .querySelectorAll("a")
+        .forEach((link) => (link.style.color = "black"));
+      document.getElementById("navbar-logo").src = Logo;
+      document
+        .querySelectorAll(".bm-burger-bars")
+        .forEach((bar) => (bar.style.background = "black"));
+      localStorage.setItem("mode", "day");
+      console.log(localStorage.getItem("mode"));
+    }
+  }
 
   return (
     <div className="toggle">
       <div
         className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
-        onClick={() => {
-          if (toggleView === "day") {
-            setToggleView("night");
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "white";
-            document
-              .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "white"));
-            document.getElementById("navbar-logo").src = LogoWhite;
-          } else if (toggleView === "night") {
-            setToggleView("day");
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
-            document
-              .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "black"));
-            document.getElementById("navbar-logo").src = Logo;
-          }
-        }}
+        onClick={ToggleMode}
       >
         {toggleView === "day" ? (
           <img
@@ -47,27 +61,10 @@ function ToggleButton() {
           />
         )}
       </div>
+
       <div
         className={toggleView === "night" ? "toggleitem active" : "toggleitem"}
-        onClick={() => {
-          if (toggleView === "day") {
-            setToggleView("night");
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "white";
-            document
-              .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "white"));
-            document.getElementById("navbar-logo").src = LogoWhite;
-          } else {
-            setToggleView("day");
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
-            document
-              .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "black"));
-            document.getElementById("navbar-logo").src = Logo;
-          }
-        }}
+        onClick={ToggleMode}
       >
         {toggleView === "night" ? (
           <img
