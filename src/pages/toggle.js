@@ -8,7 +8,7 @@ import LogoWhite from "../images/logo-white.png";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
-    localStorage.getItem("mode")
+    typeof window !== "undefined" ? localStorage.getItem("mode") : "day"
   );
 
   function ToggleMode() {
@@ -24,7 +24,6 @@ function ToggleButton() {
         .forEach((bar) => (bar.style.background = "white"));
       document.getElementById("navbar-logo").src = LogoWhite;
       localStorage.setItem("mode", "night");
-      console.log(localStorage.getItem("mode"));
     } else if (toggleView === "night") {
       setToggleView("day");
       document.body.style.backgroundColor = "white";
@@ -37,7 +36,6 @@ function ToggleButton() {
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = "black"));
       localStorage.setItem("mode", "day");
-      console.log(localStorage.getItem("mode"));
     }
   }
 
