@@ -75,7 +75,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/painting_rmnsuh.jpg"
               id="pantone"
               className="play-image"
-              alt=""
+              alt="nature scenes painted onto pantone postcards"
             />
           </a>
           <a
@@ -87,7 +87,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744835582/play/spacedrinks_dehw4i_o9ybel.jpg"
               id="stickers"
               className="play-image"
-              alt=""
+              alt="handmade stickers showing see-through boba and milk containers with space designs in them"
             />
           </a>
           <a
@@ -99,7 +99,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1668976953/play/snapchat_gnu92q.jpg"
               id="geofilters"
               className="play-image"
-              alt=""
+              alt="six geofilter designs made for Snapchat for the following locations: Lombard Street, Monterey, Chicago, Evanston, Gold Beach and Santa Monica"
             />
           </a>
           <a
@@ -111,7 +111,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840124/play/Screenshot_2025-04-16_at_2.48.13_PM_vi608j.png"
               id="books-1"
               className="play-image"
-              alt=""
+              alt="a notion table tracking books read in 2022"
             />
           </a>
           <a
@@ -123,7 +123,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840497/play/Screenshot_2025-04-16_at_2.54.43_PM_uigvbo.png"
               id="books-2"
               className="play-image"
-              alt=""
+              alt="a notion table tracking books read in 2023"
             />
           </a>
           <a
@@ -135,7 +135,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840636/play/IMG_9494_gon2dt.jpg"
               id="keycaps"
               className="play-image"
-              alt=""
+              alt="keycap sculpted into the likeness of Totoro, a Studio Ghibli character"
             />
           </a>
           <a
@@ -147,7 +147,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840498/play/Screenshot_2025-04-16_at_2.54.32_PM_nhwoyr.png"
               id="books-3"
               className="play-image"
-              alt=""
+              alt="a notion table tracking books read in 2024"
             />
           </a>
           <a
@@ -159,7 +159,7 @@ function Play() {
               src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840637/play/IMG_2486_udr7sv.jpg"
               id="crochet"
               className="play-image"
-              alt=""
+              alt="crochet creation of a french goose wearing a beret and holding a baguette"
             />
           </a>
         </div>

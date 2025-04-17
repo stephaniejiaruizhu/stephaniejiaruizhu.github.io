@@ -51,13 +51,13 @@ function ToggleButton() {
           <img
             className="toggle-icon"
             src={SunWhite}
-            alt="icon showing moon and stars"
+            alt="icon showing sun in white"
           />
         ) : (
           <img
             className="toggle-icon"
             src={SunBlack}
-            alt="icon showing moon and stars"
+            alt="icon showing sun in black"
           />
         )}
       </div>
@@ -70,13 +70,13 @@ function ToggleButton() {
           <img
             className="toggle-icon"
             src={MoonWhite}
-            alt="icon showing moon and stars"
+            alt="icon showing moon and stars in white"
           />
         ) : (
           <img
             className="toggle-icon"
             src={MoonBlack}
-            alt="icon showing moon and stars"
+            alt="icon showing moon and stars in black"
           />
         )}
       </div>
