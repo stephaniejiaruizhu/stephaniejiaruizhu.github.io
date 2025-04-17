@@ -1,8 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Work() {
   return (
     <div>
+      <div className="kicker-wrapper">
+        <p>Selected Projects</p>
+        <span>
+          <FontAwesomeIcon icon={faArrowDown} />{" "}
+        </span>
+      </div>
       <div className="project-wrapper">
         <img
           src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744675355/projectcovers/Top100.jpg"
@@ -50,9 +58,9 @@ function Work() {
             [branding + design + development]. A data-driven guide to UC, CSU
             and community college admissions with a new subscription model. I
             helped Hearst DevHub’s director of visual storytelling develop the
-            overall design and organization of the guide. I then worked with two
-            other developers and a data visualization reporter to build this
-            product from scratch.
+            overall design and organization of the guide. I then built several
+            features on this product including a timeline that automatically
+            updates.
           </p>
         </div>
       </div>
@@ -102,10 +110,10 @@ function Work() {
           <p className="project-description">
             [animation + design + development]. A multimedia piece diving into
             the story of Native-American activist Richard Oakes and how the
-            justice system failed him and his family. I helped with the overall
-            design of the page and pitched the photography treatment. Working
-            with another developer, I also animated the illustrations from our
-            graphic artist and built the infrastructure for the page.
+            justice system failed him. I helped with the overall design of the
+            page and pitched the photography treatment. Working with another
+            developer, I also animated the illustrations from our graphic artist
+            and built the infrastructure for the page.
           </p>
         </div>
       </div>
@@ -136,7 +144,79 @@ function Work() {
           </p>
         </div>
       </div>
+
       <div className="section-divider-home" />
+
+      <div className="other-wrapper">
+        <h4 className="other-title">Other Projects</h4>
+        <a
+          href="https://www.sfchronicle.com/projects/2025/california-psychiatric-hospitals-crisis/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1wc3ljaGlhdHJpYy1ob3NwaXRhbHMtY3Jpc2lzLw==&time=MTc0NDkxMDU5OTc1Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=NQ=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Psychiatric Hospital Systems
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2024/bay-area-fog-tracker/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvYmF5LWFyZWEtZm9nLXRyYWNrZXIv&time=MTc0NDkxMDYzMDgyOQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Ng=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Bay Area Fog Tracker
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzL2d1aWRlcy9sYWtlLXRhaG9lLXNraS1yZXNvcnRzLw==&time=MTc0NDkxMDg0MTQwNA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Nw=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tahoe Snow Tracker
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2023/california-voting-law/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvY2FsaWZvcm5pYS12b3RpbmctbGF3Lw==&time=MTc0NDkxMDg3MDA2Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=OA=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Voting Rights Act
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvc2YtdGFpd2FuLWZvb2Qv&time=MTc0NDkxMDk2MjU0MQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=OQ=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Taiwanese Food Guide (+ reporting)
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2023/sf-trans-clothing/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvc2YtdHJhbnMtY2xvdGhpbmcv&time=MTc0NDkxMDk4NjQ3Mw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MTA="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Clothing and Gender Euphoria
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Overdose Deaths in SF's Housing Program
+        </a>
+        <a
+          href="https://www.sfchronicle.com/bayarea/article/Fatal-crashes-persisted-on-Bay-Area-roadways-16708064.php"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pandemic Traffic Fatalities (reporting + data)
+        </a>
+        <p className="other-print">
+          I've also done some{" "}
+          <a
+            href="https://radial-earthquake-1a6.notion.site/Print-and-Illustration-1d8e131c87cb80cc8fc7c596eea9f386"
+            target="_blank"
+            rel="noreferrer"
+            className="other-print-link"
+          >
+            print and illustration work →
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

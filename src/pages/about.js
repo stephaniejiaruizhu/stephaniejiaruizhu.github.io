@@ -61,7 +61,11 @@ function About() {
           <p className="about-intro-subtext" style={{ marginTop: "30px" }}>
             Currently:
             <br />• obsessing over{" "}
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.formula1.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Formula 1
             </a>{" "}
             and{" "}
@@ -69,32 +73,56 @@ function About() {
               bright colors
             </span>
             <br />• playing through Stardew Valley{" "}
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1QuP5hdK6nCdS9Wp3AQetJ6lo5VUJGUyg/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               once again
             </a>
             <br />• reading{" "}
-            <a href="" target="_blank" rel="noreferrer">
-              Rental House
+            <a
+              href="https://www.goodreads.com/book/show/208584952-rental-house"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i>Rental House</i>
             </a>{" "}
             by Weike Wang and{" "}
-            <a href="" target="_blank" rel="noreferrer">
-              The Power Broker
+            <a
+              href="https://www.goodreads.com/book/show/1111.The_Power_Broker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i>The Power Broker</i>
             </a>{" "}
             by Robert Caro
             <br />• perfecting my{" "}
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               dumpling folds
             </a>{" "}
             [so my mom doesn’t laugh at me]
             <br />•{" "}
-            <a href="" target="" rel="noreferrer">
+            <a
+              href="https://www.yelp.com/user_details?userid=wDQlvv8Ww65JdKZ9591Lrw"
+              target="_blank"
+              rel="noreferrer"
+            >
               eating
             </a>{" "}
             my way through the Bay Area
           </p>
           <p className="about-intro-subtext" style={{ marginTop: "30px" }}>
             See something interesting?{" "}
-            <a href="" target="_blank" rel="noreferrer">
+            <a
+              href="mailto:stephaniejiaruizhu@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Let’s chat!
             </a>{" "}
             :-)
@@ -103,8 +131,50 @@ function About() {
 
           <div className="about-section">
             <h3 className="about-intro-subtitle">Kudos [selected]</h3>
+            {/*  <div className="award">
+              <p className="award-title">
+                Bronze Medal • Infographics: Regional/Local
+              </p>
+              <p className="award-giver">
+                Society for News Design • Best of News Design 46
+              </p>
+            </div>
             <div className="award">
-              <p className="award-title">Winner • Online Presentation</p>
+              <p className="award-title">
+                Bronze Medal • Page Design: Regional/Local
+              </p>
+              <p className="award-giver">
+                Society for News Design • Best of News Design 46
+              </p>
+            </div>
+            <div className="award">
+              <p className="award-title">
+                Awards of Excellence • Illustration + Use of Multimedia
+              </p>
+              <p className="award-giver">
+                Society for News Design • Best of News Design 46
+              </p>
+            </div>
+            <div className="award">
+              <p className="award-title">
+                Award of Excellence • Platforms and Products: New Site, App,
+                Landing Page, or Print Product
+              </p>
+              <p className="award-giver">
+                Society for News Design • Best of News Design 46
+              </p>
+            </div>
+            <div className="award">
+              <p className="award-title">
+                Award of Excellence • Infographics: Regional/Local
+              </p>
+              <p className="award-giver">
+                Society for News Design • Best of News Design 46
+              </p>
+            </div>
+             */}
+            <div className="award">
+              <p className="award-title">First Place • Online Presentation</p>
               <p className="award-giver">
                 Best of the West • Newspaper, Magazine and Online Contest 2025
               </p>
@@ -119,12 +189,10 @@ function About() {
             </div>
             <div className="award">
               <p className="award-title">
-                2nd Place • Race and Identity in America: Online Visual
-                Presentation
+                Award of Excellence • Design: Regional/Local
               </p>
               <p className="award-giver">
-                National Press Photographers Association • Best of
-                Photojournalism 2024
+                Society for News Design • Best of News Design 45
               </p>
             </div>
             <div className="award">
@@ -132,15 +200,7 @@ function About() {
                 Award of Excellence • Design: Regional/Local
               </p>
               <p className="award-giver">
-                Society for News Design • Creative Competition 2023
-              </p>
-            </div>
-            <div className="award">
-              <p className="award-title">
-                Award of Excellence • Design: Regional/Local
-              </p>
-              <p className="award-giver">
-                Society for News Design • Creative Competition 2022
+                Society for News Design • Best of News Design 44
               </p>
             </div>
             <div className="award">
@@ -148,7 +208,7 @@ function About() {
                 Award of Excellence • Elements: Data Visualization
               </p>
               <p className="award-giver">
-                Society for News Design • Creative Competition 2022
+                Society for News Design • Best of News Design 44
               </p>
             </div>
             <div className="award">
@@ -164,7 +224,11 @@ function About() {
             <h3 className="about-intro-subtitle">Talks</h3>
             <div className="award">
               <p className="award-title">
-                <a href="" target="_blank" rel="noreferrer">
+                <a
+                  href="https://docs.google.com/presentation/d/1viQfhsgAFj4AW-KXsWcSRDhNpnZysZbCyZImqKVq5PU/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Too much change, too fast. How can we avoid innovation burnout
                   in newsrooms?
                 </a>
@@ -173,7 +237,11 @@ function About() {
             </div>
             <div className="award">
               <p className="award-title">
-                <a href="" target="_blank" rel="noreferrer">
+                <a
+                  href="https://docs.google.com/presentation/d/1Q0kJheJ6pjtvJOdBeuTUgu9h2iLSCWPMqU-b47vgBgc/edit?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   How to tell a story with more than just words
                 </a>
               </p>
@@ -193,7 +261,7 @@ export default About;
 
 export const Head = () => (
   <>
-    <title>About– Stephanie Zhu</title>{" "}
+    <title>Stephanie Zhu– About</title>{" "}
     <link
       rel="icon"
       href="https://res.cloudinary.com/dvjavf8xh/image/upload/v1669230944/misc/favicon_yvyqci.ico"

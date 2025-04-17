@@ -15,7 +15,7 @@ function Footer() {
           Github
         </a>
         <a
-          href="https://www.are.na/stephanie-zhu-fj3owohg-v4/channels"
+          href="https://www.are.na/stephanie-zhu-fj3owohg-v4/index"
           target="_blank"
           rel="noreferrer"
           className="footer-link-item"
