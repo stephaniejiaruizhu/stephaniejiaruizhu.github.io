@@ -5,6 +5,7 @@ import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
+import "../styles/values.less";
 
 function Play() {
   function CheckMode() {
