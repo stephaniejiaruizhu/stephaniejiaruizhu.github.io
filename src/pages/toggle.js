@@ -41,7 +41,12 @@ function ToggleButton() {
   }
 
   return (
-    <div className="toggle" onClick={() => ToggleMode()}>
+    <div
+      className="toggle"
+      onClick={() =>
+        toggleView === "day" ? setToggleView("night") : setToggleView("day")
+      }
+    >
       <div
         className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
       >
