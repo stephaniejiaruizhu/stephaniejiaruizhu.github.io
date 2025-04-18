@@ -9,26 +9,8 @@ import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
-    typeof window !== "undefined" ? localStorage.getItem("mode") : null
+    typeof window !== "undefined" ? localStorage.getItem("mode") : "day"
   );
-
-  function ToggleMode() {
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
-    document
-      .querySelectorAll("a")
-      .forEach((link) => (link.style.color = "black"));
-    document
-      .querySelectorAll(".bm-burger-bars")
-      .forEach((bar) => (bar.style.background = "black"));
-    document.getElementById("navbar-logo").src = Logo;
-    localStorage.setItem("mode", "day");
-  }
-
-  useEffect(() => {
-    window.addEventListener("load", ToggleMode);
-    return () => window.removeEventListener("load", ToggleMode);
-  });
 
   return (
     <div
