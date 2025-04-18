@@ -13,7 +13,7 @@ function ToggleButton() {
   function ToggleMode() {
     if (toggleView === "day") {
       setToggleView("night");
-      /* document.body.style.backgroundColor = "black";
+      document.body.style.backgroundColor = "black";
       document.body.style.color = "white";
       document
         .querySelectorAll("a")
@@ -22,10 +22,10 @@ function ToggleButton() {
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = "white"));
       document.getElementById("navbar-logo").src = LogoWhite;
-      localStorage.setItem("mode", "night"); */
+      localStorage.setItem("mode", "night");
     } else if (toggleView === "night") {
       setToggleView("day");
-      /* document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
       document
         .querySelectorAll("a")
@@ -34,7 +34,7 @@ function ToggleButton() {
       document
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = "black"));
-      localStorage.setItem("mode", "day"); */
+      localStorage.setItem("mode", "day");
     }
   }
 
@@ -42,7 +42,11 @@ function ToggleButton() {
     <div
       className="toggle"
       onClick={() =>
-        toggleView === "day" ? setToggleView("night") : setToggleView("day")
+        toggleView === "day"
+          ? (setToggleView("night"),
+            (document.body.style.backgroundColor = "black"),
+            (document.body.style.color = "white"))
+          : setToggleView("day")
       }
     >
       <div
