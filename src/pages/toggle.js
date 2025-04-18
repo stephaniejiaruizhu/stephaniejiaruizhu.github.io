@@ -5,7 +5,7 @@ import SunBlack from "../images/icons/sun-black.svg";
 import SunWhite from "../images/icons/sun-white.png";
 import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
-import "../styles/values.less";
+import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
@@ -41,10 +41,14 @@ function ToggleButton() {
   }
 
   return (
-    <div className="toggle">
+    <div
+      className="toggle"
+      onClick={() =>
+        toggleView === "day" ? setToggleView("night") : setToggleView("day")
+      }
+    >
       <div
         className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
-        onClick={() => setToggleView("night")}
       >
         {toggleView === "day" ? (
           <img
@@ -63,7 +67,6 @@ function ToggleButton() {
 
       <div
         className={toggleView === "night" ? "toggleitem active" : "toggleitem"}
-        onClick={() => setToggleView("day")}
       >
         {toggleView === "night" ? (
           <img

@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
-import "../styles/values.less";
+import "../styles/styles.less";
 
 function About() {
   function CheckMode() {
