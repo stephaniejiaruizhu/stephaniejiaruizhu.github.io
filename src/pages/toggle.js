@@ -8,9 +8,11 @@ import LogoWhite from "../images/logo-white.png";
 import "../styles/styles.less";
 
 function ToggleButton() {
-  const [toggleView, setToggleView] = useState("day");
+  const [toggleView, setToggleView] = useState(() =>
+    typeof window !== "undefined" ? localStorage.getItem("mode") : "day"
+  );
 
-  function ToggleMode() {
+  /*  function ToggleMode() {
     if (toggleView === "day") {
       setToggleView("night");
       document.body.style.backgroundColor = "black";
@@ -37,7 +39,7 @@ function ToggleButton() {
       localStorage.setItem("mode", "day");
     }
   }
-
+ */
   return (
     <div
       className="toggle"
@@ -45,8 +47,23 @@ function ToggleButton() {
         toggleView === "day"
           ? (setToggleView("night"),
             (document.body.style.backgroundColor = "black"),
-            (document.body.style.color = "white"))
-          : setToggleView("day")
+            (document.body.style.color = "white"),
+            document
+              .querySelectorAll("a")
+              .forEach((link) => (link.style.color = "white")),
+            (document.getElementById("navbar-logo").src = LogoWhite),
+            localStorage.setItem("mode", "night"))
+          : (setToggleView("day"),
+            (document.body.style.backgroundColor = "white"),
+            (document.body.style.color = "black"),
+            document
+              .querySelectorAll("a")
+              .forEach((link) => (link.style.color = "black")),
+            (document.getElementById("navbar-logo").src = Logo),
+            document
+              .querySelectorAll(".bm-burger-bars")
+              .forEach((bar) => (bar.style.background = "black")),
+            localStorage.setItem("mode", "day"))
       }
     >
       <div
