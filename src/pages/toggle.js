@@ -44,7 +44,7 @@ function ToggleButton() {
     <div className="toggle">
       <div
         className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
-        onClick={ToggleMode}
+        onClick={() => setToggleView("night")}
       >
         {toggleView === "day" ? (
           <img
@@ -63,7 +63,7 @@ function ToggleButton() {
 
       <div
         className={toggleView === "night" ? "toggleitem active" : "toggleitem"}
-        onClick={ToggleMode}
+        onClick={() => setToggleView("day")}
       >
         {toggleView === "night" ? (
           <img
