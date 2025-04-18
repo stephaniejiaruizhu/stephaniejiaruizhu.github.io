@@ -41,7 +41,36 @@ function ToggleButton() {
   }
 
   return (
-    <div className="toggle" onClick={ToggleMode}>
+    <div
+      className="toggle"
+      onClick={() => {
+        if (toggleView === "day") {
+          setToggleView("night");
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document
+            .querySelectorAll("a")
+            .forEach((link) => (link.style.color = "white"));
+          document
+            .querySelectorAll(".bm-burger-bars")
+            .forEach((bar) => (bar.style.background = "white"));
+          document.getElementById("navbar-logo").src = LogoWhite;
+          localStorage.setItem("mode", "night");
+        } else if (toggleView === "night") {
+          setToggleView("day");
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document
+            .querySelectorAll("a")
+            .forEach((link) => (link.style.color = "black"));
+          document.getElementById("navbar-logo").src = Logo;
+          document
+            .querySelectorAll(".bm-burger-bars")
+            .forEach((bar) => (bar.style.background = "black"));
+          localStorage.setItem("mode", "day");
+        }
+      }}
+    >
       <div
         className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
       >
