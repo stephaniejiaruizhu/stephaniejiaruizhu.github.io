@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MoonBlack from "../images/icons/moon-black.svg";
 import MoonWhite from "../images/icons/moon-white.png";
 import SunBlack from "../images/icons/sun-black.svg";
