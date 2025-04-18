@@ -5,6 +5,7 @@ import SunBlack from "../images/icons/sun-black.svg";
 import SunWhite from "../images/icons/sun-white.png";
 import Logo from "../images/logo.png";
 import LogoWhite from "../images/logo-white.png";
+import "../styles/values.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>

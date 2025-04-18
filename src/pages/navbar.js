@@ -2,6 +2,7 @@ import React from "react";
 import ToggleButton from "./toggle";
 import Logo from "../images/logo.png";
 import { stack as Menu } from "react-burger-menu";
+import "../styles/values.less";
 
 function Navbar({ active }) {
   return (
@@ -56,16 +57,12 @@ function Navbar({ active }) {
 
       {/* burger menu */}
       <div className="menu-section-mobile">
-        <Menu>
+        <Menu noOverlay>
           <a
             id="Work"
             className="navbar-item"
             href="/"
-            style={
-              active === "Play"
-                ? { textDecoration: "line-through !important" }
-                : { textDecoration: "none" }
-            }
+            style={{ textDecoration: "none" }}
           >
             Work
           </a>
@@ -73,11 +70,7 @@ function Navbar({ active }) {
             id="Play"
             className="navbar-item"
             href="/play"
-            style={
-              active === "Play"
-                ? { textDecoration: "line-through !important" }
-                : { textDecoration: "none" }
-            }
+            style={{ textDecoration: "none" }}
           >
             Play
           </a>
@@ -85,11 +78,7 @@ function Navbar({ active }) {
             id="About"
             className="navbar-item"
             href="/about"
-            style={
-              active === "About"
-                ? { textDecoration: "line-through !important" }
-                : { textDecoration: "none" }
-            }
+            style={{ textDecoration: "none" }}
           >
             About
           </a>
