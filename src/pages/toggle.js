@@ -18,7 +18,6 @@ function ToggleButton() {
       onClick={() =>
         toggleView === "day"
           ? (setToggleView("night"),
-            localStorage.setItem("mode", "night"),
             (document.body.style.backgroundColor = "black"),
             (document.body.style.color = "white"),
             document
@@ -27,9 +26,9 @@ function ToggleButton() {
             document
               .querySelectorAll(".bm-burger-bars")
               .forEach((bar) => (bar.style.background = "white")),
-            (document.getElementById("navbar-logo").src = LogoWhite))
+            (document.getElementById("navbar-logo").src = LogoWhite),
+            localStorage.setItem("mode", "night"))
           : (setToggleView("day"),
-            localStorage.setItem("mode", "day"),
             (document.body.style.backgroundColor = "white"),
             (document.body.style.color = "black"),
             document
@@ -38,7 +37,8 @@ function ToggleButton() {
             (document.getElementById("navbar-logo").src = Logo),
             document
               .querySelectorAll(".bm-burger-bars")
-              .forEach((bar) => (bar.style.background = "black")))
+              .forEach((bar) => (bar.style.background = "black")),
+            localStorage.setItem("mode", "day"))
       }
     >
       <div
