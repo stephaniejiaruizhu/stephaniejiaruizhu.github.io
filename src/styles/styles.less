@@ -69,6 +69,7 @@ body {
     color: @white;
     cursor: pointer;
     width: fit-content;
+    pointer-events: all;
 
     .toggleitem {
       display: flex;
@@ -126,6 +127,10 @@ body {
 
     @media @breakpoint {
       max-width: 80%;
+    }
+
+    @media @breakpoint2 {
+      max-width: 100%;
     }
   }
 
@@ -215,6 +220,7 @@ body {
 
   @media @breakpoint2 {
     margin-left: 50px;
+    width: 95%;
   }
 
   @media @mobile {
@@ -700,7 +706,7 @@ body {
 .bm-menu {
   background: black;
   padding: 2.5em 1.5em 0;
-  font-size: @text-small;
+  font-size: @text-reg;
   font-family: @sans-serif;
   overflow: hidden !important;
 }
@@ -714,5 +720,5 @@ body {
 .bm-item {
   display: inline-block;
   color: white !important;
-  margin-top: 12px;
+  margin-top: 25px;
 }
