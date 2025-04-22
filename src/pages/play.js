@@ -85,7 +85,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744835582/play/spacedrinks_dehw4i_o9ybel.jpg"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351114/play/stickers_cf5yr8.jpg"
               id="stickers"
               className="play-image"
               alt="handmade stickers showing see-through boba and milk containers with space designs in them"
@@ -109,7 +109,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840124/play/Screenshot_2025-04-16_at_2.48.13_PM_vi608j.png"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351114/play/2022_tbt4m2.png"
               id="books-1"
               className="play-image"
               alt="a notion table tracking books read in 2022"
@@ -121,7 +121,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840497/play/Screenshot_2025-04-16_at_2.54.43_PM_uigvbo.png"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351113/play/2023_xdbx33.png"
               id="books-2"
               className="play-image"
               alt="a notion table tracking books read in 2023"
@@ -133,7 +133,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840636/play/IMG_9494_gon2dt.jpg"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351115/play/keycaps_ndvt7u.jpg"
               id="keycaps"
               className="play-image"
               alt="keycap sculpted into the likeness of Totoro, a Studio Ghibli character"
@@ -145,7 +145,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840498/play/Screenshot_2025-04-16_at_2.54.32_PM_nhwoyr.png"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351114/play/2024_gh411n.png"
               id="books-3"
               className="play-image"
               alt="a notion table tracking books read in 2024"
@@ -157,7 +157,7 @@ function Play() {
             rel="noreferrer"
           >
             <img
-              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744840637/play/IMG_2486_udr7sv.jpg"
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351116/play/crochet_azumsp.jpg"
               id="crochet"
               className="play-image"
               alt="crochet creation of a french goose wearing a beret and holding a baguette"

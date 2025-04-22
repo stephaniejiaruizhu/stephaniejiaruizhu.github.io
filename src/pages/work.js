@@ -13,7 +13,7 @@ function Work() {
       </div>
       <div className="project-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744675355/projectcovers/Top100.jpg"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
           alt="project cover showing the topper design for SF Chronicle's Top 100 Restaurant List"
           className="project-cover"
         />
@@ -40,7 +40,7 @@ function Work() {
       </div>
       <div className="project-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1727819920/projectcovers/collegeguide.png"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
           alt="project cover showing the topper design for the California College Admissions Guide Project"
           className="project-cover"
         />
@@ -68,7 +68,7 @@ function Work() {
       </div>
       <div className="project-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1715621181/projectcovers/cover_gzj0rx.jpg"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
           alt="project cover showing illustrations for the Japantown project"
           className="project-cover"
         />
@@ -95,7 +95,7 @@ function Work() {
       </div>
       <div className="project-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1696999599/projectcovers/oakes_qkkwhd.jpg"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
           alt="project cover showing the topper design for the Oakes project"
           className="project-cover"
         />
@@ -123,7 +123,7 @@ function Work() {
       </div>
       <div className="project-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1696999596/projectcovers/pasta_u0eed8.jpg"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
           alt="project cover showing the pasta shap gallery from the pasta project"
           className="project-cover"
           style={{ border: "1px solid black" }}
