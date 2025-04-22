@@ -11,22 +11,16 @@ function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
     typeof window !== "undefined" && localStorage.getItem("mode") != null
       ? localStorage.getItem("mode")
-      : "day"
+      : null
   );
 
   let dark = "#212121";
   let light = "#f2f2f2";
 
   function CheckMode() {
-    if (
-      document.body.style.backgroundColor === "white" ||
-      localStorage.getItem("mode") === "day"
-    ) {
+    if (localStorage.getItem("mode") === "day") {
       setToggleView("day");
-    } else if (
-      document.body.style.backgroundColor === "rgb(33,33,33)" ||
-      localStorage.getItem("mode") === "night"
-    ) {
+    } else if (localStorage.getItem("mode") === "night") {
       setToggleView("night");
     } else {
       setToggleView("day");
