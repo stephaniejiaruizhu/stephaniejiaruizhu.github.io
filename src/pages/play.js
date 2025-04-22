@@ -21,7 +21,7 @@ function Play() {
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = light));
       document.getElementById("navbar-logo").src = LogoWhite;
-    } else if (localStorage.getItem("mode") === "night") {
+    } else if (localStorage.getItem("mode") === "day") {
       document.body.style.backgroundColor = "white";
       document.body.style.color = dark;
       document

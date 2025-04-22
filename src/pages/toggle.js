@@ -18,8 +18,10 @@ function ToggleButton() {
   let light = "#f2f2f2";
 
   function CheckMode() {
-    console.log(document.body.style.backgroundColor);
-    if (document.body.style.backgroundColor === "white") {
+    if (
+      document.body.style.backgroundColor === "white" ||
+      localStorage.getItem("mode") === "day"
+    ) {
       setToggleView("day");
     } else {
       setToggleView("night");
