@@ -24,8 +24,9 @@ function Work() {
               href="https://www.sfchronicle.com/projects/2025/top-100-best-restaurants-san-francisco-bay-area/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvdG9wLTEwMC1iZXN0LXJlc3RhdXJhbnRzLXNhbi1mcmFuY2lzY28tYmF5LWFyZWEv&time=MTc0NDY3Njc3MzY5OQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
               rel="noreferrer"
               target="_blank"
+              className="project-link"
             >
-              Top 100 Restaurants 2025 →
+              Top 100 Restaurants 2025 <span>→</span>
             </a>{" "}
           </p>
           <p className="project-description">
@@ -50,8 +51,9 @@ function Work() {
               href="https://www.sfchronicle.com/projects/california-college-admissions/"
               rel="noreferrer"
               target="_blank"
+              className="project-link"
             >
-              California College Admissions Guide →
+              California College Admissions Guide <span>→</span>
             </a>{" "}
           </p>
           <p className="project-description">
@@ -77,8 +79,9 @@ function Work() {
               href="https://www.sfchronicle.com/projects/2024/sf-japantown-incarceration/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvc2YtamFwYW50b3duLWluY2FyY2VyYXRpb24v&time=MTc0NDc0Mzg0MjkwMw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Mg=="
               rel="noreferrer"
               target="_blank"
+              className="project-link"
             >
-              Japantown Incarceration →
+              Japantown Incarceration <span>→</span>
             </a>{" "}
           </p>
           <p className="project-description">
@@ -103,8 +106,9 @@ function Work() {
               href="https://www.sfchronicle.com/projects/2023/richard-oakes-killing/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvcmljaGFyZC1vYWtlcy1raWxsaW5nLw==&time=MTc0NDc0Mzg3NTA3Mg==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Mw=="
               rel="noreferrer"
               target="_blank"
+              className="project-link"
             >
-              The Killing of Richard Oakes →
+              The Killing of Richard Oakes <span>→</span>
             </a>{" "}
           </p>
           <p className="project-description">
@@ -131,8 +135,9 @@ function Work() {
               href="https://www.sfchronicle.com/projects/2023/flour-water-pasta/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvZmxvdXItd2F0ZXItcGFzdGEv&time=MTc0NDc0Mzk0MjUyMg==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=NA=="
               rel="noreferrer"
               target="_blank"
+              className="project-link"
             >
-              Pasta Dictionary →
+              Pasta Dictionary <span>→</span>
             </a>{" "}
           </p>
           <p className="project-description">

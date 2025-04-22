@@ -2,6 +2,7 @@
 
 body {
   color: @dark;
+  transition: all 0.3s ease-in-out;
 }
 
 ::selection {
@@ -133,6 +134,10 @@ body {
     @media @breakpoint2 {
       max-width: 90%;
     }
+
+    @media @mobile {
+      max-width: 95%;
+    }
   }
 
   .topper-intro-text {
@@ -245,6 +250,10 @@ body {
     @media @breakpoint2 {
       max-width: 90%;
     }
+
+    @media @mobile {
+      max-width: 95%;
+    }
   }
 
   .project-text {
@@ -263,6 +272,10 @@ body {
       max-width: 90%;
     }
 
+    @media @mobile {
+      max-width: 95%;
+    }
+
     .project-title {
       font-family: @serif;
       font-size: @text-large;
@@ -275,7 +288,6 @@ body {
       a {
         color: black;
         font-style: italic;
-
         &:hover {
           color: @neonpurple !important;
         }
@@ -554,6 +566,10 @@ body {
       font-family: @serif;
       font-size: @text-xlarge;
       font-weight: 100;
+
+      @media @breakpoint2 {
+        font-size: @text-large;
+      }
     }
 
     .about-section {
@@ -644,6 +660,7 @@ body {
 .footer-explanation {
   margin: 50px auto;
   width: fit-content;
+  line-height: 25px;
 }
 
 // section divider

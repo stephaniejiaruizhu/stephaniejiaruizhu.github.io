@@ -40,12 +40,13 @@ function Footer() {
           Resume
         </a>
       </div>
-      <div className="footer-explanation">
+      <div className="footer-explanation" style={{ textAlign: "center" }}>
         Built with{" "}
         <span>
           <FontAwesomeIcon icon={faHeart} />
         </span>{" "}
-        in React.
+        in React. <br />
+        [Last updated April 2025]
       </div>
     </div>
   );

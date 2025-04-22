@@ -12,20 +12,23 @@ function ToggleButton() {
     typeof window !== "undefined" ? localStorage.getItem("mode") : "day"
   );
 
+  let dark = "#212121";
+  let light = "#f2f2f2";
+
   return (
     <div
       className="toggle"
       onClick={() =>
         toggleView === "day"
           ? (setToggleView("night"),
-            (document.body.style.backgroundColor = "black"),
-            (document.body.style.color = "white"),
+            (document.body.style.backgroundColor = dark),
+            (document.body.style.color = light),
             document
               .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "white")),
+              .forEach((link) => (link.style.color = light)),
             document
               .querySelectorAll(".bm-burger-bars")
-              .forEach((bar) => (bar.style.background = "white")),
+              .forEach((bar) => (bar.style.background = light)),
             (document.getElementById("navbar-logo").src = LogoWhite),
             localStorage.setItem("mode", "night"))
           : (setToggleView("day"),

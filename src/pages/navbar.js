@@ -62,7 +62,11 @@ function Navbar({ active }) {
             id="Work"
             className="navbar-item"
             href="/"
-            style={{ textDecoration: "none" }}
+            style={
+              active === "Work"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
           >
             Work
           </a>
@@ -70,7 +74,11 @@ function Navbar({ active }) {
             id="Play"
             className="navbar-item"
             href="/play"
-            style={{ textDecoration: "none" }}
+            style={
+              active === "Play"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
           >
             Play
           </a>
@@ -78,7 +86,11 @@ function Navbar({ active }) {
             id="About"
             className="navbar-item"
             href="/about"
-            style={{ textDecoration: "none" }}
+            style={
+              active === "About"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
           >
             About
           </a>

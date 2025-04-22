@@ -132,48 +132,18 @@ function About() {
 
           <div className="about-section">
             <h3 className="about-intro-subtitle">Kudos [selected]</h3>
-            {/*  <div className="award">
-              <p className="award-title">
-                Bronze Medal • Infographics: Regional/Local
-              </p>
+            <div className="award">
+              <p className="award-title">Bronze Medal (x2)</p>
               <p className="award-giver">
                 Society for News Design • Best of News Design 46
               </p>
             </div>
             <div className="award">
-              <p className="award-title">
-                Bronze Medal • Page Design: Regional/Local
-              </p>
+              <p className="award-title">Award of Excellence (x4)</p>
               <p className="award-giver">
                 Society for News Design • Best of News Design 46
               </p>
             </div>
-            <div className="award">
-              <p className="award-title">
-                Awards of Excellence • Illustration + Use of Multimedia
-              </p>
-              <p className="award-giver">
-                Society for News Design • Best of News Design 46
-              </p>
-            </div>
-            <div className="award">
-              <p className="award-title">
-                Award of Excellence • Platforms and Products: New Site, App,
-                Landing Page, or Print Product
-              </p>
-              <p className="award-giver">
-                Society for News Design • Best of News Design 46
-              </p>
-            </div>
-            <div className="award">
-              <p className="award-title">
-                Award of Excellence • Infographics: Regional/Local
-              </p>
-              <p className="award-giver">
-                Society for News Design • Best of News Design 46
-              </p>
-            </div>
-             */}
             <div className="award">
               <p className="award-title">First Place • Online Presentation</p>
               <p className="award-giver">
@@ -190,24 +160,20 @@ function About() {
             </div>
             <div className="award">
               <p className="award-title">
-                Award of Excellence • Design: Regional/Local
+                Winner • Topical Reporting: Race, Ethnicity, Gender and Identity
               </p>
+              <p className="award-giver">
+                Online News Association • Online Journalism Awards 2024
+              </p>
+            </div>
+            <div className="award">
+              <p className="award-title">Award of Excellence (x2)</p>
               <p className="award-giver">
                 Society for News Design • Best of News Design 45
               </p>
             </div>
             <div className="award">
-              <p className="award-title">
-                Award of Excellence • Design: Regional/Local
-              </p>
-              <p className="award-giver">
-                Society for News Design • Best of News Design 44
-              </p>
-            </div>
-            <div className="award">
-              <p className="award-title">
-                Award of Excellence • Elements: Data Visualization
-              </p>
+              <p className="award-title">Award of Excellence (x3)</p>
               <p className="award-giver">
                 Society for News Design • Best of News Design 44
               </p>
