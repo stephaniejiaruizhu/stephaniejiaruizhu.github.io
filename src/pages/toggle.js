@@ -23,8 +23,13 @@ function ToggleButton() {
       localStorage.getItem("mode") === "day"
     ) {
       setToggleView("day");
-    } else {
+    } else if (
+      document.body.style.backgroundColor === "rgb(33,33,33)" ||
+      localStorage.getItem("mode") === "night"
+    ) {
       setToggleView("night");
+    } else {
+      setToggleView("day");
     }
   }
 
