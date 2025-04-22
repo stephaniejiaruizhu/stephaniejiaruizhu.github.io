@@ -5,7 +5,6 @@ import { stack as Menu } from "react-burger-menu";
 import "../styles/values.less";
 
 function Navbar({ active }) {
-  console.log(active);
   return (
     <div className="navbar">
       <a href="/">

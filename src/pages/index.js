@@ -38,7 +38,7 @@ const IndexPage = () => {
     }
   }
 
-  useEffect(CheckMode);
+  useEffect(CheckMode, []);
 
   return (
     <main>

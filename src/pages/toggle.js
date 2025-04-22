@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MoonBlack from "../images/icons/moon-black.svg";
 import MoonWhite from "../images/icons/moon-white.png";
 import SunBlack from "../images/icons/sun-black.svg";
@@ -16,6 +16,17 @@ function ToggleButton() {
 
   let dark = "#212121";
   let light = "#f2f2f2";
+
+  function CheckMode() {
+    console.log(document.body.style.backgroundColor);
+    if (document.body.style.backgroundColor === "white") {
+      setToggleView("day");
+    } else {
+      setToggleView("night");
+    }
+  }
+
+  useEffect(CheckMode, []);
 
   return (
     <div

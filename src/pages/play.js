@@ -34,7 +34,7 @@ function Play() {
     }
   }
 
-  useEffect(CheckMode);
+  useEffect(CheckMode, []);
 
   return (
     <div>

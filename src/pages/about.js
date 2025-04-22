@@ -32,7 +32,7 @@ function About() {
     }
   }
 
-  useEffect(CheckMode);
+  useEffect(CheckMode, []);
 
   return (
     <div>
