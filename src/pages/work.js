@@ -125,8 +125,8 @@ function Work() {
         <img
           src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
           alt="project cover showing the pasta shap gallery from the pasta project"
-          className="project-cover"
           style={{ border: "1px solid black" }}
+          className="project-cover"
         />
         <div className="project-text">
           <p className="project-date">04.06.2023</p>

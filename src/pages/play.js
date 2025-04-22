@@ -8,31 +8,33 @@ import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 import "../styles/styles.less";
 
 function Play() {
+  let dark = "#212121";
+  let light = "#f2f2f2";
   function CheckMode() {
     if (localStorage.getItem("mode") === "night") {
-      document.body.style.backgroundColor = "black";
-      document.body.style.color = "white";
+      document.body.style.backgroundColor = dark;
+      document.body.style.color = light;
       document
         .querySelectorAll("a")
-        .forEach((link) => (link.style.color = "white"));
+        .forEach((link) => (link.style.color = light));
       document
         .querySelectorAll(".bm-burger-bars")
-        .forEach((bar) => (bar.style.background = "white"));
+        .forEach((bar) => (bar.style.background = light));
       document.getElementById("navbar-logo").src = LogoWhite;
     } else if (localStorage.getItem("mode") === "night") {
       document.body.style.backgroundColor = "white";
-      document.body.style.color = "black";
+      document.body.style.color = dark;
       document
         .querySelectorAll("a")
-        .forEach((link) => (link.style.color = "black"));
+        .forEach((link) => (link.style.color = dark));
       document.getElementById("navbar-logo").src = Logo;
       document
         .querySelectorAll(".bm-burger-bars")
-        .forEach((bar) => (bar.style.background = "black"));
+        .forEach((bar) => (bar.style.background = dark));
     }
   }
 
-  useEffect(CheckMode, []);
+  useEffect(CheckMode);
 
   return (
     <div>
