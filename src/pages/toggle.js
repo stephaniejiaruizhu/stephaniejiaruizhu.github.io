@@ -9,18 +9,22 @@ import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
-    typeof window !== "undefined" && localStorage.getItem("mode") != null
-      ? localStorage.getItem("mode")
-      : null
+    typeof window !== "undefined" ? localStorage.getItem("mode") : null
   );
 
   let dark = "#212121";
   let light = "#f2f2f2";
 
   function CheckMode() {
-    if (localStorage.getItem("mode") === "day") {
+    if (
+      localStorage.getItem("mode") === "day" ||
+      document.body.style.backgroundColor === "white"
+    ) {
       setToggleView("day");
-    } else if (localStorage.getItem("mode") === "night") {
+    } else if (
+      localStorage.getItem("mode") === "night" ||
+      document.body.style.backgroundColor === "rgb(33,33,33)"
+    ) {
       setToggleView("night");
     } else {
       setToggleView("day");
@@ -59,7 +63,12 @@ function ToggleButton() {
       }
     >
       <div
-        className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
+        className={
+          toggleView === "day" ||
+          document.body.style.backgroundColor === "white"
+            ? "toggleitem active"
+            : "toggleitem"
+        }
       >
         {toggleView === "day" ? (
           <img
@@ -77,7 +86,12 @@ function ToggleButton() {
       </div>
 
       <div
-        className={toggleView === "night" ? "toggleitem active" : "toggleitem"}
+        className={
+          toggleView === "night" ||
+          document.body.style.backgroundColor === "rgb(33,33,33)"
+            ? "toggleitem active"
+            : "toggleitem"
+        }
       >
         {toggleView === "night" ? (
           <img
