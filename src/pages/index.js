@@ -6,10 +6,16 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Topper from "./topper";
 import Work from "./work";
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-0BT9038CSK");
 
 config.autoAddCss = false;
 
 const IndexPage = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
   return (
     <main>
       <Navbar active="Work" />
