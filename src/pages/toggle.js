@@ -8,7 +8,9 @@ import LogoWhite from "../images/logo-white.png";
 import "../styles/styles.less";
 
 function ToggleButton() {
-  const [toggleView, setToggleView] = useState(null);
+  const [toggleView, setToggleView] = useState(() =>
+    typeof window != undefined ? localStorage.getItem("mode") : null
+  );
 
   let dark = "#212121";
   let light = "#f2f2f2";
