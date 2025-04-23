@@ -59,7 +59,7 @@ function Work() {
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
-            type="image/jpeg"
+            type="image/png"
             className="project-cover"
           />
           <img
@@ -175,13 +175,11 @@ function Work() {
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351528/project%20covers/webp/pasta_w3djto.webp"
             type="image/webp"
             className="project-cover"
-            style={{ border: "1px solid black" }}
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
             type="image/jpeg"
             className="project-cover"
-            style={{ border: "1px solid black" }}
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"

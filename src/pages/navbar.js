@@ -10,9 +10,9 @@ function Navbar({ active }) {
       <a href="/">
         <img
           id="navbar-logo"
-          className="navbar-logo"
           src={Logo}
-          alt="handwritten logo saying 'Stephanie Zhu'"
+          alt="handwritten logo saying 'Stephanie Zhu"
+          className="navbar-logo"
         />
       </a>
 

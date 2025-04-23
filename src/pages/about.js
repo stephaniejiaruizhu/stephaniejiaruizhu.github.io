@@ -48,11 +48,23 @@ function About() {
     <div>
       <Navbar active="About" />
       <div className="about-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
-          className="about-image"
-          alt="headshot of Stephanie Zhu"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745446883/headshot_julerc.webp"
+            type="image/webp"
+            className="about-image"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
+            type="image/png"
+            className="about-image"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
+            className="about-image"
+            alt="headshot of Stephanie Zhu"
+          />
+        </picture>
         <div className="about-text-wrapper">
           <h3 className="about-intro-text">Hey there, I’m Stephanie.</h3>
           <p className="about-intro-subtext">
