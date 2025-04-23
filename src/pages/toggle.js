@@ -9,7 +9,7 @@ import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
-    typeof window != undefined ? localStorage.getItem("mode") : null
+    typeof window !== "undefined" ? localStorage.getItem("mode") : null
   );
 
   let dark = "#212121";
