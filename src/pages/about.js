@@ -29,6 +29,16 @@ function About() {
       document
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = dark));
+    } else {
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = dark;
+      document
+        .querySelectorAll("a")
+        .forEach((link) => (link.style.color = dark));
+      document.getElementById("navbar-logo").src = Logo;
+      document
+        .querySelectorAll(".bm-burger-bars")
+        .forEach((bar) => (bar.style.background = dark));
     }
   }
 

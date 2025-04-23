@@ -9,7 +9,7 @@ import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(() =>
-    typeof window !== "undefined" ? localStorage.getItem("mode") : null
+    typeof window !== "undefined" ? localStorage.getItem("mode") : "day"
   );
 
   let dark = "#212121";
@@ -63,12 +63,7 @@ function ToggleButton() {
       }
     >
       <div
-        className={
-          toggleView === "day" ||
-          document.body.style.backgroundColor === "white"
-            ? "toggleitem active"
-            : "toggleitem"
-        }
+        className={toggleView === "day" ? "toggleitem active" : "toggleitem"}
       >
         {toggleView === "day" ? (
           <img
@@ -86,12 +81,7 @@ function ToggleButton() {
       </div>
 
       <div
-        className={
-          toggleView === "night" ||
-          document.body.style.backgroundColor === "rgb(33,33,33)"
-            ? "toggleitem active"
-            : "toggleitem"
-        }
+        className={toggleView === "night" ? "toggleitem active" : "toggleitem"}
       >
         {toggleView === "night" ? (
           <img
