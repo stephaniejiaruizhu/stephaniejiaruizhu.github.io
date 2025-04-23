@@ -21,10 +21,10 @@ function ToggleButton() {
     if (localStorage.getItem("mode") === "day") {
       setToggleView("day");
       document.body.style.backgroundColor = "white";
-      document.body.style.color = dark;
+      document.body.style.color = "black";
       document
         .querySelectorAll("a")
-        .forEach((link) => (link.style.color = dark));
+        .forEach((link) => (link.style.color = "black"));
       document.getElementById("navbar-logo").src = Logo;
       document
         .querySelectorAll(".bm-burger-bars")
