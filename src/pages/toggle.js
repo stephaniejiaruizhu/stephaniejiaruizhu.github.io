@@ -20,8 +20,26 @@ function ToggleButton() {
 
     if (localStorage.getItem("mode") === "day") {
       setToggleView("day");
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = dark;
+      document
+        .querySelectorAll("a")
+        .forEach((link) => (link.style.color = dark));
+      document.getElementById("navbar-logo").src = Logo;
+      document
+        .querySelectorAll(".bm-burger-bars")
+        .forEach((bar) => (bar.style.background = dark));
     } else if (localStorage.getItem("mode") === "night") {
       setToggleView("night");
+      document.body.style.backgroundColor = dark;
+      document.body.style.color = light;
+      document
+        .querySelectorAll("a")
+        .forEach((link) => (link.style.color = light));
+      document
+        .querySelectorAll(".bm-burger-bars")
+        .forEach((bar) => (bar.style.background = light));
+      document.getElementById("navbar-logo").src = LogoWhite;
     }
   }
 

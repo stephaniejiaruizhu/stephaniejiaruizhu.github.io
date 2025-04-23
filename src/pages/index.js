@@ -6,41 +6,10 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Topper from "./topper";
 import Work from "./work";
-import Logo from "../images/logo.png";
-import LogoWhite from "../images/logo-white.png";
 
 config.autoAddCss = false;
 
 const IndexPage = () => {
-  let dark = "#212121";
-  let light = "#f2f2f2";
-
-  function CheckMode() {
-    if (localStorage.getItem("mode") === "night") {
-      document.body.style.backgroundColor = dark;
-      document.body.style.color = light;
-      document
-        .querySelectorAll("a")
-        .forEach((link) => (link.style.color = light));
-      document
-        .querySelectorAll(".bm-burger-bars")
-        .forEach((bar) => (bar.style.background = light));
-      document.getElementById("navbar-logo").src = LogoWhite;
-    } else if (localStorage.getItem("mode") === "day") {
-      document.body.style.backgroundColor = "white";
-      document.body.style.color = dark;
-      document
-        .querySelectorAll("a")
-        .forEach((link) => (link.style.color = dark));
-      document.getElementById("navbar-logo").src = Logo;
-      document
-        .querySelectorAll(".bm-burger-bars")
-        .forEach((bar) => (bar.style.background = dark));
-    }
-  }
-
-  useEffect(CheckMode, []);
-
   return (
     <main>
       <Navbar active="Work" />
