@@ -12,11 +12,23 @@ function Work() {
         </span>
       </div>
       <div className="project-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
-          alt="project cover showing the topper design for SF Chronicle's Top 100 Restaurant List"
-          className="project-cover"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351525/project%20covers/webp/top100_ry58vz.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
+            alt="project cover showing the topper design for SF Chronicle's Top 100 Restaurant List"
+            className="project-cover"
+          />
+        </picture>
         <div className="project-text">
           <p className="project-date">03.31.25</p>
           <p className="project-title">
@@ -39,11 +51,23 @@ function Work() {
         </div>
       </div>
       <div className="project-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
-          alt="project cover showing the topper design for the California College Admissions Guide Project"
-          className="project-cover"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351527/project%20covers/webp/collegeguide_vdsyz6.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
+            alt="project cover showing the topper design for the California College Admissions Guide Project"
+            className="project-cover"
+          />
+        </picture>
         <div className="project-text">
           <p className="project-date">10.01.2024</p>
           <p className="project-title">
@@ -67,11 +91,23 @@ function Work() {
         </div>
       </div>
       <div className="project-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
-          alt="project cover showing illustrations for the Japantown project"
-          className="project-cover"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351526/project%20covers/webp/japantown_l60ppy.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
+            alt="project cover showing illustrations for the Japantown project"
+            className="project-cover"
+          />
+        </picture>
         <div className="project-text">
           <p className="project-date">04.03.2024</p>
           <p className="project-title">
@@ -94,11 +130,23 @@ function Work() {
         </div>
       </div>
       <div className="project-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
-          alt="project cover showing the topper design for the Oakes project"
-          className="project-cover"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351526/project%20covers/webp/oakes_zfxhuj.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
+            alt="project cover showing the topper design for the Oakes project"
+            className="project-cover"
+          />
+        </picture>
         <div className="project-text">
           <p className="project-date">09.19.2023</p>
           <p className="project-title">
@@ -122,12 +170,26 @@ function Work() {
         </div>
       </div>
       <div className="project-wrapper">
-        <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
-          alt="project cover showing the pasta shap gallery from the pasta project"
-          style={{ border: "1px solid black" }}
-          className="project-cover"
-        />
+        <picture>
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351528/project%20covers/webp/pasta_w3djto.webp"
+            type="image/webp"
+            className="project-cover"
+            style={{ border: "1px solid black" }}
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
+            type="image/jpeg"
+            className="project-cover"
+            style={{ border: "1px solid black" }}
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
+            alt="project cover showing the pasta shap gallery from the pasta project"
+            className="project-cover"
+            style={{ border: "1px solid black" }}
+          />
+        </picture>
         <div className="project-text">
           <p className="project-date">04.06.2023</p>
           <p className="project-title">

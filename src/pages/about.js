@@ -49,7 +49,7 @@ function About() {
       <Navbar active="About" />
       <div className="about-wrapper">
         <img
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744395814/misc/Headshots/headshot_uunyxw.png"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
           className="about-image"
           alt="headshot of Stephanie Zhu"
         />

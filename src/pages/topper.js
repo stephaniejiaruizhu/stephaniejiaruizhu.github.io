@@ -5,7 +5,7 @@ function Topper() {
     <div className="topper">
       <img
         className="topper-image"
-        src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1744395812/misc/Headshots/headshot2_ywc1tk.png"
+        src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442387/headshot2_gjcsfn.png"
         alt="headshot of the website creator smiling and waving on a neon green-colored background in the shape of a flower."
       />
       <div className="topper-text-wrapper">
