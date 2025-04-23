@@ -14,6 +14,10 @@ function ToggleButton() {
   let light = "#f2f2f2";
 
   function CheckMode() {
+    if (toggleView === null) {
+      setToggleView("day");
+    }
+
     if (localStorage.getItem("mode") === "day") {
       setToggleView("day");
     } else if (localStorage.getItem("mode") === "night") {
