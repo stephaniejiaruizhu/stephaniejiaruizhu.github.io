@@ -306,16 +306,18 @@ body {
 
 .other-wrapper {
   width: 85vw;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   font-family: @sans-serif;
 
   @media @breakpoint {
     display: block;
+    max-width: 90vw;
+    margin-left: 80px;
   }
 
   @media @breakpoint2 {
     margin-left: 50px;
+    max-width: 95vw;
   }
 
   @media @mobile {
@@ -355,6 +357,7 @@ body {
     line-height: 25px;
     color: black;
     font-style: italic;
+    width: fit-content !important;
     display: block;
 
     &:hover {
@@ -666,7 +669,7 @@ body {
 // section divider
 .section-divider-home {
   border-bottom: 1px solid rgb(190, 190, 190);
-  margin: 100px 0 80px 100px;
+  margin: 0 auto 70px;
   width: 85vw;
 
   @media @breakpoint {
@@ -675,6 +678,7 @@ body {
 
   @media @breakpoint2 {
     margin-left: 50px;
+    width: 80vw;
   }
 
   @media @mobile {
