@@ -67,21 +67,21 @@ function About() {
             </a>
             <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/208584952-rental-house"
+              href="https://www.goodreads.com/book/show/208931300-intermezzo"
               target="_blank"
               rel="noreferrer"
             >
-              <i>Rental House</i>
+              <i>Intermezzo</i>
             </a>{" "}
-            by Weike Wang and{" "}
+            by Sally Rooney and{" "}
             <a
-              href="https://www.goodreads.com/book/show/1111.The_Power_Broker"
+              href="https://www.goodreads.com/book/show/58724915-corrections-in-ink"
               target="_blank"
               rel="noreferrer"
             >
-              <i>The Power Broker</i>
+              <i>Corrections in Ink: A Memoir</i>
             </a>{" "}
-            by Robert Caro
+            by Keri Blakinger
             <br />• perfecting my{" "}
             <a
               href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
@@ -116,6 +116,16 @@ function About() {
 
           <div className="about-section">
             <h3 className="about-intro-subtitle">Kudos [selected]</h3>
+            <div className="award">
+              <p className="award-title">
+                Honorable Mention • Excellence in Online/Digital Journalism,
+                Immersive Storytelling
+              </p>
+              <p className="award-giver">
+                Asian American Journalists Association • 2025 Journalism
+                Excellence Awards
+              </p>
+            </div>
             <div className="award">
               <p className="award-title">Bronze Medal (x2)</p>
               <p className="award-giver">

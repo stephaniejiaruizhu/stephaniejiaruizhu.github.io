@@ -14,6 +14,44 @@ function Work() {
       <div className="project-wrapper">
         <picture>
           <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888531/project%20covers/webp/ZoneZero_fgwz4r.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888539/project%20covers/ZoneZero_m7wslt.jpg"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888539/project%20covers/ZoneZero_m7wslt.jpg"
+            alt="project cover showing the topper design for a story on California's Zone Zero regulations"
+            className="project-cover"
+          />
+        </picture>
+        <div className="project-text">
+          <p className="project-date">06.01.25</p>
+          <p className="project-title">
+            <a
+              href="https://www.sfchronicle.com/projects/2025/california-fire-zone-zero-rules/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1maXJlLXpvbmUtemVyby1ydWxlcy8=&time=MTc0ODg4Nzc0MjIyOQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+              rel="noreferrer"
+              target="_blank"
+              className="project-link"
+            >
+              Zone Zero <span>→</span>
+            </a>{" "}
+          </p>
+          <p className="project-description">
+            [illustration, design + development]. A graphical explainer of
+            California's Zone Zero regulations designed to improve fire safety
+            for homes in high wildfire risk areas. I illustrated, designed and
+            coded the entire page.
+          </p>
+        </div>
+      </div>
+      <div className="project-wrapper">
+        <picture>
+          <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351525/project%20covers/webp/top100_ry58vz.webp"
             type="image/webp"
             className="project-cover"
