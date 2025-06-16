@@ -253,6 +253,13 @@ function Work() {
       <div className="other-wrapper">
         <h4 className="other-title">Other Projects</h4>
         <a
+          href="https://www.sfchronicle.com/projects/2025/sf-great-highway-traffic-data/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvc2YtZ3JlYXQtaGlnaHdheS10cmFmZmljLWRhdGEv&time=MTc1MDEwOTUyNTU3Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Great Highway Traffic Changes
+        </a>
+        <a
           href="https://www.sfchronicle.com/projects/2025/california-psychiatric-hospitals-crisis/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1wc3ljaGlhdHJpYy1ob3NwaXRhbHMtY3Jpc2lzLw==&time=MTc0NDkxMDU5OTc1Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=NQ=="
           target="_blank"
           rel="noreferrer"
