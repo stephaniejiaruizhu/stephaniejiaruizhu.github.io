@@ -26,6 +26,8 @@ function Play() {
           </span>
         </p>
         <div className="play-year-section">
+          <h4 className="play-year">2026</h4>
+          <div className="divider-vertical" />
           <h4 className="play-year">2025</h4>
           <div className="divider-vertical" />
           <h4 className="play-year">2024</h4>
@@ -133,6 +135,18 @@ function Play() {
               id="crochet"
               className="play-image"
               alt="crochet creation of a french goose wearing a beret and holding a baguette"
+            />
+          </a>
+          <a
+            href="https://radial-earthquake-1a6.notion.site/183e131c87cb8083af8afedf408f4e0a?v=183e131c87cb81fd9d34000c4ac9e97b"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1750200297/play/Screenshot_2025-06-17_at_3.32.21_PM_eh9tpw.png"
+              id="books-4"
+              className="play-image"
+              alt="a notion table tracking books read in 2025"
             />
           </a>
         </div>
