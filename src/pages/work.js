@@ -42,10 +42,10 @@ function Work() {
             </a>{" "}
           </p>
           <p className="project-description">
-            [illustration, design + development]. A graphical explainer of
-            California's Zone Zero regulations designed to improve fire safety
+            [illustration, design + development]. A graphic explainer of
+            California's Zone Zero regulations, designed to improve fire safety
             for homes in high wildfire risk areas. I illustrated, designed and
-            coded the entire page.
+            coded the page.
           </p>
         </div>
       </div>

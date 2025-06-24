@@ -67,21 +67,13 @@ function About() {
             </a>
             <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/208931300-intermezzo"
+              href="https://www.goodreads.com/book/show/58416952-the-will-of-the-many"
               target="_blank"
               rel="noreferrer"
             >
-              <i>Intermezzo</i>
+              <i>The Will of the Many</i>
             </a>{" "}
-            by Sally Rooney and{" "}
-            <a
-              href="https://www.goodreads.com/book/show/58724915-corrections-in-ink"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i>Corrections in Ink: A Memoir</i>
-            </a>{" "}
-            by Keri Blakinger
+            by James Islington
             <br />• perfecting my{" "}
             <a
               href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
