@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -147,6 +147,30 @@ function Play() {
               id="books-4"
               className="play-image"
               alt="a notion table tracking books read in 2025"
+            />
+          </a>
+          <a
+            href="https://radial-earthquake-1a6.notion.site/Cooking-218e131c87cb80cba60af738c4909409"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1750982938/play/dumplings-min_sibbuy.jpg"
+              id="cooking"
+              className="play-image"
+              alt="uncooked chive and pork dumplings on baking trays"
+            />
+          </a>
+          <a
+            href="https://radial-earthquake-1a6.notion.site/Scrapbooking-21ee131c87cb803982fef588c8a89e02"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1750982617/play/IMG_5145_1_-min_tfiniy.jpg"
+              id="scrapbooking"
+              className="play-image"
+              alt="page from scrapbook showcasing a trip to Vancouver"
             />
           </a>
         </div>
