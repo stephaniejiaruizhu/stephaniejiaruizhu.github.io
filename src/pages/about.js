@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import "../styles/styles.less";
@@ -37,7 +37,7 @@ function About() {
             <br /> Like every person with a journalism background ever, I tell
             people I love telling stories. But more specifically, I want to
             combine research and analysis skills from journalism with technology
-            to create experiences that are thoughtful and speak to users.
+            to create experiences that are thoughtful and delightful.
             <br />
             <br /> What this looks like is different day-to-day and can be
             confusing to explain, but at the core of it all, I just want to make
@@ -57,15 +57,15 @@ function About() {
             <span style={{ color: "#8f00ff", fontWeight: "800" }}>
               bright colors
             </span>
-            <br />• playing through Stardew Valley{" "}
+            <br /> • becoming an{" "}
             <a
               href="https://drive.google.com/file/d/1QuP5hdK6nCdS9Wp3AQetJ6lo5VUJGUyg/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              once again
-            </a>
-            <br />• reading{" "}
+              overlord
+            </a>{" "}
+            in Stardew Valley <br />• reading{" "}
             <a
               href="https://www.goodreads.com/book/show/58416952-the-will-of-the-many"
               target="_blank"
@@ -73,7 +73,15 @@ function About() {
             >
               <i>The Will of the Many</i>
             </a>{" "}
-            by James Islington
+            by James Islington and{" "}
+            <a
+              href="https://www.newyorker.com/magazine/2025/07/07/the-silence-fiction-zadie-smith"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i>The Silence</i>
+            </a>{" "}
+            by Zadie Smith
             <br />• perfecting my{" "}
             <a
               href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"

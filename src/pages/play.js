@@ -12,10 +12,9 @@ function Play() {
       <div className="play-wrapper">
         <h3 className="play-title">My playground for. . .</h3>
         <p className="play-text">
-          trying things. I got really burnt out in college. As a way to regain
-          motivation, I started a challenge (inspired by a class I took) for
-          myself: make or do something fun every year and document it. Here's to
-          the last six years! <br />
+          hobbies and trying things. In college I started a challenge for myself
+          : make or do something fun every year and document it. Here's to the
+          last six years! <br />
           <br />
           <span>
             <FontAwesomeIcon
