@@ -32,7 +32,7 @@ function Footer() {
           LinkedIn
         </a>
         <a
-          href="https://drive.google.com/file/d/18M70mnP8zwlaeYKT_OTHmuGL10dkL5Vi/view?usp=sharing"
+          href="https://drive.google.com/file/d/1H_0Actbx7NOaV7Dui3B2G0k2iEl-PSw6/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="footer-link-item"

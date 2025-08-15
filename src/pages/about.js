@@ -67,22 +67,13 @@ function About() {
             </a>{" "}
             in Stardew Valley <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/58416952-the-will-of-the-many"
+              href="https://www.goodreads.com/book/show/117833.The_Master_and_Margarita"
               target="_blank"
               rel="noreferrer"
             >
-              <i>The Will of the Many</i>
+              <i>The Master and Margarita</i>
             </a>{" "}
-            by James Islington and{" "}
-            <a
-              href="https://www.newyorker.com/magazine/2025/07/07/the-silence-fiction-zadie-smith"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i>The Silence</i>
-            </a>{" "}
-            by Zadie Smith
-            <br />• perfecting my{" "}
+            by Mikhail Bulgakov <br />• perfecting my{" "}
             <a
               href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
               target="_blank"
