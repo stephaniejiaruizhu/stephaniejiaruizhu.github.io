@@ -14,6 +14,44 @@ function Work() {
       <div className="project-wrapper">
         <picture>
           <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916618/project%20covers/webp/Heklina_dytypx.webp"
+            type="image/webp"
+            className="project-cover"
+          />
+          <source
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
+            type="image/jpeg"
+            className="project-cover"
+          />
+          <img
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
+            alt="project cover showing the topper design for a story on late drag queen Heklina's closet"
+            className="project-cover"
+          />
+        </picture>
+        <div className="project-text">
+          <p className="project-date">09.25.25</p>
+          <p className="project-title">
+            <a
+              href="https://www.sfchronicle.com/projects/2025/heklina-drag-closet/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvaGVrbGluYS1kcmFnLWNsb3NldC8=&time=MTc1ODkxNjgwMTMwMw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+              rel="noreferrer"
+              target="_blank"
+              className="project-link"
+            >
+              Inside Heklina's Closet <span>→</span>
+            </a>{" "}
+          </p>
+          <p className="project-description">
+            [design + development]. A deep dive into the fashion and history
+            inside of late S.F. drag icon Heklina's closet. I pitched the design
+            direction for this piece and built it out with the help of one other
+            designer.
+          </p>
+        </div>
+      </div>
+      <div className="project-wrapper">
+        <picture>
+          <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888531/project%20covers/webp/ZoneZero_fgwz4r.webp"
             type="image/webp"
             className="project-cover"
