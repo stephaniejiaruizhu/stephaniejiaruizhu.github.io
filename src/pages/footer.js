@@ -46,7 +46,7 @@ function Footer() {
           <FontAwesomeIcon icon={faHeart} />
         </span>{" "}
         in React. <br />
-        [Last updated June 2025]
+        [Last updated September 2025]
       </div>
     </div>
   );
