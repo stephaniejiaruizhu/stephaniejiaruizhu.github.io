@@ -1,6 +1,6 @@
 import React from "react";
 import ToggleButton from "./toggle";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo-dark.png";
 import { stack as Menu } from "react-burger-menu";
 import "../styles/values.less";
 
@@ -40,6 +40,20 @@ function Navbar({ active }) {
       >
         Play
       </a>
+
+      <a
+        id="Bookshelf"
+        className="navbar-item-desktop"
+        href="/bookshelf"
+        style={
+          active === "Bookshelf"
+            ? { textDecoration: "line-through !important" }
+            : { textDecoration: "none" }
+        }
+      >
+        Bookshelf
+      </a>
+
       <a
         id="About"
         className="navbar-item-desktop"

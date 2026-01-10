@@ -2,10 +2,18 @@
 
 body {
   transition: all 0.3s ease-in-out;
+  background-color: @light;
+  color: @dark;
 }
 
 ::selection {
   background-color: @neongreen;
+  color: @dark;
+}
+
+a:hover {
+  color: @neongreen !important;
+  background-color: @dark;
 }
 
 // navbar
@@ -39,20 +47,11 @@ body {
   }
 
   a {
-    color: black;
+    color: @dark;
     text-decoration: line-through;
 
-    &:hover {
-      color: @neonpurple !important;
-      font-weight: 500;
-    }
-
     &:visited {
-      color: black;
-
-      &:hover {
-        color: @neonpurple !important;
-      }
+      color: @dark;
     }
   }
 
@@ -63,10 +62,10 @@ body {
   .toggle {
     display: flex;
     padding: 4px 4px;
-    border: 1px solid black;
+    border: 1px solid @dark;
     border-radius: 30px;
     background-color: @neongreen;
-    color: @white;
+    color: @light;
     cursor: pointer;
     width: fit-content;
     pointer-events: all !important;
@@ -76,7 +75,7 @@ body {
       align-items: center;
       padding: 3px 9px;
       &.active {
-        background-color: @black !important;
+        background-color: @dark !important;
         width: fit-content !important;
         border-radius: 30px !important;
       }
@@ -237,9 +236,14 @@ body {
     margin-left: 20px;
   }
 
-  .project-cover {
+  .project-cover-wrapper {
     border-radius: 10px;
+  }
+
+  .project-cover {
     max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid @dark;
     // filter: drop-shadow(0px 2px 2px #d1d1d1);
 
     @media @breakpoint {
@@ -286,11 +290,8 @@ body {
       }
 
       a {
-        color: black;
+        color: @dark;
         font-style: italic;
-        &:hover {
-          color: @neonpurple !important;
-        }
       }
     }
 
@@ -342,11 +343,7 @@ body {
       display: inline-block;
 
       &:visited {
-        color: @black;
-      }
-
-      &:hover {
-        color: @neonpurple !important;
+        color: @dark;
       }
     }
   }
@@ -355,14 +352,10 @@ body {
     font-family: @sans-serif;
     font-size: @text-reg;
     line-height: 25px;
-    color: black;
+    color: @dark;
     font-style: italic;
     width: fit-content !important;
     display: block;
-
-    &:hover {
-      color: @neonpurple !important;
-    }
   }
 }
 
@@ -471,7 +464,7 @@ body {
       width: 290px;
       left: 100px;
       bottom: 1000px;
-      border: 1px solid black;
+      border: 1px solid @dark;
       @media @breakpoint2 {
         left: 45px;
         width: 280px;
@@ -500,7 +493,7 @@ body {
       width: 300px;
       left: 250px;
       bottom: 1280px;
-      border: 1px solid black;
+      border: 1px solid @dark;
       @media @breakpoint2 {
         left: 120px;
         bottom: 1350px;
@@ -515,7 +508,7 @@ body {
       width: 300px;
       left: 220px;
       bottom: 1580px;
-      border: 1px solid black;
+      border: 1px solid @dark;
       @media @breakpoint2 {
         left: 50px;
       }
@@ -541,7 +534,7 @@ body {
       width: 280px;
       left: 200px;
       bottom: 1950px;
-      border: 1px solid black;
+      border: 1px solid @dark;
 
       @media @breakpoint2 {
         left: 70px;
@@ -579,6 +572,137 @@ body {
         left: 50px;
       }
     }
+  }
+}
+
+// bookshelf page
+
+.bookshelf-wrapper {
+  .bookshelf-title {
+    font-family: @serif;
+    font-size: @text-xlarge;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+  }
+
+  .bookshelf-year-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: @sans-serif;
+    width: fit-content;
+    margin: auto;
+    color: @neonblue;
+  }
+
+  .bookshelf-year {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .active-marker {
+      width: 8px;
+      height: 8px;
+      border-radius: 5px;
+      background-color: @neonblue;
+      display: inline-block;
+    }
+  }
+}
+
+.book-wrapper {
+  margin-top: 50px;
+}
+
+.book-item {
+  font-family: @sans-serif;
+  text-align: center;
+  font-weight: 600;
+  max-width: 500px;
+  margin: 25px auto;
+
+  @media (max-width: 600px) {
+    max-width: 80%;
+  }
+
+  .book-image {
+    width: 100px;
+  }
+
+  .book-title {
+    display: inline;
+  }
+  .book-author {
+    display: inline;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+}
+
+.book-wrapper-2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 100px auto 150px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.book-item-2 {
+  display: flex;
+  flex-direction: column;
+  font-family: @sans-serif;
+  text-align: center;
+  font-weight: 600;
+  width: 25%;
+  align-items: center;
+  cursor: pointer;
+
+  @media (max-width: 1200px) {
+    width: 30%;
+  }
+
+  @media (max-width: 900px) {
+    width: 50%;
+  }
+
+  .book-item-image {
+    max-width: 150px;
+    border-radius: 15px;
+    padding: 4px;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid @dark;
+    }
+
+    @media (max-width: 600px) {
+      max-width: 80%;
+    }
+  }
+
+  .book-title-2 {
+    margin-bottom: 3px;
+    max-width: 90%;
+
+    @media (max-width: 600px) {
+      max-width: 95%;
+    }
+  }
+
+  .book-author-2 {
+    font-weight: 400;
+  }
+}
+
+.hover {
+  &:hover {
+    border: 1px solid @light !important;
   }
 }
 
@@ -634,14 +758,8 @@ body {
           margin: 0px;
 
           a {
-            color: black;
+            color: @dark;
             font-style: italic;
-            &:hover {
-              color: @neonpurple !important;
-            }
-            &:visited {
-              color: @black;
-            }
           }
         }
         .award-giver {
@@ -655,15 +773,7 @@ body {
       line-height: 28px;
 
       a {
-        color: black;
-
-        &:visited {
-          color: black;
-        }
-
-        &:hover {
-          color: @neonpurple !important;
-        }
+        color: @dark;
       }
     }
   }
@@ -694,16 +804,11 @@ body {
 
   a {
     cursor: pointer;
-    color: black;
+    color: @dark;
     text-decoration: none !important;
 
-    &:hover {
-      color: @neonpurple !important;
-      font-weight: 500;
-    }
-
     &:visited {
-      color: black;
+      color: @dark;
     }
   }
 }
@@ -759,19 +864,19 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: black;
+  background: @dark;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: @neonpurple !important;
+  background: @neongreen !important;
 }
 
 /* Position and sizing of clickable cross button */
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: white !important;
+  background: @light !important;
   height: 20px !important;
 }
 
@@ -792,11 +897,12 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: black;
+  background: @dark;
   padding: 2.5em 1.5em 0;
   font-size: @text-reg;
   font-family: @sans-serif;
   overflow: hidden !important;
+  border-right: 1px solid @light;
 }
 
 /* Wrapper for item list */
@@ -808,6 +914,6 @@ body {
 /* Individual item */
 .bm-item {
   display: inline-block;
-  color: white !important;
+  color: @light !important;
   margin-top: 25px;
 }

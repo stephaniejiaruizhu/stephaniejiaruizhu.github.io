@@ -5,18 +5,18 @@ function Topper() {
     <div className="topper">
       <picture>
         <source
-          srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745446882/headshot2_wpvddl.webp"
+          srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767895814/misc/Headshots/headshot_lighter_green_zqjmgq.webp"
           type="image/webp"
           className="topper-image"
         />
         <source
-          srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442387/headshot2_gjcsfn.png"
+          srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767895746/misc/Headshots/headshot_lighter_green_pbswtt.png"
           type="image/png"
           className="topper-image"
         />
         <img
           className="topper-image"
-          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442387/headshot2_gjcsfn.png"
+          src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767895746/misc/Headshots/headshot_lighter_green_pbswtt.png"
           alt="headshot of the website creator smiling and waving on a neon green-colored background in the shape of a flower."
         />
       </picture>

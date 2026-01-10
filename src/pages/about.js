@@ -10,17 +10,17 @@ function About() {
       <div className="about-wrapper">
         <picture>
           <source
-            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745446883/headshot_julerc.webp"
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767998029/misc/Headshots/headshot2_lighter_green_qurzmi.webp"
             type="image/webp"
             className="about-image"
           />
           <source
-            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
+            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767998029/misc/Headshots/headshot2_lighter_green_ayuxsf.png"
             type="image/png"
             className="about-image"
           />
           <img
-            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745442388/headshot_lvhm3r.png"
+            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1767998029/misc/Headshots/headshot2_lighter_green_ayuxsf.png"
             className="about-image"
             alt="headshot of Stephanie Zhu"
           />
@@ -67,13 +67,13 @@ function About() {
             </a>{" "}
             in Stardew Valley <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/117833.The_Master_and_Margarita"
+              href="https://www.goodreads.com/book/show/40121985-how-to-hide-an-empire"
               target="_blank"
               rel="noreferrer"
             >
-              <i>The Master and Margarita</i>
+              <i>How to Hide an Empire</i>
             </a>{" "}
-            by Mikhail Bulgakov <br />• perfecting my{" "}
+            by Daniel Immerwahr <br />• perfecting my{" "}
             <a
               href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
               target="_blank"

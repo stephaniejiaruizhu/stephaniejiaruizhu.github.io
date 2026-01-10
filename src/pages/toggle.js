@@ -3,15 +3,19 @@ import MoonBlack from "../images/icons/moon-black.svg";
 import MoonWhite from "../images/icons/moon-white.png";
 import SunBlack from "../images/icons/sun-black.svg";
 import SunWhite from "../images/icons/sun-white.png";
-import Logo from "../images/logo.png";
-import LogoWhite from "../images/logo-white.png";
+import Logo from "../images/logo-dark.png";
+import LogoWhite from "../images/logo-light.png";
 import "../styles/styles.less";
 
 function ToggleButton() {
   const [toggleView, setToggleView] = useState(null);
 
-  let dark = "#212121";
-  let light = "#f2f2f2";
+  let dark = "#1F2A27";
+  let light = "#EEEAE3";
+  let green = "#d4df7d";
+  let pink = "#ff15d8";
+  let purple = "#e0bfda";
+  let blue = "#0429fe";
 
   function CheckMode() {
     if (toggleView === null) {
@@ -20,11 +24,23 @@ function ToggleButton() {
 
     if (localStorage.getItem("mode") === "day") {
       setToggleView("day");
-      document.body.style.backgroundColor = "white";
-      document.body.style.color = "black";
+      document.body.style.backgroundColor = light;
+      document.body.style.color = dark;
+      document
+        .querySelectorAll("div.bookshelf-year")
+        .forEach((title) => (title.style.color = blue));
+      document
+        .querySelectorAll("book-author")
+        .forEach((title) => (title.style.color = pink));
+      document
+        .querySelectorAll(".book-author-2")
+        .forEach((title) => (title.style.color = pink));
+      document
+        .querySelectorAll("div.active-marker")
+        .forEach((marker) => (marker.style.backgroundColor = blue));
       document
         .querySelectorAll("a")
-        .forEach((link) => (link.style.color = "black"));
+        .forEach((link) => (link.style.color = dark));
       document.getElementById("navbar-logo").src = Logo;
       document
         .querySelectorAll(".bm-burger-bars")
@@ -33,6 +49,18 @@ function ToggleButton() {
       setToggleView("night");
       document.body.style.backgroundColor = dark;
       document.body.style.color = light;
+      document
+        .querySelectorAll(".book-author")
+        .forEach((title) => (title.style.color = green));
+      document
+        .querySelectorAll(".book-author-2")
+        .forEach((title) => (title.style.color = green));
+      document
+        .querySelectorAll("div.bookshelf-year")
+        .forEach((title) => (title.style.color = purple));
+      document
+        .querySelectorAll("div.active-marker")
+        .forEach((marker) => (marker.style.backgroundColor = purple));
       document
         .querySelectorAll("a")
         .forEach((link) => (link.style.color = light));
@@ -54,6 +82,21 @@ function ToggleButton() {
             (document.body.style.backgroundColor = dark),
             (document.body.style.color = light),
             document
+              .querySelectorAll(".book-author")
+              .forEach((title) => (title.style.color = green)),
+            document
+              .querySelectorAll(".book-author-2")
+              .forEach((title) => (title.style.color = green)),
+            document
+              .querySelectorAll("div.bookshelf-year")
+              .forEach((title) => (title.style.color = purple)),
+            document
+              .querySelectorAll(".book-item-image")
+              .forEach((title) => title.classList.add("hover")),
+            document
+              .querySelectorAll("div.active-marker")
+              .forEach((marker) => (marker.style.backgroundColor = purple)),
+            document
               .querySelectorAll("a")
               .forEach((link) => (link.style.color = light)),
             document
@@ -62,15 +105,30 @@ function ToggleButton() {
             (document.getElementById("navbar-logo").src = LogoWhite),
             localStorage.setItem("mode", "night"))
           : (setToggleView("day"),
-            (document.body.style.backgroundColor = "white"),
-            (document.body.style.color = "black"),
+            (document.body.style.backgroundColor = light),
+            (document.body.style.color = dark),
+            document
+              .querySelectorAll("div.bookshelf-year")
+              .forEach((title) => (title.style.color = blue)),
+            document
+              .querySelectorAll(".book-author")
+              .forEach((title) => (title.style.color = pink)),
+            document
+              .querySelectorAll(".book-author-2")
+              .forEach((title) => (title.style.color = pink)),
+            document
+              .querySelectorAll(".book-item-image")
+              .forEach((title) => title.classList.remove("hover")),
+            document
+              .querySelectorAll("div.active-marker")
+              .forEach((marker) => (marker.style.backgroundColor = blue)),
             document
               .querySelectorAll("a")
-              .forEach((link) => (link.style.color = "black")),
+              .forEach((link) => (link.style.color = dark)),
             (document.getElementById("navbar-logo").src = Logo),
             document
               .querySelectorAll(".bm-burger-bars")
-              .forEach((bar) => (bar.style.background = "black")),
+              .forEach((bar) => (bar.style.background = dark)),
             localStorage.setItem("mode", "day"))
       }
     >

@@ -16,12 +16,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916618/project%20covers/webp/Heklina_dytypx.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
@@ -54,12 +52,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888531/project%20covers/webp/ZoneZero_fgwz4r.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888539/project%20covers/ZoneZero_m7wslt.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1748888539/project%20covers/ZoneZero_m7wslt.jpg"
@@ -92,12 +88,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351525/project%20covers/webp/top100_ry58vz.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350485/project%20covers/top100_temsf2.jpg"
@@ -131,12 +125,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351527/project%20covers/webp/collegeguide_vdsyz6.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
             type="image/png"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/collegeguide_voenim.png"
@@ -171,12 +163,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351526/project%20covers/webp/japantown_l60ppy.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/japantown_dijzmk.jpg"
@@ -210,12 +200,10 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351526/project%20covers/webp/oakes_zfxhuj.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/oakes_alfffh.jpg"
@@ -250,18 +238,15 @@ function Work() {
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745351528/project%20covers/webp/pasta_w3djto.webp"
             type="image/webp"
-            className="project-cover"
           />
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
             type="image/jpeg"
-            className="project-cover"
           />
           <img
             src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1745350486/project%20covers/pasta_d6ocdr.jpg"
             alt="project cover showing the pasta shap gallery from the pasta project"
             className="project-cover"
-            style={{ border: "1px solid black" }}
           />
         </picture>
         <div className="project-text">
