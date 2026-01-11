@@ -576,8 +576,19 @@ a:hover {
 }
 
 // bookshelf page
-
 .bookshelf-wrapper {
+  .toggle-styles {
+    text-align: center;
+    font-family: @sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    border-radius: 20px;
+    padding: 5px 13px;
+  }
+
   .bookshelf-title {
     font-family: @serif;
     font-size: @text-xlarge;
@@ -617,6 +628,7 @@ a:hover {
 
 .book-wrapper {
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .book-item {
@@ -625,6 +637,7 @@ a:hover {
   font-weight: 600;
   max-width: 500px;
   margin: 25px auto;
+  cursor: pointer;
 
   @media (max-width: 600px) {
     max-width: 80%;
@@ -639,7 +652,7 @@ a:hover {
   }
   .book-author {
     display: inline;
-    margin-left: 10px;
+    margin-left: 8px;
     font-weight: 400;
   }
 }
@@ -661,7 +674,6 @@ a:hover {
   font-weight: 600;
   width: 25%;
   align-items: center;
-  cursor: pointer;
 
   @media (max-width: 1200px) {
     width: 30%;
@@ -676,6 +688,7 @@ a:hover {
     border-radius: 15px;
     padding: 4px;
     border: 1px solid transparent;
+    cursor: pointer;
 
     &:hover {
       border: 1px solid @dark;
@@ -706,8 +719,96 @@ a:hover {
   }
 }
 
-// about page
+/* Popup */
+.popup-outer-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: relative;
+}
 
+.popup-wrapper {
+  width: 400px;
+  height: 550px;
+  border-radius: 15px;
+  overflow-y: scroll;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .xmark {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+}
+
+.popup-title-wrapper {
+  margin-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  .popup-date {
+    font-family: @sans-serif;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .popup-title {
+    font-family: @serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: @light;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 85%;
+  }
+
+  .popup-author {
+    font-family: @sans-serif;
+    color: @neongreen;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .popup-image {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
+
+.rating-wrapper {
+  display: flex;
+  margin-top: 15px;
+  gap: 5px;
+  .star {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.popup-tags {
+  display: flex;
+  width: 95%;
+  margin-top: 30px;
+  justify-content: flex-end;
+  font-family: @sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  gap: 10px;
+
+  .tags {
+    padding: 5px 15px;
+    border-radius: 15px;
+  }
+}
+
+// about page
 .about-wrapper {
   margin: 100px 100px 150px;
   font-family: @sans-serif;

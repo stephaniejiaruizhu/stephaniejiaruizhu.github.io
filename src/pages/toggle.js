@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import MoonBlack from "../images/icons/moon-black.svg";
-import MoonWhite from "../images/icons/moon-white.png";
-import SunBlack from "../images/icons/sun-black.svg";
-import SunWhite from "../images/icons/sun-white.png";
+import MoonBlack from "../images/icons/moon-dark.webp";
+import MoonWhite from "../images/icons/moon-light.webp";
+import SunBlack from "../images/icons/sun-dark.webp";
+import SunWhite from "../images/icons/sun-light.webp";
 import Logo from "../images/logo-dark.png";
 import LogoWhite from "../images/logo-light.png";
 import "../styles/styles.less";
