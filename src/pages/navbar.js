@@ -41,7 +41,7 @@ function Navbar({ active }) {
         Play
       </a>
 
-      {/*    <a
+      {/* <a
         id="Bookshelf"
         className="navbar-item-desktop"
         href="/bookshelf"
