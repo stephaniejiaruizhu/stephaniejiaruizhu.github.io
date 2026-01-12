@@ -26,18 +26,6 @@ function ToggleButton() {
       setToggleView("day");
       document.body.style.backgroundColor = light;
       document.body.style.color = dark;
-      /* document
-        .querySelectorAll("div.bookshelf-year")
-        .forEach((title) => (title.style.color = blue));
-      document
-        .querySelectorAll("book-author")
-        .forEach((title) => (title.style.color = pink));
-      document
-        .querySelectorAll(".book-author-2")
-        .forEach((title) => (title.style.color = pink));
-      document
-        .querySelectorAll("div.active-marker")
-        .forEach((marker) => (marker.style.backgroundColor = blue)); */
       document
         .querySelectorAll("a")
         .forEach((link) => (link.style.color = dark));
@@ -49,18 +37,6 @@ function ToggleButton() {
       setToggleView("night");
       document.body.style.backgroundColor = dark;
       document.body.style.color = light;
-      /* document
-        .querySelectorAll(".book-author")
-        .forEach((title) => (title.style.color = green));
-      document
-        .querySelectorAll(".book-author-2")
-        .forEach((title) => (title.style.color = green));
-      document
-        .querySelectorAll("div.bookshelf-year")
-        .forEach((title) => (title.style.color = purple));
-      document
-        .querySelectorAll("div.active-marker")
-        .forEach((marker) => (marker.style.backgroundColor = purple)); */
       document
         .querySelectorAll("a")
         .forEach((link) => (link.style.color = light));
@@ -81,21 +57,6 @@ function ToggleButton() {
           ? (setToggleView("night"),
             (document.body.style.backgroundColor = dark),
             (document.body.style.color = light),
-            /* document
-              .querySelectorAll(".book-author")
-              .forEach((title) => (title.style.color = green)),
-            document
-              .querySelectorAll(".book-author-2")
-              .forEach((title) => (title.style.color = green)),
-            document
-              .querySelectorAll("div.bookshelf-year")
-              .forEach((title) => (title.style.color = purple)),
-            document
-              .querySelectorAll(".book-item-image")
-              .forEach((title) => title.classList.add("hover")),
-            document
-              .querySelectorAll("div.active-marker")
-              .forEach((marker) => (marker.style.backgroundColor = purple)), */
             document
               .querySelectorAll("a")
               .forEach((link) => (link.style.color = light)),
@@ -107,21 +68,6 @@ function ToggleButton() {
           : (setToggleView("day"),
             (document.body.style.backgroundColor = light),
             (document.body.style.color = dark),
-            /* document
-              .querySelectorAll("div.bookshelf-year")
-              .forEach((title) => (title.style.color = blue)),
-            document
-              .querySelectorAll(".book-author")
-              .forEach((title) => (title.style.color = pink)),
-            document
-              .querySelectorAll(".book-author-2")
-              .forEach((title) => (title.style.color = pink)),
-            document
-              .querySelectorAll(".book-item-image")
-              .forEach((title) => title.classList.remove("hover")),
-            document
-              .querySelectorAll("div.active-marker")
-              .forEach((marker) => (marker.style.backgroundColor = blue)), */
             document
               .querySelectorAll("a")
               .forEach((link) => (link.style.color = dark)),
