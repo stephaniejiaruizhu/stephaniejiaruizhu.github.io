@@ -327,13 +327,13 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           style={{ color: mode === "day" ? dark : light }}
           className="popup-title"
         >
-          {info.title}
+          {info.title ? info.title : null}
         </h3>
         <p
           style={{ color: mode === "day" ? neonpink : neongreen }}
           className="popup-author"
         >
-          {info.author}
+          {info.author ? info.author : null}
         </p>
         {info.image != null ? (
           <img className="popup-image" src={info.image} alt="book cover" />
