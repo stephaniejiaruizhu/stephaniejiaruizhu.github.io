@@ -184,14 +184,14 @@ function Bookshelf() {
         <div className="book-wrapper-2">
           {items.map((item) => (
             <>
-              <Popup
+              {/* <Popup
                 info={popupinfo ? popupinfo : item}
                 card={card}
                 cardscroll={cardscroll}
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
-              />
+              /> */}
               <div className="book-item-2">
                 {item.image != null ? (
                   <img
@@ -223,14 +223,14 @@ function Bookshelf() {
         <div className="book-wrapper">
           {items.map((item) => (
             <>
-              <Popup
+              {/* <Popup
                 info={popupinfo ? popupinfo : item}
                 card={card}
                 cardscroll={cardscroll}
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
-              />
+              /> */}
               <div
                 className="book-item"
                 onClick={() => {

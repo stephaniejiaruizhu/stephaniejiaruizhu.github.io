@@ -327,7 +327,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           style={{ color: mode === "day" ? dark : light }}
           className="popup-title"
         >
-          {info.title != null ? info.title : null}
+          {info.title}
         </h3>
         <p
           style={{ color: mode === "day" ? neonpink : neongreen }}
