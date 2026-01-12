@@ -26,7 +26,7 @@ function ToggleButton() {
       setToggleView("day");
       document.body.style.backgroundColor = light;
       document.body.style.color = dark;
-      document
+      /* document
         .querySelectorAll("div.bookshelf-year")
         .forEach((title) => (title.style.color = blue));
       document
@@ -37,7 +37,7 @@ function ToggleButton() {
         .forEach((title) => (title.style.color = pink));
       document
         .querySelectorAll("div.active-marker")
-        .forEach((marker) => (marker.style.backgroundColor = blue));
+        .forEach((marker) => (marker.style.backgroundColor = blue)); */
       document
         .querySelectorAll("a")
         .forEach((link) => (link.style.color = dark));
@@ -49,7 +49,7 @@ function ToggleButton() {
       setToggleView("night");
       document.body.style.backgroundColor = dark;
       document.body.style.color = light;
-      document
+      /* document
         .querySelectorAll(".book-author")
         .forEach((title) => (title.style.color = green));
       document
@@ -60,7 +60,7 @@ function ToggleButton() {
         .forEach((title) => (title.style.color = purple));
       document
         .querySelectorAll("div.active-marker")
-        .forEach((marker) => (marker.style.backgroundColor = purple));
+        .forEach((marker) => (marker.style.backgroundColor = purple)); */
       document
         .querySelectorAll("a")
         .forEach((link) => (link.style.color = light));
@@ -81,7 +81,7 @@ function ToggleButton() {
           ? (setToggleView("night"),
             (document.body.style.backgroundColor = dark),
             (document.body.style.color = light),
-            document
+            /* document
               .querySelectorAll(".book-author")
               .forEach((title) => (title.style.color = green)),
             document
@@ -95,7 +95,7 @@ function ToggleButton() {
               .forEach((title) => title.classList.add("hover")),
             document
               .querySelectorAll("div.active-marker")
-              .forEach((marker) => (marker.style.backgroundColor = purple)),
+              .forEach((marker) => (marker.style.backgroundColor = purple)), */
             document
               .querySelectorAll("a")
               .forEach((link) => (link.style.color = light)),
@@ -107,7 +107,7 @@ function ToggleButton() {
           : (setToggleView("day"),
             (document.body.style.backgroundColor = light),
             (document.body.style.color = dark),
-            document
+            /* document
               .querySelectorAll("div.bookshelf-year")
               .forEach((title) => (title.style.color = blue)),
             document
@@ -121,7 +121,7 @@ function ToggleButton() {
               .forEach((title) => title.classList.remove("hover")),
             document
               .querySelectorAll("div.active-marker")
-              .forEach((marker) => (marker.style.backgroundColor = blue)),
+              .forEach((marker) => (marker.style.backgroundColor = blue)), */
             document
               .querySelectorAll("a")
               .forEach((link) => (link.style.color = dark)),
