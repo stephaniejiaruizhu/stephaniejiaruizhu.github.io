@@ -97,6 +97,18 @@ function Navbar({ active }) {
             Play
           </a>
           <a
+            id="Bookshelf"
+            className="navbar-item"
+            href="/bookshelf"
+            style={
+              active === "Bookshelf"
+                ? { textDecoration: "line-through !important" }
+                : { textDecoration: "none" }
+            }
+          >
+            Bookshelf
+          </a>
+          <a
             id="About"
             className="navbar-item"
             href="/about"
