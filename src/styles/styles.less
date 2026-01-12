@@ -12,8 +12,7 @@ body {
 }
 
 a:hover {
-  color: @neongreen !important;
-  background-color: @dark;
+  color: @gray !important;
 }
 
 // navbar
@@ -639,6 +638,10 @@ a:hover {
   margin: 25px auto;
   cursor: pointer;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @media (max-width: 600px) {
     max-width: 80%;
   }
@@ -970,7 +973,7 @@ a:hover {
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: @neongreen !important;
+  background: @gray !important;
 }
 
 /* Position and sizing of clickable cross button */

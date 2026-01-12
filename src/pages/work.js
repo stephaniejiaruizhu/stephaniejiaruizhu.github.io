@@ -276,6 +276,13 @@ function Work() {
       <div className="other-wrapper">
         <h4 className="other-title">Other Projects</h4>
         <a
+          href="https://www.sfchronicle.com/projects/2025/superbugs-antibiotic-resistance-ai/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvc3VwZXJidWdzLWFudGliaW90aWMtcmVzaXN0YW5jZS1haS8=&time=MTc2ODIwMzc1NjQzOA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          Antibiotic Resistance and A.I. Drug Development
+        </a>
+        <a
           href="https://www.sfchronicle.com/projects/2025/sf-great-highway-traffic-data/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvc2YtZ3JlYXQtaGlnaHdheS10cmFmZmljLWRhdGEv&time=MTc1MDEwOTUyNTU3Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
           target="_blank"
           rel="noreferrer"

@@ -270,8 +270,21 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
     var startDate = new Date(info.date_started);
     var startDateFinal;
 
-    var endDate = new Date(info.date_finished);
-    var endDateFinal;
+    let endDate;
+    let endDateFinal;
+    if (info.date_finished) {
+      endDate = new Date(info.date_finished);
+
+      endDateFinal =
+        ("0" + (endDate.getMonth() + 1)).slice(-2) +
+        "." +
+        ("0" + endDate.getDate()).slice(-2) +
+        "." +
+        endDate.getFullYear();
+    } else {
+      endDate = null;
+      endDateFinal = null;
+    }
 
     startDateFinal =
       ("0" + (startDate.getMonth() + 1)).slice(-2) +
@@ -280,14 +293,12 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
       "." +
       startDate.getFullYear();
 
-    endDateFinal =
-      ("0" + (endDate.getMonth() + 1)).slice(-2) +
-      "." +
-      ("0" + endDate.getDate()).slice(-2) +
-      "." +
-      endDate.getFullYear();
     return (
-      <p className="popup-date">{`${startDateFinal} – ${endDateFinal}`}</p>
+      <p className="popup-date">
+        {endDateFinal
+          ? `${startDateFinal} – ${endDateFinal}`
+          : `${startDateFinal} – `}
+      </p>
     );
   }
 

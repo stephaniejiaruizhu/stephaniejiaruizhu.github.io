@@ -47,25 +47,33 @@ function About() {
             Currently:
             <br />• obsessing over{" "}
             <a
-              href="https://www.formula1.com/"
+              href="https://www.instagram.com/yuichi_artwork/?hl=en"
               target="_blank"
               rel="noreferrer"
             >
-              Formula 1
+              silly art
+            </a>
+            , {""}
+            <a
+              href="https://magicpuzzlecompany.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              jigsaw puzzles
             </a>{" "}
             and{" "}
-            <span style={{ color: "#8f00ff", fontWeight: "800" }}>
+            <span style={{ color: "#0429fe", fontWeight: "800" }}>
               bright colors
             </span>
-            <br /> • becoming an{" "}
+            <br /> • making questionable choices in{" "}
             <a
-              href="https://drive.google.com/file/d/1QuP5hdK6nCdS9Wp3AQetJ6lo5VUJGUyg/view?usp=sharing"
+              href="https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
               target="_blank"
               rel="noreferrer"
             >
-              overlord
+              Disco Elysium
             </a>{" "}
-            in Stardew Valley <br />• reading{" "}
+            <br />• reading{" "}
             <a
               href="https://www.goodreads.com/book/show/40121985-how-to-hide-an-empire"
               target="_blank"
@@ -73,18 +81,17 @@ function About() {
             >
               <i>How to Hide an Empire</i>
             </a>{" "}
-            by Daniel Immerwahr <br />• perfecting my{" "}
+            by Daniel Immerwahr <br />• trying my hand at{" "}
             <a
-              href="https://drive.google.com/file/d/1TXCx38r2byLDnUOfYOvH2GB2ZkfiInd-/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JSqPQHO053dtYGw1QiLAUWn9OrFpU6UX/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              dumpling folds
+              baking
             </a>{" "}
-            [so my mom doesn’t laugh at me]
-            <br />•{" "}
+            and{" "}
             <a
-              href="https://www.yelp.com/user_details?userid=wDQlvv8Ww65JdKZ9591Lrw"
+              href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
