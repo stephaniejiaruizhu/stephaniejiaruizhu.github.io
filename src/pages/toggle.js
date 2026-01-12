@@ -45,11 +45,6 @@ function ToggleButton() {
       document
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = dark));
-      document.getElementById("styles-toggle").style.backgroundColor = light;
-      document.getElementById("styles-toggle").style.color = dark;
-      document.getElementById(
-        "styles-toggle"
-      ).style.border = `1px solid ${dark}`;
     } else if (localStorage.getItem("mode") === "night") {
       setToggleView("night");
       document.body.style.backgroundColor = dark;
@@ -73,11 +68,6 @@ function ToggleButton() {
         .querySelectorAll(".bm-burger-bars")
         .forEach((bar) => (bar.style.background = light));
       document.getElementById("navbar-logo").src = LogoWhite;
-      document.getElementById("styles-toggle").style.backgroundColor = dark;
-      document.getElementById("styles-toggle").style.color = light;
-      document.getElementById(
-        "styles-toggle"
-      ).style.border = `1px solid ${light}`;
     }
   }
 
@@ -113,12 +103,6 @@ function ToggleButton() {
               .querySelectorAll(".bm-burger-bars")
               .forEach((bar) => (bar.style.background = light)),
             (document.getElementById("navbar-logo").src = LogoWhite),
-            (document.getElementById("styles-toggle").style.backgroundColor =
-              dark),
-            (document.getElementById("styles-toggle").style.color = light),
-            (document.getElementById(
-              "styles-toggle"
-            ).style.border = `1px solid ${light}`),
             localStorage.setItem("mode", "night"))
           : (setToggleView("day"),
             (document.body.style.backgroundColor = light),
@@ -145,12 +129,6 @@ function ToggleButton() {
             document
               .querySelectorAll(".bm-burger-bars")
               .forEach((bar) => (bar.style.background = dark)),
-            (document.getElementById("styles-toggle").style.backgroundColor =
-              light),
-            (document.getElementById("styles-toggle").style.color = dark),
-            (document.getElementById(
-              "styles-toggle"
-            ).style.border = `1px solid ${dark}`),
             localStorage.setItem("mode", "day"))
       }
     >
