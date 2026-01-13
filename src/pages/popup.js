@@ -6,7 +6,7 @@ import StarLightOutline from "../images/icons/star-outline-light.webp";
 import XDark from "../images/icons/xmarkdark.webp";
 import XLight from "../images/icons/xmarklight.webp";
 
-function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
+function Popup({ info, card, popup, mode, setPopup }) {
   // colors
   let light = "#eeeae3";
   let dark = "#1f2a27";
@@ -44,7 +44,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
 
   // generate star ratings
   function StarsLight() {
-    if (info.my_rating === 2) {
+    if (info && info.my_rating === 2) {
       return (
         <div className="rating-wrapper">
           <img
@@ -74,7 +74,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 3) {
+    } else if (info && info.my_rating === 3) {
       return (
         <div className="rating-wrapper">
           <img
@@ -104,7 +104,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 4) {
+    } else if (info && info.my_rating === 4) {
       return (
         <div className="rating-wrapper">
           <img
@@ -134,7 +134,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 5) {
+    } else if (info && info.my_rating === 5) {
       return (
         <div className="rating-wrapper">
           <img
@@ -168,7 +168,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
   }
 
   function StarsDark() {
-    if (info.my_rating === 2) {
+    if (info && info.my_rating === 2) {
       return (
         <div className="rating-wrapper">
           <img className="star" src={StarDarkSolid} alt="filled in star icon" />
@@ -190,7 +190,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 3) {
+    } else if (info && info.my_rating === 3) {
       return (
         <div className="rating-wrapper">
           <img className="star" src={StarDarkSolid} alt="filled in star icon" />
@@ -208,7 +208,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 4) {
+    } else if (info && info.my_rating === 4) {
       return (
         <div className="rating-wrapper">
           <img className="star" src={StarDarkSolid} alt="filled in star icon" />
@@ -222,7 +222,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
           />
         </div>
       );
-    } else if (info.my_rating === 5) {
+    } else if (info && info.my_rating === 5) {
       return (
         <div className="rating-wrapper">
           <img className="star" src={StarDarkSolid} alt="filled in star icon" />
@@ -236,34 +236,38 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
   }
 
   function GenerateTags() {
-    let genres = info.genre.split(",");
-    let formats = info.format.split(",");
-    return (
-      <div className="popup-tags">
-        {formats.map((format) => (
-          <div
-            className="tags"
-            style={{
-              backgroundColor: mode === "day" ? neonpink : neongreen,
-              color: mode === "day" ? light : dark,
-            }}
-          >
-            {format}
-          </div>
-        ))}
-        {genres.map((genre) => (
-          <div
-            className="tags"
-            style={{
-              backgroundColor: mode === "day" ? neonblue : purple,
-              color: mode === "day" ? light : dark,
-            }}
-          >
-            {genre}
-          </div>
-        ))}
-      </div>
-    );
+    if (info) {
+      let genres = info.genre.split(",");
+      let formats = info.format.split(",");
+      return (
+        <div className="popup-tags">
+          {formats.map((format) => (
+            <div
+              className="tags"
+              style={{
+                backgroundColor: mode === "day" ? neonpink : neongreen,
+                color: mode === "day" ? light : dark,
+              }}
+            >
+              {format}
+            </div>
+          ))}
+          {genres.map((genre) => (
+            <div
+              className="tags"
+              style={{
+                backgroundColor: mode === "day" ? neonblue : purple,
+                color: mode === "day" ? light : dark,
+              }}
+            >
+              {genre}
+            </div>
+          ))}
+        </div>
+      );
+    } else {
+      return;
+    }
   }
 
   function GenerateDate() {
@@ -321,7 +325,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
         }}
         alt="x icon"
       />
-      <div className="popup-title-wrapper" ref={cardscroll}>
+      <div className="popup-title-wrapper">
         <GenerateDate />
         <h3
           style={{ color: mode === "day" ? dark : light }}
