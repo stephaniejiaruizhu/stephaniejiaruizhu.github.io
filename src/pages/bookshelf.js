@@ -212,7 +212,7 @@ function Bookshelf() {
                 <p className="book-title-2">{item.title}</p>
                 <span
                   className="book-author-2"
-                  style={{ color: mode === "day" ? pink : green }}
+                  style={{ color: mode === "night" ? green : pink }}
                 >
                   {item.author}
                 </span>
@@ -242,7 +242,7 @@ function Bookshelf() {
                 <p className="book-title">{item.title}</p>
                 <span
                   className="book-author"
-                  style={{ color: mode === "day" ? pink : green }}
+                  style={{ color: mode === "night" ? green : pink }}
                 >{`[${item.author}]`}</span>
               </div>
             </>
