@@ -59,11 +59,6 @@ function Bookshelf() {
           className="toggle-styles"
           id="styles-toggle"
           onClick={() => setStyle(!style)}
-          style={{
-            backgroundColor: mode === "day" ? light : dark,
-            color: mode === "day" ? dark : light,
-            border: mode === "day" ? `1px solid ${dark}` : `1px solid ${light}`,
-          }}
         >
           {style === false ? "SEE AS LIST" : "SEE AS COVERS"}
         </p>
