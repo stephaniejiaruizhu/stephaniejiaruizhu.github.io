@@ -335,7 +335,7 @@ function Popup({ info, card, cardscroll, popup, mode, setPopup }) {
         >
           {info ? info.author : null}
         </p>
-        {info.image != null ? (
+        {info ? (
           <img className="popup-image" src={info.image} alt="book cover" />
         ) : null}
         {mode === "day" ? <StarsLight /> : <StarsDark />}
