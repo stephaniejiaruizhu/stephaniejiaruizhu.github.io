@@ -245,8 +245,8 @@ function Popup({ info, card, popup, mode, setPopup }) {
             <div
               className="tags"
               style={{
-                backgroundColor: mode === "day" ? neonpink : neongreen,
-                color: mode === "day" ? light : dark,
+                backgroundColor: mode === "night" ? neongreen : neonpink,
+                color: mode === "night" ? dark : light,
               }}
             >
               {format}
@@ -256,8 +256,8 @@ function Popup({ info, card, popup, mode, setPopup }) {
             <div
               className="tags"
               style={{
-                backgroundColor: mode === "day" ? neonblue : purple,
-                color: mode === "day" ? light : dark,
+                backgroundColor: mode === "night" ? purple : neonblue,
+                color: mode === "night" ? dark : light,
               }}
             >
               {genre}
@@ -316,14 +316,14 @@ function Popup({ info, card, popup, mode, setPopup }) {
       ref={card}
       style={{
         display: popup ? "block" : "none",
-        backgroundColor: mode === "day" ? light : dark,
-        border: mode === "day" ? `2px solid ${dark}` : `2px solid ${light}`,
-        boxShadow: mode === "day" ? `2px 3px ${dark}` : `2px 3px ${light}`,
+        backgroundColor: mode === "night" ? dark : light,
+        border: mode === "dark" ? `2px solid ${light}` : `2px solid ${dark}`,
+        boxShadow: mode === "dark" ? `2px 3px ${light}` : `2px 3px ${dark}`,
       }}
     >
       <img
         className="xmark"
-        src={mode === "day" ? XDark : XLight}
+        src={mode === "night" ? XLight : XDark}
         onClick={() => {
           setPopup(0);
         }}
@@ -332,13 +332,13 @@ function Popup({ info, card, popup, mode, setPopup }) {
       <div className="popup-title-wrapper">
         <GenerateDate />
         <h3
-          style={{ color: mode === "day" ? dark : light }}
+          style={{ color: mode === "night" ? light : dark }}
           className="popup-title"
         >
           {info ? info.title : null}
         </h3>
         <p
-          style={{ color: mode === "day" ? neonpink : neongreen }}
+          style={{ color: mode === "night" ? neongreen : neonpink }}
           className="popup-author"
         >
           {info ? info.author : null}
@@ -346,7 +346,7 @@ function Popup({ info, card, popup, mode, setPopup }) {
         {info ? (
           <img className="popup-image" src={info.image} alt="book cover" />
         ) : null}
-        {mode === "day" ? <StarsLight /> : <StarsDark />}
+        {mode === "night" ? <StarsDark /> : <StarsLight />}
         <GenerateTags />
       </div>
     </div>
