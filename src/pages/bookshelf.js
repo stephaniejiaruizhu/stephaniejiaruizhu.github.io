@@ -2,19 +2,20 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Papa from "papaparse";
-// import Popup from "./popup";
+import Popup from "./popup";
 
 function Bookshelf() {
   const [items, setItems] = useState([]);
   const [active, setActive] = useState("2026");
   const [mode, setMode] = useState(null);
   const [style, setStyle] = useState(false);
-  // const [popup, setPopup] = useState(0);
-  // const [popupinfo, setPopupInfo] = useState(null);
+  const [popup, setPopup] = useState(0);
+  const [popupinfo, setPopupInfo] = useState(null);
   const [url, setUrl] = useState(
     "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv"
   );
-  // const card = useRef(null);
+
+  const card = useRef(null);
 
   let green = "#d4df7d";
   let pink = "#ff15d8";
@@ -185,14 +186,13 @@ function Bookshelf() {
         <div className="book-wrapper-2">
           {items.map((item) => (
             <>
-              {/* <Popup
+              <Popup
                 info={popupinfo ? popupinfo : item}
                 card={card}
-                cardscroll={cardscroll}
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
-              /> */}
+              />
               <div className="book-item-2">
                 {item.image != null ? (
                   <img
@@ -203,10 +203,10 @@ function Bookshelf() {
                     }
                     src={item.image}
                     alt="book cover"
-                    /* onClick={() => {
+                    onClick={() => {
                       setPopup(!popup);
                       setPopupInfo(item);
-                    }} */
+                    }}
                   />
                 ) : null}
                 <p className="book-title-2">{item.title}</p>
@@ -224,20 +224,19 @@ function Bookshelf() {
         <div className="book-wrapper">
           {items.map((item) => (
             <>
-              {/* <Popup
+              <Popup
                 info={popupinfo ? popupinfo : item}
                 card={card}
-                cardscroll={cardscroll}
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
-              /> */}
+              />
               <div
                 className="book-item"
-                /* onClick={() => {
+                onClick={() => {
                   setPopup(!popup);
                   setPopupInfo(item);
-                }} */
+                }}
               >
                 <p className="book-title">{item.title}</p>
                 <span
