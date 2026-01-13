@@ -271,39 +271,43 @@ function Popup({ info, card, popup, mode, setPopup }) {
   }
 
   function GenerateDate() {
-    var startDate = new Date(info.date_started);
-    var startDateFinal;
+    if (info) {
+      var startDate = new Date(info.date_started);
+      var startDateFinal;
 
-    let endDate;
-    let endDateFinal;
-    if (info.date_finished) {
-      endDate = new Date(info.date_finished);
+      let endDate;
+      let endDateFinal;
+      if (info.date_finished) {
+        endDate = new Date(info.date_finished);
 
-      endDateFinal =
-        ("0" + (endDate.getMonth() + 1)).slice(-2) +
+        endDateFinal =
+          ("0" + (endDate.getMonth() + 1)).slice(-2) +
+          "." +
+          ("0" + endDate.getDate()).slice(-2) +
+          "." +
+          endDate.getFullYear();
+      } else {
+        endDate = null;
+        endDateFinal = null;
+      }
+
+      startDateFinal =
+        ("0" + (startDate.getMonth() + 1)).slice(-2) +
         "." +
-        ("0" + endDate.getDate()).slice(-2) +
+        ("0" + startDate.getDate()).slice(-2) +
         "." +
-        endDate.getFullYear();
+        startDate.getFullYear();
+
+      return (
+        <p className="popup-date">
+          {endDateFinal
+            ? `${startDateFinal} – ${endDateFinal}`
+            : `${startDateFinal} – `}
+        </p>
+      );
     } else {
-      endDate = null;
-      endDateFinal = null;
+      return;
     }
-
-    startDateFinal =
-      ("0" + (startDate.getMonth() + 1)).slice(-2) +
-      "." +
-      ("0" + startDate.getDate()).slice(-2) +
-      "." +
-      startDate.getFullYear();
-
-    return (
-      <p className="popup-date">
-        {endDateFinal
-          ? `${startDateFinal} – ${endDateFinal}`
-          : `${startDateFinal} – `}
-      </p>
-    );
   }
 
   return (
