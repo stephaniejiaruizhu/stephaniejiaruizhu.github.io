@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Papa from "papaparse";
 import Popup from "./popup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 
 function Bookshelf() {
   const [items, setItems] = useState([]);
@@ -180,6 +182,15 @@ function Bookshelf() {
             ALL
           </div>
         </div>
+        <p className="instructions">
+          <FontAwesomeIcon
+            icon={faHandPointer}
+            style={{ paddingRight: "2px" }}
+          />{" "}
+          {style === false
+            ? "Click on an image to learn more."
+            : "Click on a title to learn more."}
+        </p>
       </div>
 
       {style === false ? (
@@ -192,6 +203,7 @@ function Bookshelf() {
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
+                setMode={setMode}
               />
               <div className="book-item-2">
                 {item.image != null ? (

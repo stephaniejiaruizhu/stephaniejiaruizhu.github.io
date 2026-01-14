@@ -386,6 +386,10 @@ a:hover {
     font-size: @text-reg;
     max-width: 80%;
 
+    span {
+      font-style: italic;
+    }
+
     @media @breakpoint2 {
       max-width: 100%;
     }
@@ -632,8 +636,16 @@ a:hover {
   }
 }
 
+.instructions {
+  text-align: center;
+  font-family: @sans-serif;
+  font-size: @text-reg;
+  margin-top: 60px;
+  font-style: italic;
+}
+
 .book-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
@@ -672,7 +684,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   max-width: 90%;
-  margin: 100px auto 150px;
+  margin: 40px auto 150px;
   row-gap: 50px;
   justify-content: center;
 }
@@ -739,7 +751,7 @@ a:hover {
   overflow-y: scroll;
 
   @media (max-width: 420px) {
-    width: 90%;
+    width: 85%;
   }
 
   @media (max-height: 580px) {
@@ -755,9 +767,12 @@ a:hover {
     position: absolute;
     right: 20px;
     top: 25px;
-    width: 15px;
-    height: 15px;
+    font-size: 25px;
     cursor: pointer;
+
+    &:hover {
+      color: @gray !important;
+    }
   }
 }
 
@@ -800,7 +815,12 @@ a:hover {
   display: flex;
   margin-top: 15px;
   gap: 5px;
+  font-size: 20px;
   .star {
+    width: 20px;
+    height: 20px;
+  }
+  .star-solid {
     width: 20px;
     height: 20px;
   }
@@ -816,7 +836,12 @@ a:hover {
   font-size: 13px;
   gap: 10px;
 
-  .tags {
+  .tags-form {
+    padding: 5px 15px;
+    border-radius: 15px;
+  }
+
+  .tags-genre {
     padding: 5px 15px;
     border-radius: 15px;
   }

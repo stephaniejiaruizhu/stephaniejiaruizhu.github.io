@@ -27,6 +27,14 @@ function ToggleButton() {
       document.body.style.backgroundColor = light;
       document.body.style.color = dark;
       document
+        .querySelectorAll(".popup-wrapper")
+        .forEach(
+          (popup) => (
+            (popup.style.backgroundColor = light),
+            (popup.style.border = `2px solid ${dark}`)
+          )
+        );
+      document
         .querySelectorAll("div.bookshelf-year")
         .forEach((title) => (title.style.color = blue));
       document
@@ -49,6 +57,14 @@ function ToggleButton() {
       setToggleView("night");
       document.body.style.backgroundColor = dark;
       document.body.style.color = light;
+      document
+        .querySelectorAll(".popup-wrapper")
+        .forEach(
+          (popup) => (
+            (popup.style.backgroundColor = dark),
+            (popup.style.border = `2px solid ${light}`)
+          )
+        );
       document
         .querySelectorAll(".book-author")
         .forEach((title) => (title.style.color = green));
@@ -82,6 +98,39 @@ function ToggleButton() {
             (document.body.style.backgroundColor = dark),
             (document.body.style.color = light),
             document
+              .querySelectorAll(".popup-wrapper")
+              .forEach(
+                (popup) => (
+                  (popup.style.backgroundColor = dark),
+                  (popup.style.border = `2px solid ${light}`)
+                )
+              ),
+            document
+              .querySelectorAll(".popup-title")
+              .forEach((title) => (title.style.color = light)),
+            document
+              .querySelectorAll(".popup-author")
+              .forEach((title) => (title.style.color = green)),
+            document
+              .querySelectorAll(".tags-form")
+              .forEach(
+                (title) => (
+                  (title.style.backgroundColor = green),
+                  (title.style.color = dark)
+                )
+              ),
+            document
+              .querySelectorAll(".tags-genre")
+              .forEach(
+                (title) => (
+                  (title.style.backgroundColor = purple),
+                  (title.style.color = dark)
+                )
+              ),
+            document
+              .querySelectorAll(".star-solid")
+              .forEach((star) => (star.style.color = "yellow")),
+            document
               .querySelectorAll(".book-author")
               .forEach((title) => (title.style.color = green)),
             document
@@ -107,6 +156,36 @@ function ToggleButton() {
           : (setToggleView("day"),
             (document.body.style.backgroundColor = light),
             (document.body.style.color = dark),
+            document
+              .querySelectorAll(".popup-wrapper")
+              .forEach(
+                (popup) => (
+                  (popup.style.backgroundColor = light),
+                  (popup.style.border = `2px solid ${dark}`)
+                )
+              ),
+            document
+              .querySelectorAll(".popup-title")
+              .forEach((title) => (title.style.color = dark)),
+            document
+              .querySelectorAll(".popup-author")
+              .forEach((title) => (title.style.color = pink)),
+            document
+              .querySelectorAll(".tags-form")
+              .forEach(
+                (title) => (
+                  (title.style.backgroundColor = pink),
+                  (title.style.color = light)
+                )
+              ),
+            document
+              .querySelectorAll(".tags-genre")
+              .forEach(
+                (title) => (
+                  (title.style.backgroundColor = blue),
+                  (title.style.color = light)
+                )
+              ),
             document
               .querySelectorAll("div.bookshelf-year")
               .forEach((title) => (title.style.color = blue)),

@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import StarDarkSolid from "../images/icons/star-dark-solid.webp";
-import StarDarkOutline from "../images/icons/star-outline-dark.webp";
-import StarLightSolid from "../images/icons/star-light-solid.webp";
-import StarLightOutline from "../images/icons/star-outline-light.webp";
-import XDark from "../images/icons/xmarkdark.webp";
-import XLight from "../images/icons/xmarklight.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faStar as faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
-function Popup({ info, card, popup, mode, setPopup }) {
+function Popup({ info, card, popup, mode, setMode, setPopup }) {
   // colors
   let light = "#eeeae3";
   let dark = "#1f2a27";
@@ -14,6 +12,22 @@ function Popup({ info, card, popup, mode, setPopup }) {
   let neonpink = "#ff15d8";
   let neonblue = "#0429fe";
   let purple = "#e0bfda";
+
+  function checkMode() {
+    if (localStorage.getItem("mode") === "day") {
+      setMode("day");
+    } else if (localStorage.getItem("mode") === "night") {
+      setMode("night");
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("storage", checkMode);
+    window.dispatchEvent(new Event("storage"));
+    return () => {
+      window.removeEventListener("storage", checkMode);
+    };
+  }, [popup]);
 
   // close popup if clicking outside of it
   const closePopup = (e) => {
@@ -43,231 +57,95 @@ function Popup({ info, card, popup, mode, setPopup }) {
   });
 
   // generate star ratings
-  function StarsLight() {
+  function Stars() {
     if (info && info.my_rating === 2) {
       return (
         <div className="rating-wrapper">
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
         </div>
       );
     } else if (info && info.my_rating === 3) {
       return (
         <div className="rating-wrapper">
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
         </div>
       );
     } else if (info && info.my_rating === 4) {
       return (
         <div className="rating-wrapper">
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightOutline}
-            alt="star icon without fill"
-          />
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star">
+            <FontAwesomeIcon icon={farStar} />
+          </span>
         </div>
       );
     } else if (info && info.my_rating === 5) {
       return (
         <div className="rating-wrapper">
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
-          <img
-            className="star"
-            src={StarLightSolid}
-            alt="filled in star icon"
-          />
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
+          <span className="star-solid">
+            <FontAwesomeIcon icon={faStar} />
+          </span>
         </div>
       );
     }
   }
 
-  function StarsDark() {
-    if (info && info.my_rating === 2) {
-      return (
-        <div className="rating-wrapper">
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-        </div>
-      );
-    } else if (info && info.my_rating === 3) {
-      return (
-        <div className="rating-wrapper">
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-        </div>
-      );
-    } else if (info && info.my_rating === 4) {
-      return (
-        <div className="rating-wrapper">
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img
-            className="star"
-            src={StarDarkOutline}
-            alt="star icon without fill"
-          />
-        </div>
-      );
-    } else if (info && info.my_rating === 5) {
-      return (
-        <div className="rating-wrapper">
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-          <img className="star" src={StarDarkSolid} alt="filled in star icon" />
-        </div>
-      );
-    }
-  }
-
-  function GenerateTags() {
-    if (info) {
-      let genres = info.genre.split(",");
-      let formats = info.format.split(",");
-      return (
-        <div className="popup-tags">
-          {formats.map((format) => (
-            <div
-              className="tags"
-              style={{
-                backgroundColor: mode === "night" ? neongreen : neonpink,
-                color: mode === "night" ? dark : light,
-              }}
-            >
-              {format}
-            </div>
-          ))}
-          {genres.map((genre) => (
-            <div
-              className="tags"
-              style={{
-                backgroundColor: mode === "night" ? purple : neonblue,
-                color: mode === "night" ? dark : light,
-              }}
-            >
-              {genre}
-            </div>
-          ))}
-        </div>
-      );
-    } else {
-      return;
-    }
+  let genres;
+  let formats;
+  if (info) {
+    genres = info.genre.split(",");
+    formats = info.format.split(",");
   }
 
   function GenerateDate() {
@@ -318,17 +196,22 @@ function Popup({ info, card, popup, mode, setPopup }) {
         display: popup ? "block" : "none",
         backgroundColor: mode === "night" ? dark : light,
         border: mode === "dark" ? `2px solid ${light}` : `2px solid ${dark}`,
-        boxShadow: mode === "dark" ? `2px 3px ${light}` : `2px 3px ${dark}`,
       }}
     >
-      <img
+      <span
         className="xmark"
-        src={mode === "night" ? XLight : XDark}
         onClick={() => {
           setPopup(0);
         }}
-        alt="x icon"
-      />
+      >
+        <FontAwesomeIcon
+          icon={faXmark}
+          style={{
+            paddingRight: "2px",
+            fill: mode === "dark" ? light : dark,
+          }}
+        />
+      </span>
       <div className="popup-title-wrapper">
         <GenerateDate />
         <h3
@@ -346,8 +229,33 @@ function Popup({ info, card, popup, mode, setPopup }) {
         {info ? (
           <img className="popup-image" src={info.image} alt="book cover" />
         ) : null}
-        {mode === "night" ? <StarsDark /> : <StarsLight />}
-        <GenerateTags />
+        <Stars />
+        {info ? (
+          <div className="popup-tags">
+            {formats.map((format) => (
+              <div
+                className="tags-form"
+                style={{
+                  backgroundColor: mode === "night" ? neongreen : neonpink,
+                  color: mode === "night" ? dark : light,
+                }}
+              >
+                {format}
+              </div>
+            ))}
+            {genres.map((genre) => (
+              <div
+                className="tags-genre"
+                style={{
+                  backgroundColor: mode === "night" ? purple : neonblue,
+                  color: mode === "night" ? dark : light,
+                }}
+              >
+                {genre}
+              </div>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   );
