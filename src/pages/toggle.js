@@ -128,9 +128,6 @@ function ToggleButton() {
                 )
               ),
             document
-              .querySelectorAll(".star-solid")
-              .forEach((star) => (star.style.color = "yellow")),
-            document
               .querySelectorAll(".book-author")
               .forEach((title) => (title.style.color = green)),
             document

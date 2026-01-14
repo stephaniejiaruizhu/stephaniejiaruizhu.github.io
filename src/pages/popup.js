@@ -21,13 +21,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
     }
   }
 
-  useEffect(() => {
-    window.addEventListener("storage", checkMode);
-    window.dispatchEvent(new Event("storage"));
-    return () => {
-      window.removeEventListener("storage", checkMode);
-    };
-  }, [popup]);
+  useEffect(checkMode, []);
 
   // close popup if clicking outside of it
   const closePopup = (e) => {
@@ -189,75 +183,76 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
   }
 
   return (
-    <div
-      className="popup-wrapper"
-      ref={card}
-      style={{
-        display: popup ? "block" : "none",
-        backgroundColor: mode === "night" ? dark : light,
-        border: mode === "night" ? `2px solid ${light}` : `2px solid ${dark}`,
-      }}
-    >
-      <span
-        className="xmark"
-        onClick={() => {
-          setPopup(0);
+    info && (
+      <div
+        className="popup-wrapper"
+        ref={card}
+        style={{
+          display: popup && info ? "block" : "none",
+          backgroundColor: mode === "night" ? dark : light,
+          border: mode === "night" ? `2px solid ${light}` : `2px solid ${dark}`,
         }}
       >
-        <FontAwesomeIcon
-          icon={faXmark}
-          style={{
-            paddingRight: "2px",
-            color: mode === "night" ? light : dark,
+        <span
+          className="xmark"
+          onClick={() => {
+            setPopup(0);
           }}
-        />
-      </span>
-      <div className="popup-title-wrapper">
-        <GenerateDate />
-        <h3
-          style={{ color: mode === "night" ? light : dark }}
-          className="popup-title"
         >
-          {info ? info.title : null}
-        </h3>
-        <p
-          style={{ color: mode === "night" ? neongreen : neonpink }}
-          className="popup-author"
-        >
-          {info ? info.author : null}
-        </p>
-        {info ? (
-          <img className="popup-image" src={info.image} alt="book cover" />
-        ) : null}
-        <Stars />
-        {info ? (
-          <div className="popup-tags">
-            {formats.map((format) => (
-              <div
-                className="tags-form"
-                style={{
-                  backgroundColor: mode === "night" ? neongreen : neonpink,
-                  color: mode === "night" ? dark : light,
-                }}
-              >
-                {format}
-              </div>
-            ))}
-            {genres.map((genre) => (
-              <div
-                className="tags-genre"
-                style={{
-                  backgroundColor: mode === "night" ? purple : neonblue,
-                  color: mode === "night" ? dark : light,
-                }}
-              >
-                {genre}
-              </div>
-            ))}
-          </div>
-        ) : null}
+          <FontAwesomeIcon
+            icon={faXmark}
+            style={{
+              paddingRight: "2px",
+            }}
+          />
+        </span>
+        <div className="popup-title-wrapper">
+          <GenerateDate />
+          <h3
+            style={{ color: mode === "night" ? light : dark }}
+            className="popup-title"
+          >
+            {info ? info.title : null}
+          </h3>
+          <p
+            style={{ color: mode === "night" ? neongreen : neonpink }}
+            className="popup-author"
+          >
+            {info ? info.author : null}
+          </p>
+          {info ? (
+            <img className="popup-image" src={info.image} alt="book cover" />
+          ) : null}
+          <Stars />
+          {info ? (
+            <div className="popup-tags">
+              {formats.map((format) => (
+                <div
+                  className="tags-form"
+                  style={{
+                    backgroundColor: mode === "night" ? neongreen : neonpink,
+                    color: mode === "night" ? dark : light,
+                  }}
+                >
+                  {format}
+                </div>
+              ))}
+              {genres.map((genre) => (
+                <div
+                  className="tags-genre"
+                  style={{
+                    backgroundColor: mode === "night" ? purple : neonblue,
+                    color: mode === "night" ? dark : light,
+                  }}
+                >
+                  {genre}
+                </div>
+              ))}
+            </div>
+          ) : null}
+        </div>
       </div>
-    </div>
+    )
   );
 }
 

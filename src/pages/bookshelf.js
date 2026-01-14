@@ -21,8 +21,6 @@ function Bookshelf() {
 
   let green = "#d4df7d";
   let pink = "#ff15d8";
-  let light = "#eeeae3";
-  let dark = "#1f2a27";
 
   useEffect(
     (active) => {
@@ -46,13 +44,7 @@ function Bookshelf() {
     }
   }
 
-  useEffect(() => {
-    window.addEventListener("storage", checkMode);
-    window.dispatchEvent(new Event("storage"));
-    return () => {
-      window.removeEventListener("storage", checkMode);
-    };
-  }, [active]);
+  useEffect(checkMode, []);
 
   return (
     <div>
@@ -198,7 +190,7 @@ function Bookshelf() {
           {items.map((item) => (
             <>
               <Popup
-                info={popupinfo ? popupinfo : item}
+                info={popupinfo ? popupinfo : null}
                 card={card}
                 popup={popup}
                 setPopup={setPopup}
@@ -237,11 +229,12 @@ function Bookshelf() {
           {items.map((item) => (
             <>
               <Popup
-                info={popupinfo ? popupinfo : item}
+                info={popupinfo ? popupinfo : null}
                 card={card}
                 popup={popup}
                 setPopup={setPopup}
                 mode={mode}
+                setMode={setMode}
               />
               <div
                 className="book-item"
