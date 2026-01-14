@@ -195,7 +195,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
       style={{
         display: popup ? "block" : "none",
         backgroundColor: mode === "night" ? dark : light,
-        border: mode === "dark" ? `2px solid ${light}` : `2px solid ${dark}`,
+        border: mode === "night" ? `2px solid ${light}` : `2px solid ${dark}`,
       }}
     >
       <span
@@ -208,7 +208,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
           icon={faXmark}
           style={{
             paddingRight: "2px",
-            fill: mode === "dark" ? light : dark,
+            color: mode === "night" ? light : dark,
           }}
         />
       </span>
