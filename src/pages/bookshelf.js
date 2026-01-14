@@ -22,19 +22,16 @@ function Bookshelf() {
   let green = "#d4df7d";
   let pink = "#ff15d8";
 
-  useEffect(
-    (active) => {
-      Papa.parse(url, {
-        download: true,
-        header: true,
-        dynamicTyping: true,
-        complete: (results) => {
-          setItems(results.data);
-        },
-      });
-    },
-    [url]
-  );
+  useEffect(() => {
+    Papa.parse(url, {
+      download: true,
+      header: true,
+      dynamicTyping: true,
+      complete: (results) => {
+        setItems(results.data);
+      },
+    });
+  }, [url]);
 
   function checkMode() {
     if (localStorage.getItem("mode") === "day") {
@@ -187,16 +184,16 @@ function Bookshelf() {
 
       {style === false ? (
         <div className="book-wrapper-2">
+          <Popup
+            info={popupinfo}
+            card={card}
+            popup={popup}
+            setPopup={setPopup}
+            mode={mode}
+            setMode={setMode}
+          />
           {items.map((item) => (
             <>
-              <Popup
-                info={popupinfo ? popupinfo : null}
-                card={card}
-                popup={popup}
-                setPopup={setPopup}
-                mode={mode}
-                setMode={setMode}
-              />
               <div className="book-item-2">
                 {item.image != null ? (
                   <img
@@ -226,16 +223,16 @@ function Bookshelf() {
         </div>
       ) : (
         <div className="book-wrapper">
+          <Popup
+            info={popupinfo}
+            card={card}
+            popup={popup}
+            setPopup={setPopup}
+            mode={mode}
+            setMode={setMode}
+          />
           {items.map((item) => (
             <>
-              <Popup
-                info={popupinfo ? popupinfo : null}
-                card={card}
-                popup={popup}
-                setPopup={setPopup}
-                mode={mode}
-                setMode={setMode}
-              />
               <div
                 className="book-item"
                 onClick={() => {
