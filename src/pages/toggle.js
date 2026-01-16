@@ -87,7 +87,7 @@ function ToggleButton() {
     }
   }
 
-  useEffect(CheckMode, []);
+  useEffect(CheckMode, [toggleView]);
 
   return (
     <div

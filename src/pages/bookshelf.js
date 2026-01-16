@@ -3,8 +3,10 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Papa from "papaparse";
 import Popup from "./popup";
+// import Info from "./infopopup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
+// import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 function Bookshelf() {
   const [items, setItems] = useState([]);
@@ -22,6 +24,7 @@ function Bookshelf() {
   let green = "#d4df7d";
   let pink = "#ff15d8";
 
+  // turn csv into json
   useEffect(() => {
     Papa.parse(url, {
       download: true,
@@ -33,6 +36,7 @@ function Bookshelf() {
     });
   }, [url]);
 
+  // check if light or dark mode
   function checkMode() {
     if (localStorage.getItem("mode") === "day") {
       setMode("day");
@@ -41,7 +45,7 @@ function Bookshelf() {
     }
   }
 
-  useEffect(checkMode, []);
+  useEffect(checkMode, [mode, style]);
 
   return (
     <div>
@@ -54,6 +58,12 @@ function Bookshelf() {
         >
           {style === false ? "SEE AS LIST" : "SEE AS COVERS"}
         </p>
+        {/* <p>
+          <FontAwesomeIcon
+            icon={faCircleInfo}
+            className="bookshelf-info fa-border"
+          />
+        </p> */}
         <h2 className="bookshelf-title">Bookshelf</h2>
         <div className="bookshelf-year-filter">
           <div

@@ -13,6 +13,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
   let neonblue = "#0429fe";
   let purple = "#e0bfda";
 
+  // check light or dark mode
   function checkMode() {
     if (localStorage.getItem("mode") === "day") {
       setMode("day");
@@ -35,7 +36,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
     return () => document.removeEventListener("mousedown", closePopup);
   });
 
-  // control card based on keyboard
+  // close popup on esc
   const controlCard = (e) => {
     const { key, keyCode } = e;
 
@@ -135,6 +136,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
     }
   }
 
+  // split comma separated lists into arrays
   let genres;
   let formats;
   if (info) {
@@ -142,6 +144,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
     formats = info.format.split(",");
   }
 
+  // format date
   function GenerateDate() {
     if (info) {
       var startDate = new Date(info.date_started);
@@ -224,6 +227,12 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
             <img className="popup-image" src={info.image} alt="book cover" />
           ) : null}
           <Stars />
+          {info && info.notes ? (
+            <p className="popup-notes">
+              <span>NOTES:</span>
+              {info.notes}
+            </p>
+          ) : null}
           {info ? (
             <div className="popup-tags">
               {formats.map((format) => (
