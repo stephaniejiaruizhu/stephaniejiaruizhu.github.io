@@ -215,6 +215,7 @@ function Bookshelf() {
           {style === false
             ? "Click on an image to learn more."
             : "Click on a title to learn more."}
+          {active === "2026" ? " Dots indicate current reads." : null}
         </p>
       </div>
 
@@ -232,19 +233,27 @@ function Bookshelf() {
             <>
               <div className="book-item-2">
                 {item.image != null ? (
-                  <img
-                    className={
-                      mode === "day"
-                        ? "book-item-image"
-                        : "book-item-image hover"
-                    }
-                    src={item.image}
-                    alt="book cover"
-                    onClick={() => {
-                      setPopup(!popup);
-                      setPopupInfo(item);
-                    }}
-                  />
+                  <div className="book-image-wrapper">
+                    <div
+                      style={{
+                        display: item.date_finished == null ? "block" : "none",
+                      }}
+                      className="dot"
+                    />
+                    <img
+                      className={
+                        mode === "day"
+                          ? "book-item-image"
+                          : "book-item-image hover"
+                      }
+                      src={item.image}
+                      alt="book cover"
+                      onClick={() => {
+                        setPopup(!popup);
+                        setPopupInfo(item);
+                      }}
+                    />
+                  </div>
                 ) : null}
                 <p className="book-title-2">{item.title}</p>
                 <span
@@ -276,11 +285,20 @@ function Bookshelf() {
                   setPopupInfo(item);
                 }}
               >
-                <p className="book-title">{item.title}</p>
-                <span
-                  className="book-author"
-                  style={{ color: mode === "night" ? green : pink }}
-                >{`[${item.author}]`}</span>
+                <p className="book-title">
+                  <span
+                    style={{
+                      display:
+                        item.date_finished == null ? "inline-block" : "none",
+                    }}
+                    className="dot-2"
+                  />
+                  {item.title}{" "}
+                  <span
+                    className="book-author"
+                    style={{ color: mode === "night" ? green : pink }}
+                  >{`[${item.author}]`}</span>
+                </p>
               </div>
             </>
           ))}
