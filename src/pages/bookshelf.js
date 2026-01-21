@@ -10,19 +10,23 @@ import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 
 function Bookshelf() {
   const [items, setItems] = useState([]);
+  const [copy, setCopy] = useState([]);
   const [active, setActive] = useState("2026");
   const [mode, setMode] = useState(null);
   const [style, setStyle] = useState(false);
   const [popup, setPopup] = useState(0);
   const [popupinfo, setPopupInfo] = useState(null);
+  const [recommended, setRecommended] = useState(false);
   const [url, setUrl] = useState(
-    "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv"
+    "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv",
   );
 
   const card = useRef(null);
 
   let green = "#d4df7d";
   let pink = "#ff15d8";
+  let blue = "#0429fe";
+  let purple = "#e0bfda";
 
   // turn csv into json
   useEffect(() => {
@@ -32,6 +36,7 @@ function Bookshelf() {
       dynamicTyping: true,
       complete: (results) => {
         setItems(results.data);
+        setCopy(results.data);
       },
     });
   }, [url]);
@@ -45,8 +50,17 @@ function Bookshelf() {
     }
   }
 
-  useEffect(checkMode, [mode, style]);
+  function Filter() {
+    if (recommended) {
+      const filtered = items.filter((item) => item.my_rating >= 4);
+      setItems(filtered);
+    } else {
+      setItems(copy);
+    }
+  }
+  useEffect(Filter, [recommended, active]);
 
+  useEffect(checkMode, [mode, style, active]);
   return (
     <div>
       <Navbar active="Bookshelf" />
@@ -63,15 +77,22 @@ function Bookshelf() {
             icon={faCircleInfo}
             className="bookshelf-info fa-border"
           />
+          
         </p> */}
+        <p onClick={() => setRecommended(!recommended)} className="recommended">
+          {recommended ? "SEE ALL BOOKS" : "SEE RECOMMENDED"}
+        </p>
         <h2 className="bookshelf-title">Bookshelf</h2>
-        <div className="bookshelf-year-filter">
+        <div
+          className="bookshelf-year-filter"
+          style={{ color: mode === "night" ? purple : blue }}
+        >
           <div
             className="bookshelf-year"
             onClick={() => {
               setActive("2026");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv",
               );
             }}
             style={{
@@ -89,8 +110,9 @@ function Bookshelf() {
             onClick={() => {
               setActive("2025");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990679/csvs/2025_egeidm.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990679/csvs/2025_egeidm.csv",
               );
+              setRecommended(false);
             }}
             style={{
               fontWeight: active === "2025" ? 800 : 400,
@@ -108,8 +130,9 @@ function Bookshelf() {
             onClick={() => {
               setActive("2024");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2024_ymr4ka.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2024_ymr4ka.csv",
               );
+              setRecommended(false);
             }}
             className="bookshelf-year"
             style={{
@@ -127,8 +150,9 @@ function Bookshelf() {
             onClick={() => {
               setActive("2023");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2023_xtjofz.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2023_xtjofz.csv",
               );
+              setRecommended(false);
             }}
             className="bookshelf-year"
             style={{
@@ -146,8 +170,9 @@ function Bookshelf() {
             onClick={() => {
               setActive("2022");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1768023327/csvs/2022_lmbddu.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1768023327/csvs/2022_lmbddu.csv",
               );
+              setRecommended(false);
             }}
             style={{
               fontWeight: active === "2022" ? 800 : 400,
@@ -165,8 +190,9 @@ function Bookshelf() {
             onClick={() => {
               setActive("ALL");
               setUrl(
-                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/combined_y1q8eo.csv"
+                "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/combined_y1q8eo.csv",
               );
+              setRecommended(false);
             }}
             className="bookshelf-year"
             style={{

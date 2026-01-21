@@ -679,6 +679,27 @@ a:hover {
   font-style: italic;
 }
 
+.recommended {
+  font-family: @sans-serif;
+  background-color: white;
+  color: @dark;
+  padding: 5px 10px;
+  border: 1px solid @dark;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 13px;
+
+  &:hover {
+    background-color: @dark;
+    color: @light;
+    border: 1px solid @light;
+  }
+}
+
 .book-wrapper {
   margin-top: 30px;
   margin-bottom: 100px;
