@@ -121,6 +121,7 @@ function Bookshelf() {
               setUrl(
                 "https://res.cloudinary.com/dvjavf8xh/raw/upload/v1767990676/csvs/2026_i9l45k.csv",
               );
+              setRecommended(false);
             }}
             style={{
               fontWeight: active === "2026" ? 800 : 400,
