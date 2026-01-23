@@ -28,7 +28,7 @@ function Navbar({ active }) {
       >
         Work
       </a>
-      <a
+      {/* <a
         id="Play"
         className="navbar-item-desktop"
         href="/play"
@@ -39,7 +39,7 @@ function Navbar({ active }) {
         }
       >
         Play
-      </a>
+      </a> */}
 
       <a
         id="Bookshelf"

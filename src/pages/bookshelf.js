@@ -5,7 +5,13 @@ import Papa from "papaparse";
 import Popup from "./popup";
 // import Info from "./infopopup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHandPointer,
+  faList,
+  faHeart,
+  faBook,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 // import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 function Bookshelf() {
@@ -52,7 +58,7 @@ function Bookshelf() {
 
   function Filter() {
     if (recommended) {
-      const filtered = items.filter((item) => item.my_rating >= 4);
+      const filtered = items.filter((item) => item.fav === "yes");
       setItems(filtered);
     } else {
       setItems(copy);
@@ -70,17 +76,38 @@ function Bookshelf() {
           id="styles-toggle"
           onClick={() => setStyle(!style)}
         >
-          {style === false ? "SEE AS LIST" : "SEE AS COVERS"}
+          {style === false ? (
+            <>
+              <span style={{ paddingRight: "6px" }}>
+                {<FontAwesomeIcon icon={faList} />}
+              </span>
+              SEE AS LIST
+            </>
+          ) : (
+            <>
+              <span style={{ paddingRight: "6px" }}>
+                {<FontAwesomeIcon icon={faBook} />}
+              </span>
+              SEE AS COVERS
+            </>
+          )}
         </p>
-        {/* <p>
-          <FontAwesomeIcon
-            icon={faCircleInfo}
-            className="bookshelf-info fa-border"
-          />
-          
-        </p> */}
         <p onClick={() => setRecommended(!recommended)} className="recommended">
-          {recommended ? "SEE ALL BOOKS" : "SEE RECOMMENDED"}
+          {recommended ? (
+            <>
+              <span style={{ paddingRight: "6px" }}>
+                {<FontAwesomeIcon icon={faStar} />}
+              </span>
+              SEE ALL
+            </>
+          ) : (
+            <>
+              <span style={{ paddingRight: "6px" }}>
+                {<FontAwesomeIcon icon={faHeart} />}
+              </span>
+              SEE FAVORITES
+            </>
+          )}
         </p>
         <h2 className="bookshelf-title">Bookshelf</h2>
         <div
@@ -219,6 +246,12 @@ function Bookshelf() {
         </p>
       </div>
 
+      {active === "2026" && recommended === true ? (
+        <p className="book-later">
+          It's too early in the year for favorites! Come back later 😀.
+        </p>
+      ) : null}
+
       {style === false ? (
         <div className="book-wrapper-2">
           <Popup
@@ -236,7 +269,7 @@ function Bookshelf() {
                   <div className="book-image-wrapper">
                     <div
                       style={{
-                        display: item.date_finished == null ? "block" : "none",
+                        display: item.date_finished === null ? "block" : "none",
                       }}
                       className="dot"
                     />
@@ -289,7 +322,7 @@ function Bookshelf() {
                   <span
                     style={{
                       display:
-                        item.date_finished == null ? "inline-block" : "none",
+                        item.date_finished === null ? "inline-block" : "none",
                     }}
                     className="dot-2"
                   />

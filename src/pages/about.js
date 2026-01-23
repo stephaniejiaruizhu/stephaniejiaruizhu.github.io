@@ -45,13 +45,13 @@ function About() {
           </p>
           <p className="about-intro-subtext" style={{ marginTop: "30px" }}>
             Currently:
-            <br />• obsessing over{" "}
+            <br />• loving{" "}
             <a
               href="https://www.instagram.com/yuichi_artwork/?hl=en"
               target="_blank"
               rel="noreferrer"
             >
-              silly art
+              whimsical art
             </a>
             , {""}
             <a
@@ -62,7 +62,13 @@ function About() {
               jigsaw puzzles
             </a>{" "}
             and{" "}
-            <span style={{ color: "#0429fe", fontWeight: "800" }}>
+            <span
+              style={{
+                color: "#1f2a27",
+                backgroundColor: "#d4df7d",
+                padding: "2px 5px",
+              }}
+            >
               bright colors
             </span>
             <br /> • making questionable choices in{" "}
@@ -81,15 +87,7 @@ function About() {
             >
               <i>How to Hide an Empire</i>
             </a>{" "}
-            by Daniel Immerwahr <br />• trying my hand at{" "}
-            <a
-              href="https://drive.google.com/file/d/1JSqPQHO053dtYGw1QiLAUWn9OrFpU6UX/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              baking
-            </a>{" "}
-            and{" "}
+            by Daniel Immerwahr <br />•{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
