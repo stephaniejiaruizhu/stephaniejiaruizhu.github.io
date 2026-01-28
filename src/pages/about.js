@@ -45,7 +45,7 @@ function About() {
           </p>
           <p className="about-intro-subtext" style={{ marginTop: "30px" }}>
             Currently:
-            <br />• loving{" "}
+            <br />• into{" "}
             <a
               href="https://www.instagram.com/yuichi_artwork/?hl=en"
               target="_blank"
@@ -87,15 +87,14 @@ function About() {
             >
               <i>How to Hide an Empire</i>
             </a>{" "}
-            by Daniel Immerwahr <br />•{" "}
+            by Daniel Immerwahr <br />• documenting my eats through{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              eating
-            </a>{" "}
-            my way through the Bay Area
+              doodles
+            </a>
           </p>
           <p className="about-intro-subtext" style={{ marginTop: "30px" }}>
             See something interesting?{" "}
