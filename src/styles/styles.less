@@ -589,7 +589,7 @@ a:hover {
     bottom: 20px;
     left: 30px;
     border-radius: 20px;
-    padding: 5px 13px;
+    padding: 8px 13px;
     background-color: @light;
     color: @dark;
     border: 1px solid @dark;
@@ -696,6 +696,10 @@ a:hover {
   right: 30px;
   font-size: 13px;
   z-index: 1;
+
+  @media (max-width: 700px) {
+    padding: 8px 18px;
+  }
 
   &:hover {
     background-color: @dark;

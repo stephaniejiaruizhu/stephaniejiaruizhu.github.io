@@ -28,7 +28,7 @@ function Work() {
           />
         </picture>
         <div className="project-text">
-          <p className="project-date">09.25.25</p>
+          <p className="project-date">09.25.2025</p>
           <p className="project-title">
             <a
               href="https://www.sfchronicle.com/projects/2025/heklina-drag-closet/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvaGVrbGluYS1kcmFnLWNsb3NldC8=&time=MTc1ODkxNjgwMTMwMw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
@@ -40,10 +40,10 @@ function Work() {
             </a>{" "}
           </p>
           <p className="project-description">
-            [design + development]. A deep dive into the fashion and history
-            inside of late S.F. drag icon Heklina's closet. I pitched the design
-            direction for this piece and built it out with the help of one other
-            designer.
+            [design direction, design + development]. A deep dive into the
+            fashion and history inside of late S.F. drag icon Heklina's closet.
+            I pitched the design direction for this piece and built it out with
+            the help of one other designer.
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ function Work() {
           />
         </picture>
         <div className="project-text">
-          <p className="project-date">06.01.25</p>
+          <p className="project-date">06.01.2025</p>
           <p className="project-title">
             <a
               href="https://www.sfchronicle.com/projects/2025/california-fire-zone-zero-rules/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1maXJlLXpvbmUtemVyby1ydWxlcy8=&time=MTc0ODg4Nzc0MjIyOQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
@@ -100,7 +100,7 @@ function Work() {
           />
         </picture>
         <div className="project-text">
-          <p className="project-date">03.31.25</p>
+          <p className="project-date">03.31.2025</p>
           <p className="project-title">
             <a
               href="https://www.sfchronicle.com/projects/2025/top-100-best-restaurants-san-francisco-bay-area/"
