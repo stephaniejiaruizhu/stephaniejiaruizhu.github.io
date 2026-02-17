@@ -228,10 +228,16 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
           ) : null}
           <Stars />
           {info && info.notes ? (
-            <p className="popup-notes">
-              <span>NOTES:</span>
-              {info.notes}
-            </p>
+            <>
+              <p className="popup-notes-kicker">
+                {" "}
+                <span>NOTES:</span>
+              </p>
+              <p
+                className="popup-notes"
+                dangerouslySetInnerHTML={{ __html: info.notes }}
+              ></p>
+            </>
           ) : null}
           {info ? (
             <div className="popup-tags">
