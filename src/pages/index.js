@@ -7,7 +7,7 @@ import Footer from "./footer";
 import Topper from "./topper";
 import Work from "./work";
 import ReactGA from "react-ga4";
-ReactGA.initialize("G-0BT9038CSK");
+ReactGA.initialize("G-RFMTEQTLE9");
 
 config.autoAddCss = false;
 
