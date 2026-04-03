@@ -69,9 +69,9 @@ function Bookshelf() {
   return (
     <div>
       <Navbar active="Bookshelf" />
-      <div className={bookshelfStyles.bookshelfWrapper}>
+      <div className={`${bookshelfStyles.bookshelfWrapper} bookshelf-wrapper`}>
         <p
-          className={bookshelfStyles.toggleStyles}
+          className={`${bookshelfStyles.toggleStyles} toggle-styles`}
           id="styles-toggle"
           onClick={() => setStyle(!style)}
         >
@@ -93,7 +93,7 @@ function Bookshelf() {
         </p>
         <p
           onClick={() => setRecommended(!recommended)}
-          className={bookshelfStyles.recommended}
+          className={`${bookshelfStyles.recommended} recommended`}
         >
           {recommended ? (
             <>
@@ -111,13 +111,15 @@ function Bookshelf() {
             </>
           )}
         </p>
-        <h2 className={bookshelfStyles.bookshelfTitle}>Bookshelf</h2>
+        <h2 className={`${bookshelfStyles.bookshelfTitle} bookshelf-title`}>
+          Bookshelf
+        </h2>
         <div
-          className={bookshelfStyles.bookshelfYearFilter}
+          className={`${bookshelfStyles.bookshelfYearFilter} bookshelf-year-filter`}
           style={{ color: mode === "night" ? purple : blue }}
         >
           <div
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
             onClick={() => {
               setActive("2026");
               setUrl(
@@ -131,7 +133,7 @@ function Bookshelf() {
             }}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "2026" ? 1 : 0 }}
             />
             2026
@@ -148,10 +150,10 @@ function Bookshelf() {
               fontWeight: active === "2025" ? 800 : 400,
               marginLeft: active === "2025" ? "12px" : "0px",
             }}
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "2025" ? 1 : 0 }}
             />
             2025
@@ -164,14 +166,14 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
             style={{
               fontWeight: active === "2024" ? 800 : 400,
               marginLeft: active === "2024" ? "12px" : "0px",
             }}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "2024" ? 1 : 0 }}
             />
             2024
@@ -184,14 +186,14 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
             style={{
               fontWeight: active === "2023" ? 800 : 400,
               marginLeft: active === "2023" ? "12px" : "0px",
             }}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "2023" ? 1 : 0 }}
             />
             2023
@@ -208,10 +210,10 @@ function Bookshelf() {
               fontWeight: active === "2022" ? 800 : 400,
               marginLeft: active === "2022" ? "12px" : "0px",
             }}
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "2022" ? 1 : 0 }}
             />
             2022
@@ -224,14 +226,14 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className={bookshelfStyles.bookshelfYear}
+            className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
             style={{
               fontWeight: active === "ALL" ? 800 : 400,
               marginLeft: active === "ALL" ? "12px" : "0px",
             }}
           >
             <div
-              className={bookshelfStyles.activeMarker}
+              className={`${bookshelfStyles.activeMarker} active-marker`}
               style={{ opacity: active === "ALL" ? 1 : 0 }}
             />
             ALL
@@ -256,7 +258,7 @@ function Bookshelf() {
       ) : null}
 
       {style === false ? (
-        <div className={bookshelfStyles.bookWrapper2}>
+        <div className={`${bookshelfStyles.bookWrapper2} book-wrapper-2`}>
           <Popup
             info={popupinfo}
             card={card}
@@ -267,20 +269,22 @@ function Bookshelf() {
           />
           {items.map((item) => (
             <>
-              <div className={bookshelfStyles.bookItem2}>
+              <div className={`${bookshelfStyles.bookItem2} book-item-2`}>
                 {item.image != null ? (
-                  <div className={bookshelfStyles.bookItemImageWrapper}>
+                  <div
+                    className={`${bookshelfStyles.bookImageWrapper} book-image-wrapper`}
+                  >
                     <div
                       style={{
                         display: item.date_finished === null ? "block" : "none",
                       }}
-                      className={bookshelfStyles.dot}
+                      className={`${bookshelfStyles.dot} dot`}
                     />
                     <img
                       className={
                         mode === "day"
-                          ? bookshelfStyles.bookItemImage
-                          : `${bookshelfStyles.bookItemImage} ${bookshelfStyles.hover}`
+                          ? `${bookshelfStyles.bookItemImage} book-item-image`
+                          : `${bookshelfStyles.bookItemImage} ${bookshelfStyles.hover} hover book-item-image`
                       }
                       src={item.image}
                       alt="book cover"
@@ -291,9 +295,11 @@ function Bookshelf() {
                     />
                   </div>
                 ) : null}
-                <p className={bookshelfStyles.bookTitle2}>{item.title}</p>
+                <p className={`${bookshelfStyles.bookTitle2} book-title-2`}>
+                  {item.title}
+                </p>
                 <span
-                  className={bookshelfStyles.bookAuthor2}
+                  className={`${bookshelfStyles.bookAuthor2} book-author-2`}
                   style={{ color: mode === "night" ? green : pink }}
                 >
                   {item.author}
@@ -303,7 +309,7 @@ function Bookshelf() {
           ))}
         </div>
       ) : (
-        <div className={bookshelfStyles.bookWrapper}>
+        <div className={`${bookshelfStyles.bookWrapper} book-wrapper`}>
           <Popup
             info={popupinfo}
             card={card}
@@ -315,23 +321,23 @@ function Bookshelf() {
           {items.map((item) => (
             <>
               <div
-                className={bookshelfStyles.bookItem}
+                className={`${bookshelfStyles.bookItem} book-item`}
                 onClick={() => {
                   setPopup(!popup);
                   setPopupInfo(item);
                 }}
               >
-                <p className={bookshelfStyles.bookTitle}>
+                <p className={`${bookshelfStyles.bookTitle} book-title`}>
                   <span
                     style={{
                       display:
                         item.date_finished === null ? "inline-block" : "none",
                     }}
-                    className={bookshelfStyles.dot2}
+                    className={`${bookshelfStyles.dot2} dot-2`}
                   />
                   {item.title}{" "}
                   <span
-                    className={bookshelfStyles.bookAuthor}
+                    className={`${bookshelfStyles.bookAuthor} book-author`}
                     style={{ color: mode === "night" ? green : pink }}
                   >{`[${item.author}]`}</span>
                 </p>

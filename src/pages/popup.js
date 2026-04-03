@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
+import * as popupStyles from "../styles/modules/popup.module.less";
 
 function Popup({ info, card, popup, mode, setMode, setPopup }) {
   // colors
@@ -55,80 +56,80 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
   function Stars() {
     if (info && info.my_rating === 2) {
       return (
-        <div className="rating-wrapper">
-          <span className="star-solid">
+        <div className={popupStyles.ratingWrapper}>
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
         </div>
       );
     } else if (info && info.my_rating === 3) {
       return (
-        <div className="rating-wrapper">
-          <span className="star-solid">
+        <div className={popupStyles.ratingWrapper}>
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
         </div>
       );
     } else if (info && info.my_rating === 4) {
       return (
-        <div className="rating-wrapper">
-          <span className="star-solid">
+        <div className={popupStyles.ratingWrapper}>
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star">
+          <span className={popupStyles.star}>
             <FontAwesomeIcon icon={farStar} />
           </span>
         </div>
       );
     } else if (info && info.my_rating === 5) {
       return (
-        <div className="rating-wrapper">
-          <span className="star-solid">
+        <div className={popupStyles.ratingWrapper}>
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
-          <span className="star-solid">
+          <span className={popupStyles.starSolid}>
             <FontAwesomeIcon icon={faStar} />
           </span>
         </div>
@@ -174,7 +175,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
         startDate.getFullYear();
 
       return (
-        <p className="popup-date">
+        <p className={`${popupStyles.popupDate} popup-date`}>
           {endDateFinal
             ? `${startDateFinal} – ${endDateFinal}`
             : `${startDateFinal} – `}
@@ -188,7 +189,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
   return (
     info && (
       <div
-        className="popup-wrapper"
+        className={`${popupStyles.popupWrapper} popup-wrapper`}
         ref={card}
         style={{
           display: popup && info ? "block" : "none",
@@ -197,7 +198,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
         }}
       >
         <span
-          className="xmark"
+          className={`${popupStyles.xmark} xmark`}
           onClick={() => {
             setPopup(0);
           }}
@@ -209,41 +210,47 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
             }}
           />
         </span>
-        <div className="popup-title-wrapper">
+        <div className={`${popupStyles.popupTitleWrapper} popup-title-wrapper`}>
           <GenerateDate />
           <h3
             style={{ color: mode === "night" ? light : dark }}
-            className="popup-title"
+            className={`${popupStyles.popupTitle} popup-title`}
           >
             {info ? info.title : null}
           </h3>
           <p
             style={{ color: mode === "night" ? neongreen : neonpink }}
-            className="popup-author"
+            className={`${popupStyles.popupAuthor} popup-author`}
           >
             {info ? info.author : null}
           </p>
           {info ? (
-            <img className="popup-image" src={info.image} alt="book cover" />
+            <img
+              className={`${popupStyles.popupImage} popup-image`}
+              src={info.image}
+              alt="book cover"
+            />
           ) : null}
           <Stars />
           {info && info.notes ? (
             <>
-              <p className="popup-notes-kicker">
+              <p
+                className={`${popupStyles.popupNotesKicker} popup-notes-kicker`}
+              >
                 {" "}
                 <span>NOTES:</span>
               </p>
               <p
-                className="popup-notes"
+                className={`${popupStyles.popupNotes} popup-notes`}
                 dangerouslySetInnerHTML={{ __html: info.notes }}
               ></p>
             </>
           ) : null}
           {info ? (
-            <div className="popup-tags">
+            <div className={`${popupStyles.popupTags} popup-tags`}>
               {formats.map((format) => (
                 <div
-                  className="tags-form"
+                  className={`${popupStyles.tagsForm} tags-form`}
                   style={{
                     backgroundColor: mode === "night" ? neongreen : neonpink,
                     color: mode === "night" ? dark : light,
@@ -254,7 +261,7 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
               ))}
               {genres.map((genre) => (
                 <div
-                  className="tags-genre"
+                  className={`${popupStyles.tagsGenre} tags-genre`}
                   style={{
                     backgroundColor: mode === "night" ? purple : neonblue,
                     color: mode === "night" ? dark : light,

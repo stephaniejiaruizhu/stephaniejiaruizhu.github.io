@@ -32,7 +32,7 @@ function ToggleButton() {
           (popup) => (
             (popup.style.backgroundColor = light),
             (popup.style.border = `2px solid ${dark}`)
-          )
+          ),
         );
       document
         .querySelectorAll("div.bookshelf-year")
@@ -63,7 +63,7 @@ function ToggleButton() {
           (popup) => (
             (popup.style.backgroundColor = dark),
             (popup.style.border = `2px solid ${light}`)
-          )
+          ),
         );
       document
         .querySelectorAll(".book-author")
@@ -103,7 +103,7 @@ function ToggleButton() {
                 (popup) => (
                   (popup.style.backgroundColor = dark),
                   (popup.style.border = `2px solid ${light}`)
-                )
+                ),
               ),
             document
               .querySelectorAll(".popup-title")
@@ -117,7 +117,7 @@ function ToggleButton() {
                 (title) => (
                   (title.style.backgroundColor = green),
                   (title.style.color = dark)
-                )
+                ),
               ),
             document
               .querySelectorAll(".tags-genre")
@@ -125,7 +125,7 @@ function ToggleButton() {
                 (title) => (
                   (title.style.backgroundColor = purple),
                   (title.style.color = dark)
-                )
+                ),
               ),
             document
               .querySelectorAll(".book-author")
@@ -159,7 +159,7 @@ function ToggleButton() {
                 (popup) => (
                   (popup.style.backgroundColor = light),
                   (popup.style.border = `2px solid ${dark}`)
-                )
+                ),
               ),
             document
               .querySelectorAll(".popup-title")
@@ -173,7 +173,7 @@ function ToggleButton() {
                 (title) => (
                   (title.style.backgroundColor = pink),
                   (title.style.color = light)
-                )
+                ),
               ),
             document
               .querySelectorAll(".tags-genre")
@@ -181,7 +181,7 @@ function ToggleButton() {
                 (title) => (
                   (title.style.backgroundColor = blue),
                   (title.style.color = light)
-                )
+                ),
               ),
             document
               .querySelectorAll("div.bookshelf-year")
