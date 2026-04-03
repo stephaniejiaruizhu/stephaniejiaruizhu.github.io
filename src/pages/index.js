@@ -14,7 +14,7 @@ config.autoAddCss = false;
 const IndexPage = () => {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-  }, []);
+  });
 
   return (
     <main>

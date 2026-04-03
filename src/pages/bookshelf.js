@@ -3,7 +3,6 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Papa from "papaparse";
 import Popup from "./popup";
-// import Info from "./infopopup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHandPointer,
@@ -12,7 +11,7 @@ import {
   faBook,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-// import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import * as bookshelfStyles from "../styles/modules/bookshelf.module.less";
 
 function Bookshelf() {
   const [items, setItems] = useState([]);
@@ -65,14 +64,14 @@ function Bookshelf() {
     }
   }
   useEffect(Filter, [recommended, active]);
-
   useEffect(checkMode, [mode, style, active]);
+
   return (
     <div>
       <Navbar active="Bookshelf" />
-      <div className="bookshelf-wrapper">
+      <div className={bookshelfStyles.bookshelfWrapper}>
         <p
-          className="toggle-styles"
+          className={bookshelfStyles.toggleStyles}
           id="styles-toggle"
           onClick={() => setStyle(!style)}
         >
@@ -92,7 +91,10 @@ function Bookshelf() {
             </>
           )}
         </p>
-        <p onClick={() => setRecommended(!recommended)} className="recommended">
+        <p
+          onClick={() => setRecommended(!recommended)}
+          className={bookshelfStyles.recommended}
+        >
           {recommended ? (
             <>
               <span style={{ paddingRight: "6px" }}>
@@ -109,13 +111,13 @@ function Bookshelf() {
             </>
           )}
         </p>
-        <h2 className="bookshelf-title">Bookshelf</h2>
+        <h2 className={bookshelfStyles.bookshelfTitle}>Bookshelf</h2>
         <div
-          className="bookshelf-year-filter"
+          className={bookshelfStyles.bookshelfYearFilter}
           style={{ color: mode === "night" ? purple : blue }}
         >
           <div
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
             onClick={() => {
               setActive("2026");
               setUrl(
@@ -129,7 +131,7 @@ function Bookshelf() {
             }}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "2026" ? 1 : 0 }}
             />
             2026
@@ -146,10 +148,10 @@ function Bookshelf() {
               fontWeight: active === "2025" ? 800 : 400,
               marginLeft: active === "2025" ? "12px" : "0px",
             }}
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "2025" ? 1 : 0 }}
             />
             2025
@@ -162,14 +164,14 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
             style={{
               fontWeight: active === "2024" ? 800 : 400,
               marginLeft: active === "2024" ? "12px" : "0px",
             }}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "2024" ? 1 : 0 }}
             />
             2024
@@ -182,14 +184,14 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
             style={{
               fontWeight: active === "2023" ? 800 : 400,
               marginLeft: active === "2023" ? "12px" : "0px",
             }}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "2023" ? 1 : 0 }}
             />
             2023
@@ -206,10 +208,10 @@ function Bookshelf() {
               fontWeight: active === "2022" ? 800 : 400,
               marginLeft: active === "2022" ? "12px" : "0px",
             }}
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "2022" ? 1 : 0 }}
             />
             2022
@@ -222,20 +224,20 @@ function Bookshelf() {
               );
               setRecommended(false);
             }}
-            className="bookshelf-year"
+            className={bookshelfStyles.bookshelfYear}
             style={{
               fontWeight: active === "ALL" ? 800 : 400,
               marginLeft: active === "ALL" ? "12px" : "0px",
             }}
           >
             <div
-              className="active-marker"
+              className={bookshelfStyles.activeMarker}
               style={{ opacity: active === "ALL" ? 1 : 0 }}
             />
             ALL
           </div>
         </div>
-        <p className="instructions">
+        <p className={bookshelfStyles.instructions}>
           <FontAwesomeIcon
             icon={faHandPointer}
             style={{ paddingRight: "2px" }}
@@ -248,13 +250,13 @@ function Bookshelf() {
       </div>
 
       {active === "2026" && recommended === true ? (
-        <p className="book-later">
+        <p className={bookshelfStyles.bookLater}>
           It's too early in the year for favorites! Come back later 😀.
         </p>
       ) : null}
 
       {style === false ? (
-        <div className="book-wrapper-2">
+        <div className={bookshelfStyles.bookWrapper2}>
           <Popup
             info={popupinfo}
             card={card}
@@ -265,20 +267,20 @@ function Bookshelf() {
           />
           {items.map((item) => (
             <>
-              <div className="book-item-2">
+              <div className={bookshelfStyles.bookItem2}>
                 {item.image != null ? (
-                  <div className="book-image-wrapper">
+                  <div className={bookshelfStyles.bookItemImageWrapper}>
                     <div
                       style={{
                         display: item.date_finished === null ? "block" : "none",
                       }}
-                      className="dot"
+                      className={bookshelfStyles.dot}
                     />
                     <img
                       className={
                         mode === "day"
-                          ? "book-item-image"
-                          : "book-item-image hover"
+                          ? bookshelfStyles.bookItemImage
+                          : `${bookshelfStyles.bookItemImage} ${bookshelfStyles.hover}`
                       }
                       src={item.image}
                       alt="book cover"
@@ -289,9 +291,9 @@ function Bookshelf() {
                     />
                   </div>
                 ) : null}
-                <p className="book-title-2">{item.title}</p>
+                <p className={bookshelfStyles.bookTitle2}>{item.title}</p>
                 <span
-                  className="book-author-2"
+                  className={bookshelfStyles.bookAuthor2}
                   style={{ color: mode === "night" ? green : pink }}
                 >
                   {item.author}
@@ -301,7 +303,7 @@ function Bookshelf() {
           ))}
         </div>
       ) : (
-        <div className="book-wrapper">
+        <div className={bookshelfStyles.bookWrapper}>
           <Popup
             info={popupinfo}
             card={card}
@@ -313,23 +315,23 @@ function Bookshelf() {
           {items.map((item) => (
             <>
               <div
-                className="book-item"
+                className={bookshelfStyles.bookItem}
                 onClick={() => {
                   setPopup(!popup);
                   setPopupInfo(item);
                 }}
               >
-                <p className="book-title">
+                <p className={bookshelfStyles.bookTitle}>
                   <span
                     style={{
                       display:
                         item.date_finished === null ? "inline-block" : "none",
                     }}
-                    className="dot-2"
+                    className={bookshelfStyles.dot2}
                   />
                   {item.title}{" "}
                   <span
-                    className="book-author"
+                    className={bookshelfStyles.bookAuthor}
                     style={{ color: mode === "night" ? green : pink }}
                   >{`[${item.author}]`}</span>
                 </p>

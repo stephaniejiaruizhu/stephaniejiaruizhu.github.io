@@ -1,0 +1,73 @@
+@import (less) "../styles.less";
+
+// about page
+.about-wrapper {
+  margin: 100px 100px 150px;
+  font-family: @sans-serif;
+
+  @media @breakpoint2 {
+    margin: 100px 50px 150px;
+  }
+
+  @media @mobile {
+    margin-left: 20px;
+  }
+
+  .about-image {
+    max-width: 350px;
+  }
+
+  .about-text-wrapper {
+    max-width: 80%;
+    font-size: @text-reg;
+
+    @media @breakpoint2 {
+      max-width: 100%;
+    }
+
+    .about-intro-text {
+      font-family: @serif;
+      font-size: @text-xlarge;
+      font-weight: 100;
+
+      @media @breakpoint2 {
+        font-size: @text-large;
+      }
+    }
+
+    .about-section {
+      margin-bottom: 50px;
+      .about-intro-subtitle {
+        font-family: @serif;
+        font-size: @text-large;
+        font-weight: 100;
+        margin-bottom: 20px;
+      }
+
+      .award {
+        line-height: 25px;
+        margin-bottom: 20px;
+        .award-title {
+          margin: 0px;
+
+          a {
+            color: @dark;
+            font-style: italic;
+          }
+        }
+        .award-giver {
+          color: @gray;
+          margin: 0px;
+        }
+      }
+    }
+
+    .about-intro-subtext {
+      line-height: 28px;
+
+      a {
+        color: @dark;
+      }
+    }
+  }
+}

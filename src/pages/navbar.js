@@ -28,18 +28,6 @@ function Navbar({ active }) {
       >
         Work
       </a>
-      {/* <a
-        id="Play"
-        className="navbar-item-desktop"
-        href="/play"
-        style={
-          active === "Play"
-            ? { textDecoration: "line-through !important" }
-            : { textDecoration: "none" }
-        }
-      >
-        Play
-      </a> */}
 
       <a
         id="Bookshelf"
@@ -84,18 +72,7 @@ function Navbar({ active }) {
           >
             Work
           </a>
-          {/*   <a
-            id="Play"
-            className="navbar-item"
-            href="/play"
-            style={
-              active === "Play"
-                ? { textDecoration: "line-through !important" }
-                : { textDecoration: "none" }
-            }
-          >
-            Play
-          </a> */}
+
           <a
             id="Bookshelf"
             className="navbar-item"

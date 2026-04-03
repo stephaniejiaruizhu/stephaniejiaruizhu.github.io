@@ -12,6 +12,32 @@ function Work() {
         </span>
       </div>
       <div className="project-wrapper">
+        <video className="video-cover" autoPlay muted playsInline loop>
+          <source
+            src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1775193090/project%20covers/Top100_wey9m6.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="project-text">
+          <p className="project-date">03.30.2026</p>
+          <p className="project-title">
+            <a
+              href="https://www.sfchronicle.com/projects/2026/top-100-best-restaurants-san-francisco-bay-area/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjYvdG9wLTEwMC1iZXN0LXJlc3RhdXJhbnRzLXNhbi1mcmFuY2lzY28tYmF5LWFyZWEv&time=MTc3NTE5MjM2ODI3Mg==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+              rel="noreferrer"
+              target="_blank"
+              className="project-link"
+            >
+              Top 100 Restaurants 2026 <span>→</span>
+            </a>{" "}
+          </p>
+          <p className="project-description">
+            [design + development]. A redesign of the 2025 ranked list from
+            Chronicle food critics on the best places to eat at in the Bay Area.
+          </p>
+        </div>
+      </div>
+
+      <div className="project-wrapper">
         <picture>
           <source
             srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916618/project%20covers/webp/Heklina_dytypx.webp"
@@ -47,6 +73,7 @@ function Work() {
           </p>
         </div>
       </div>
+
       <div className="project-wrapper">
         <picture>
           <source
@@ -83,6 +110,7 @@ function Work() {
           </p>
         </div>
       </div>
+
       <div className="project-wrapper">
         <picture>
           <source
@@ -120,6 +148,7 @@ function Work() {
           </p>
         </div>
       </div>
+
       <div className="project-wrapper">
         <picture>
           <source
@@ -290,34 +319,6 @@ function Work() {
           Great Highway Traffic Changes
         </a>
         <a
-          href="https://www.sfchronicle.com/projects/2025/california-psychiatric-hospitals-crisis/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1wc3ljaGlhdHJpYy1ob3NwaXRhbHMtY3Jpc2lzLw==&time=MTc0NDkxMDU5OTc1Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=NQ=="
-          target="_blank"
-          rel="noreferrer"
-        >
-          California Psychiatric Hospital Systems
-        </a>
-        <a
-          href="https://www.sfchronicle.com/projects/2024/bay-area-fog-tracker/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvYmF5LWFyZWEtZm9nLXRyYWNrZXIv&time=MTc0NDkxMDYzMDgyOQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Ng=="
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bay Area Fog Tracker
-        </a>
-        <a
-          href="https://www.sfchronicle.com/projects/guides/lake-tahoe-ski-resorts/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzL2d1aWRlcy9sYWtlLXRhaG9lLXNraS1yZXNvcnRzLw==&time=MTc0NDkxMDg0MTQwNA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Nw=="
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tahoe Snow Tracker
-        </a>
-        <a
-          href="https://www.sfchronicle.com/projects/2023/california-voting-law/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvY2FsaWZvcm5pYS12b3RpbmctbGF3Lw==&time=MTc0NDkxMDg3MDA2Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=OA=="
-          target="_blank"
-          rel="noreferrer"
-        >
-          California Voting Rights Act
-        </a>
-        <a
           href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvc2YtdGFpd2FuLWZvb2Qv&time=MTc0NDkxMDk2MjU0MQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=OQ=="
           target="_blank"
           rel="noreferrer"
@@ -337,13 +338,6 @@ function Work() {
           rel="noreferrer"
         >
           Overdose Deaths in SF's Housing Program
-        </a>
-        <a
-          href="https://www.sfchronicle.com/bayarea/article/Fatal-crashes-persisted-on-Bay-Area-roadways-16708064.php"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Pandemic Traffic Fatalities (reporting + data)
         </a>
         <p className="other-print">
           I've also done some{" "}
