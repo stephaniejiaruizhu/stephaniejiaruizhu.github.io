@@ -17,6 +17,7 @@ function Work() {
             src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1775193090/project%20covers/Top100_wey9m6.mp4"
             type="video/mp4"
           />
+          Your browser does not support video playback.
         </video>
         <div className="project-text">
           <p className="project-date">03.30.2026</p>
@@ -38,21 +39,13 @@ function Work() {
       </div>
 
       <div className="project-wrapper">
-        <picture>
+        <video className="video-cover" autoPlay muted playsInline loop>
           <source
-            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916618/project%20covers/webp/Heklina_dytypx.webp"
-            type="image/webp"
+            src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1775627391/project%20covers/Heklina_avvpdl.mp4"
+            type="video/mp4"
           />
-          <source
-            srcSet="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
-            type="image/jpeg"
-          />
-          <img
-            src="https://res.cloudinary.com/dvjavf8xh/image/upload/v1758916581/project%20covers/Heklina_ehuywb.jpg"
-            alt="project cover showing the topper design for a story on late drag queen Heklina's closet"
-            className="project-cover"
-          />
-        </picture>
+          Your browser does not support video playback.
+        </video>
         <div className="project-text">
           <p className="project-date">09.25.2025</p>
           <p className="project-title">
