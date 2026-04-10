@@ -35,6 +35,14 @@ function Work() {
             [design + development]. A redesign of the 2025 ranked list from
             Chronicle food critics on the best places to eat at in the Bay Area.
           </p>
+          <a
+            href="https://radial-earthquake-1a6.notion.site/Top-100-Restaurants-in-the-Bay-Area-1e4e131c87cb801ea838e9df85e41bd8"
+            rel="noreferrer"
+            target="_blank"
+            className="project-case-study"
+          >
+            Case study
+          </a>
         </div>
       </div>
 

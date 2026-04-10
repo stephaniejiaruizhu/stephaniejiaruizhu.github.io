@@ -1,12 +1,13 @@
 @import (less) "../styles.less";
 
-/* Popup */
 .popup-wrapper {
   width: 400px;
   height: 550px;
   border-radius: 15px;
   overflow-y: scroll;
   z-index: 2;
+  background-color: var(--background-color);
+  border: 1px solid var(--color);
 
   @media (max-width: 550px) {
     width: 380px;
@@ -31,6 +32,7 @@
     top: 25px;
     font-size: 25px;
     cursor: pointer;
+    color: var(--color);
 
     &:hover {
       color: @gray !important;
@@ -53,7 +55,7 @@
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
-    color: @light;
+    color: var(--color);
     margin-top: 0px;
     margin-bottom: 0px;
     max-width: 85%;
@@ -61,7 +63,7 @@
 
   .popup-author {
     font-family: @sans-serif;
-    color: @neongreen;
+    color: var(--bookshelf-accent);
     margin-top: 5px;
     font-weight: 500;
   }
@@ -121,11 +123,15 @@
   .tags-form {
     padding: 5px 15px;
     border-radius: 15px;
+    background-color: var(--bookshelf-accent);
+    color: var(--background-color);
   }
 
   .tags-genre {
     padding: 5px 15px;
     border-radius: 15px;
+    background-color: var(--bookshelf-main);
+    color: var(--background-color);
   }
 }
 
@@ -137,7 +143,7 @@
   transform: translate(-50%, -50%);
   width: 500px;
   height: 550px;
-  background-color: @light;
-  border: 1px solid @dark;
+  background-color: var(--background-color);
+  border: 1px solid var(--color);
   border-radius: 15px;
 }

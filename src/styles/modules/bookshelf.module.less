@@ -70,7 +70,7 @@
     font-family: @sans-serif;
     width: fit-content;
     margin: auto;
-    color: @neonblue;
+    color: var(--bookshelf-main) !important;
   }
 
   .bookshelf-year {
@@ -83,7 +83,7 @@
       width: 8px;
       height: 8px;
       border-radius: 5px;
-      background-color: @neonblue;
+      background-color: var(--bookshelf-main);
       display: inline-block;
     }
 
@@ -157,7 +157,7 @@
     display: inline;
     margin-left: 8px;
     font-weight: 400;
-    color: @neonpink;
+    color: var(--bookshelf-accent);
   }
 
   .dot-2 {
@@ -216,7 +216,7 @@
     cursor: pointer;
 
     &:hover {
-      border-color: @dark;
+      border: 1px solid var(--color);
     }
 
     @media (max-width: 600px) {
@@ -235,7 +235,7 @@
 
   .book-author-2 {
     font-weight: 400;
-    color: @neonpink;
+    color: var(--bookshelf-accent);
   }
 
   .book-image-wrapper {
@@ -255,11 +255,5 @@
         left: 15px;
       }
     }
-  }
-}
-
-.hover {
-  &:hover {
-    border: 1px solid @light !important;
   }
 }

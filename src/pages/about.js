@@ -73,16 +73,7 @@ function About() {
             >
               jigsaw puzzles
             </a>{" "}
-            and{" "}
-            <span
-              style={{
-                color: "#1f2a27",
-                backgroundColor: "#d4df7d",
-                padding: "2px 5px",
-              }}
-            >
-              bright colors
-            </span>
+            and <span className={aboutStyles.aboutSpan}>bright colors</span>
             <br /> • making questionable choices in{" "}
             <a
               href="https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"

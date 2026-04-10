@@ -5,26 +5,7 @@ import { faStar as faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import * as popupStyles from "../styles/modules/popup.module.less";
 
-function Popup({ info, card, popup, mode, setMode, setPopup }) {
-  // colors
-  let light = "#eeeae3";
-  let dark = "#1f2a27";
-  let neongreen = "#d4df7d";
-  let neonpink = "#ff15d8";
-  let neonblue = "#0429fe";
-  let purple = "#e0bfda";
-
-  // check light or dark mode
-  function checkMode() {
-    if (localStorage.getItem("mode") === "day") {
-      setMode("day");
-    } else if (localStorage.getItem("mode") === "night") {
-      setMode("night");
-    }
-  }
-
-  useEffect(checkMode, []);
-
+function Popup({ info, card, popup, setPopup }) {
   // close popup if clicking outside of it
   const closePopup = (e) => {
     if (card.current && popup && !card.current.contains(e.target)) {
@@ -193,8 +174,6 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
         ref={card}
         style={{
           display: popup && info ? "block" : "none",
-          backgroundColor: mode === "night" ? dark : light,
-          border: mode === "night" ? `2px solid ${light}` : `2px solid ${dark}`,
         }}
       >
         <span
@@ -212,16 +191,10 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
         </span>
         <div className={`${popupStyles.popupTitleWrapper} popup-title-wrapper`}>
           <GenerateDate />
-          <h3
-            style={{ color: mode === "night" ? light : dark }}
-            className={`${popupStyles.popupTitle} popup-title`}
-          >
+          <h3 className={`${popupStyles.popupTitle} popup-title`}>
             {info ? info.title : null}
           </h3>
-          <p
-            style={{ color: mode === "night" ? neongreen : neonpink }}
-            className={`${popupStyles.popupAuthor} popup-author`}
-          >
+          <p className={`${popupStyles.popupAuthor} popup-author`}>
             {info ? info.author : null}
           </p>
           {info ? (
@@ -249,24 +222,12 @@ function Popup({ info, card, popup, mode, setMode, setPopup }) {
           {info ? (
             <div className={`${popupStyles.popupTags} popup-tags`}>
               {formats.map((format) => (
-                <div
-                  className={`${popupStyles.tagsForm} tags-form`}
-                  style={{
-                    backgroundColor: mode === "night" ? neongreen : neonpink,
-                    color: mode === "night" ? dark : light,
-                  }}
-                >
+                <div className={`${popupStyles.tagsForm} tags-form`}>
                   {format}
                 </div>
               ))}
               {genres.map((genre) => (
-                <div
-                  className={`${popupStyles.tagsGenre} tags-genre`}
-                  style={{
-                    backgroundColor: mode === "night" ? purple : neonblue,
-                    color: mode === "night" ? dark : light,
-                  }}
-                >
+                <div className={`${popupStyles.tagsGenre} tags-genre`}>
                   {genre}
                 </div>
               ))}

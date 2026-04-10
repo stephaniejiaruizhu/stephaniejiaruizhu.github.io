@@ -17,7 +17,6 @@ function Bookshelf() {
   const [items, setItems] = useState([]);
   const [copy, setCopy] = useState([]);
   const [active, setActive] = useState("2026");
-  const [mode, setMode] = useState(null);
   const [style, setStyle] = useState(false);
   const [popup, setPopup] = useState(0);
   const [popupinfo, setPopupInfo] = useState(null);
@@ -27,11 +26,6 @@ function Bookshelf() {
   );
 
   const card = useRef(null);
-
-  let green = "#d4df7d";
-  let pink = "#ff15d8";
-  let blue = "#0429fe";
-  let purple = "#e0bfda";
 
   // turn csv into json
   useEffect(() => {
@@ -46,15 +40,6 @@ function Bookshelf() {
     });
   }, [url]);
 
-  // check if light or dark mode
-  function checkMode() {
-    if (localStorage.getItem("mode") === "day") {
-      setMode("day");
-    } else if (localStorage.getItem("mode") === "night") {
-      setMode("night");
-    }
-  }
-
   function Filter() {
     if (recommended) {
       const filtered = items.filter((item) => item.fav === "yes");
@@ -64,7 +49,6 @@ function Bookshelf() {
     }
   }
   useEffect(Filter, [recommended, active]);
-  useEffect(checkMode, [mode, style, active]);
 
   return (
     <div>
@@ -116,7 +100,6 @@ function Bookshelf() {
         </h2>
         <div
           className={`${bookshelfStyles.bookshelfYearFilter} bookshelf-year-filter`}
-          style={{ color: mode === "night" ? purple : blue }}
         >
           <div
             className={`${bookshelfStyles.bookshelfYear} bookshelf-year`}
@@ -264,8 +247,6 @@ function Bookshelf() {
             card={card}
             popup={popup}
             setPopup={setPopup}
-            mode={mode}
-            setMode={setMode}
           />
           {items.map((item) => (
             <>
@@ -281,11 +262,7 @@ function Bookshelf() {
                       className={`${bookshelfStyles.dot} dot`}
                     />
                     <img
-                      className={
-                        mode === "day"
-                          ? `${bookshelfStyles.bookItemImage} book-item-image`
-                          : `${bookshelfStyles.bookItemImage} ${bookshelfStyles.hover} hover book-item-image`
-                      }
+                      className={bookshelfStyles.bookItemImage}
                       src={item.image}
                       alt="book cover"
                       onClick={() => {
@@ -300,7 +277,6 @@ function Bookshelf() {
                 </p>
                 <span
                   className={`${bookshelfStyles.bookAuthor2} book-author-2`}
-                  style={{ color: mode === "night" ? green : pink }}
                 >
                   {item.author}
                 </span>
@@ -315,8 +291,6 @@ function Bookshelf() {
             card={card}
             popup={popup}
             setPopup={setPopup}
-            mode={mode}
-            setMode={setMode}
           />
           {items.map((item) => (
             <>
@@ -338,7 +312,6 @@ function Bookshelf() {
                   {item.title}{" "}
                   <span
                     className={`${bookshelfStyles.bookAuthor} book-author`}
-                    style={{ color: mode === "night" ? green : pink }}
                   >{`[${item.author}]`}</span>
                 </p>
               </div>

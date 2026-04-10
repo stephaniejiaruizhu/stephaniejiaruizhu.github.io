@@ -1,9 +1,45 @@
 @import (less) "../styles/values.less";
 
+:root {
+  --background-color: @light;
+  --color: @dark;
+
+  [data-theme="dark"] {
+    --background-color: @dark;
+    --color: @light;
+    --hover: @neongreen;
+    --bookshelf-main: @lightpurple;
+    --bookshelf-accent: @neongreen;
+  }
+
+  [data-theme="light"] {
+    --background-color: @light;
+    --color: @dark;
+    --hover: @neonblue;
+    --bookshelf-main: @neonblue;
+    --bookshelf-accent: @neonpink;
+  }
+}
+
 body {
+  [data-theme="dark"] {
+    --background-color: @dark;
+    --color: @light;
+    --hover: @neongreen;
+    --bookshelf-main: @lightpurple;
+    --bookshelf-accent: @neongreen;
+  }
+
+  [data-theme="light"] {
+    --background-color: @light;
+    --color: @dark;
+    --hover: @neonblue;
+    --bookshelf-main: @neonblue;
+    --bookshelf-accent: @neonpink;
+  }
   transition: all 0.3s ease-in-out;
-  background-color: @light;
-  color: @dark;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
 ::selection {
@@ -12,7 +48,7 @@ body {
 }
 
 a:hover {
-  color: @gray !important;
+  color: var(--bookshelf-accent) !important;
 }
 
 // navbar
@@ -46,11 +82,11 @@ a:hover {
   }
 
   a {
-    color: @dark;
+    color: var(--color);
     text-decoration: line-through;
 
     &:visited {
-      color: @dark;
+      color: var(--color);
     }
   }
 
@@ -255,10 +291,11 @@ a:hover {
   }
 
   .video-cover {
-    max-width: 70%;
+    min-width: 70%;
     border-radius: 10px;
     border: 1px solid @dark;
-    object-fit: contain;
+    object-fit: cover;
+    background-size: cover;
 
     @media @breakpoint {
       max-width: 80%;
@@ -304,7 +341,7 @@ a:hover {
       }
 
       a {
-        color: @dark;
+        color: var(--color);
         font-style: italic;
       }
     }
@@ -315,6 +352,23 @@ a:hover {
 
     .project-description {
       line-height: 25px;
+    }
+
+    .project-case-study {
+      padding: 5px 10px;
+      width: fit-content;
+      border: 1px solid @dark;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: @light;
+      color: @dark;
+      text-decoration: none;
+
+      &:hover {
+        background-color: @dark;
+        color: @light !important;
+        border: 1px solid @light;
+      }
     }
   }
 }
@@ -366,7 +420,7 @@ a:hover {
     font-family: @sans-serif;
     font-size: @text-reg;
     line-height: 25px;
-    color: @dark;
+    color: var(--color);
     font-style: italic;
     width: fit-content !important;
     display: block;
@@ -398,11 +452,11 @@ a:hover {
 
   a {
     cursor: pointer;
-    color: @dark;
+    color: var(--color);
     text-decoration: none !important;
 
     &:visited {
-      color: @dark;
+      color: var(--color);
     }
   }
 }
@@ -458,19 +512,19 @@ a:hover {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: @dark;
+  background: var(--color);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: @gray !important;
+  background: var(--bookshelf-accent);
 }
 
 /* Position and sizing of clickable cross button */
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: @light !important;
+  background: var(--color);
   height: 20px !important;
 }
 
@@ -491,12 +545,12 @@ a:hover {
 
 /* General sidebar styles */
 .bm-menu {
-  background: @dark;
+  background: var(--background-color);
   padding: 2.5em 1.5em 0;
   font-size: @text-reg;
   font-family: @sans-serif;
   overflow: hidden !important;
-  border-right: 1px solid @light;
+  border-right: 1px solid var(--color);
 }
 
 /* Wrapper for item list */
@@ -508,6 +562,6 @@ a:hover {
 /* Individual item */
 .bm-item {
   display: inline-block;
-  color: @light !important;
+  color: var(--color);
   margin-top: 25px;
 }
