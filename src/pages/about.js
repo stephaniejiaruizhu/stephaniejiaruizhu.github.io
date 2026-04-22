@@ -84,13 +84,13 @@ function About() {
             </a>{" "}
             <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/40121985-how-to-hide-an-empire"
+              href="https://www.goodreads.com/book/show/256008.Lonesome_Dove"
               target="_blank"
               rel="noreferrer"
             >
-              <i>How to Hide an Empire</i>
+              <i>Lonesome Dove</i>
             </a>{" "}
-            by Daniel Immerwahr <br />• documenting my eats through{" "}
+            by Larry McMurtry <br />• documenting my eats through{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
