@@ -48,7 +48,16 @@ function Bookshelf() {
       setItems(copy);
     }
   }
+
+  function AddClass() {
+    if (popup === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }
   useEffect(Filter, [recommended, active]);
+  useEffect(AddClass, [popup]);
 
   return (
     <div>

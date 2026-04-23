@@ -32,14 +32,16 @@ function About() {
           <p className={aboutStyles.aboutIntroSubtext}>
             {" "}
             I was most recently a designer and developer at San Francisco
-            Chronicle where I worked on digital news products and interactive
-            stories. Before that, I studied journalism, computer science and
-            design at Northwestern University. I’ve also designed for The Boston
-            Globe and CalMatters. <br />
+            Chronicle working on digital news products and interactive stories.
+            My work there has been recognized at the Online Journalism Awards,
+            Pulitizer Prizes and Society for News Design Creative Competition.
+            Before that, I studied journalism, computer science and design at
+            Northwestern University. I’ve also designed for The Boston Globe and
+            CalMatters. <br />
             <br /> Like every person with a journalism background ever, I tell
             people I love telling stories. But more specifically, I want to
-            combine research and analysis skills from journalism with technology
-            to create experiences that are thoughtful and delightful.
+            combine research and analysis skills I learned from journalism with
+            technology to create experiences that are thoughtful and delightful.
             <br />
             <br /> What this looks like is different day-to-day and can be
             confusing to explain, but at the core of it all, I just want to make
