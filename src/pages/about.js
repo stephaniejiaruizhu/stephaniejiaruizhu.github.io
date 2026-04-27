@@ -120,6 +120,18 @@ function About() {
           <div className={aboutStyles.aboutSection}>
             <h3 className={aboutStyles.aboutIntroSubtitle}>Kudos [selected]</h3>
             <div className={aboutStyles.award}>
+              <p className={aboutStyles.awardTitle}>Silver Medal</p>
+              <p className={aboutStyles.awardGiver}>
+                Society for News Design • Creative Competition 47
+              </p>
+            </div>
+            <div className={aboutStyles.award}>
+              <p className={aboutStyles.awardTitle}>Award of Excellence (x5)</p>
+              <p className={aboutStyles.awardGiver}>
+                Society for News Design • Creative Competition 47
+              </p>
+            </div>
+            <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>
                 Honorable Mention • Excellence in Online/Digital Journalism,
                 Immersive Storytelling
@@ -132,21 +144,13 @@ function About() {
             <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>Bronze Medal (x2)</p>
               <p className={aboutStyles.awardGiver}>
-                Society for News Design • Best of News Design 46
+                Society for News Design • Creative Competition 46
               </p>
             </div>
             <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>Award of Excellence (x4)</p>
               <p className={aboutStyles.awardGiver}>
-                Society for News Design • Best of News Design 46
-              </p>
-            </div>
-            <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>
-                First Place • Online Presentation
-              </p>
-              <p className={aboutStyles.awardGiver}>
-                Best of the West • Newspaper, Magazine and Online Contest 2025
+                Society for News Design • Creative Competition 46
               </p>
             </div>
             <div className={aboutStyles.award}>
@@ -168,13 +172,13 @@ function About() {
             <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>Award of Excellence (x2)</p>
               <p className={aboutStyles.awardGiver}>
-                Society for News Design • Best of News Design 45
+                Society for News Design • Creative Competition 45
               </p>
             </div>
             <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>Award of Excellence (x3)</p>
               <p className={aboutStyles.awardGiver}>
-                Society for News Design • Best of News Design 44
+                Society for News Design • Creative Competition 44
               </p>
             </div>
             <div className={aboutStyles.award}>
