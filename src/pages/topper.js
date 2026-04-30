@@ -26,7 +26,7 @@ function Topper() {
         </h1>
         <h2 className="topper-intro-subtext">
           In other words, I'm a visual storyteller who designs and codes. I also
-          write and draw things [sometimes]. Welcome to my little corner of the
+          write and draw things sometimes. Welcome to my little corner of the
           internet!
         </h2>
       </div>
