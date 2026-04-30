@@ -69,8 +69,8 @@ function Work() {
           <p className="project-description">
             [design direction, design + development]. A deep dive into the
             fashion and history inside of late S.F. drag icon Heklina's closet.
-            I pitched the design direction for this piece and built it out with
-            the help of one other designer.
+            I led the design and development of this piece and built the page
+            out with the help of one other designer.
           </p>
         </div>
       </div>
@@ -107,7 +107,8 @@ function Work() {
             [illustration, design + development]. A graphic explainer of
             California's Zone Zero regulations, designed to improve fire safety
             for homes in high wildfire risk areas. I illustrated, designed and
-            coded the page.
+            coded the page. This project received two awards of excellence at
+            the Society for News Design Creative Competition in 2026.
           </p>
         </div>
       </div>
@@ -145,7 +146,9 @@ function Work() {
             where to eat in the Bay Area. I designed and built core features of
             the guide, including the topper and map. I also collaborated with
             three other designers to come up with the overall vision for the
-            list.
+            list. This project received a silver medal and two awards of
+            excellence at the Society for News Design Creative Competition in
+            2026.
           </p>
         </div>
       </div>
@@ -180,11 +183,12 @@ function Work() {
           </p>
           <p className="project-description">
             [branding + design + development]. A data-driven guide to UC, CSU
-            and community college admissions with a new subscription model. I
-            helped Hearst DevHub’s director of visual storytelling develop the
-            overall design and organization of the guide. I then built several
-            features on this product including a timeline that automatically
-            updates.
+            and community college admissions. I helped Hearst DevHub’s director
+            of visual storytelling develop the overall design and organization
+            of the guide. I then built several features on this product
+            including a timeline that automatically updates. This project
+            received two awards of excellence at the Society for News Design
+            Creative Competition in 2025.
           </p>
         </div>
       </div>
@@ -219,9 +223,12 @@ function Work() {
           <p className="project-description">
             [editing + design + development]. An analysis and visualization of
             how Franklin D. Roosevelt's Executive Order 9066 affected San
-            Francisco's Japantown. I was the main designer and developer on this
-            project where I played a key role in the structuring the topper,
-            selecting photos and determining the general design direction.
+            Francisco's Japantown. I led the design direction and development of
+            this piece. This project received two bronze medals and an award of
+            excellence at the Society for News Design Creative Competition in
+            2025. It is also an ONA Online Journalism Awards winner [visual
+            digital storytelling] and an AAJA Journalism Excellence Awards
+            finalist [immersive storytelling].
           </p>
         </div>
       </div>
@@ -256,10 +263,11 @@ function Work() {
           <p className="project-description">
             [animation + design + development]. A multimedia piece diving into
             the story of Native-American activist Richard Oakes and how the
-            justice system failed him. I helped with the overall design of the
-            page and pitched the photography treatment. Working with another
-            developer, I also animated the illustrations from our graphic artist
-            and built the infrastructure for the page.
+            justice system failed him. I worked with another designer/developer
+            to art direct, design and animate the page. This project received
+            two awards of excellence at the Society for News Design Creative
+            Competition in 2024. It is also an ONA Online Journalism Awards
+            winner [topical reporting: race, ethnicity, gender and identity].
           </p>
         </div>
       </div>
@@ -293,10 +301,10 @@ function Work() {
           </p>
           <p className="project-description">
             [design + development]. A browseable encyclopedia of 50 pasta shapes
-            and their origins. I pitched and helped organize a design sprint
-            with the design, food and visuals teams to conceptualize the format
-            of the project. I then synthesized the ideas for the design team and
-            built the dictionary component using D3 and React.
+            and their origins. I organized a design sprint with the design, food
+            and visuals teams to conceptualize the format of the project. I then
+            synthesized the ideas from the sprint and built the dictionary
+            component using D3 and React.
           </p>
         </div>
       </div>
@@ -324,7 +332,7 @@ function Work() {
           target="_blank"
           rel="noreferrer"
         >
-          Taiwanese Food Guide (+ reporting)
+          Taiwanese Food Guide [+ reporting]
         </a>
         <a
           href="https://www.sfchronicle.com/projects/2023/sf-trans-clothing/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjMvc2YtdHJhbnMtY2xvdGhpbmcv&time=MTc0NDkxMDk4NjQ3Mw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MTA="

@@ -22,11 +22,11 @@ function Topper() {
       </picture>
       <div className="topper-text-wrapper">
         <h1 className="topper-intro-text">
-          Hey there, I’m Stephanie– professional pixel wrangler and bug maker.
+          Hey there, I’m Stephanie– pixel wrangler and bug maker.
         </h1>
         <h2 className="topper-intro-subtext">
-          In other words, I'm a digital designer and front-end developer. I also
-          write and illustrate sometimes. Welcome to my little corner of the
+          In other words, I'm a visual storyteller who designs and codes. I also
+          write and draw things [sometimes]. Welcome to my little corner of the
           internet!
         </h2>
       </div>
