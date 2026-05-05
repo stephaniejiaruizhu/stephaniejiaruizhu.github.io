@@ -320,11 +320,25 @@ function Work() {
           Antibiotic Resistance and A.I. Drug Development
         </a>
         <a
+          href="https://www.sfchronicle.com/projects/2025/san-francisco-street-names/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvc2FuLWZyYW5jaXNjby1zdHJlZXQtbmFtZXMv&time=MTc3Nzk1MDA0MTY5MA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=Mg=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          San Francisco Street Names
+        </a>
+        <a
           href="https://www.sfchronicle.com/projects/2025/sf-great-highway-traffic-data/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvc2YtZ3JlYXQtaGlnaHdheS10cmFmZmljLWRhdGEv&time=MTc1MDEwOTUyNTU3Nw==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
           target="_blank"
           rel="noreferrer"
         >
           Great Highway Traffic Changes
+        </a>
+        <a
+          href="https://www.sfchronicle.com/projects/2025/california-psychiatric-hospitals-crisis/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjUvY2FsaWZvcm5pYS1wc3ljaGlhdHJpYy1ob3NwaXRhbHMtY3Jpc2lzLw==&time=MTc3Nzk0OTc5NDc5MA==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=MQ=="
+          target="_blank"
+          rel="noreferrer"
+        >
+          California Psychiatric Hospital Crisis [Pulitzer finalist]
         </a>
         <a
           href="https://www.sfchronicle.com/projects/2024/sf-taiwan-food/?utm_source=marketing&utm_medium=copy-url-link&utm_campaign=article-share&hash=aHR0cHM6Ly93d3cuc2ZjaHJvbmljbGUuY29tL3Byb2plY3RzLzIwMjQvc2YtdGFpd2FuLWZvb2Qv&time=MTc0NDkxMDk2MjU0MQ==&rid=MTcwNzU5Y2MtMDczZi00ZWE1LTlmZjEtYjI4NTJhNmJjNWFj&sharecount=OQ=="
@@ -345,7 +359,7 @@ function Work() {
           target="_blank"
           rel="noreferrer"
         >
-          Overdose Deaths in SF's Housing Program
+          Overdose Deaths in SF's Housing Program [Pulitzer finalist]
         </a>
         <p className="other-print">
           I've also done some{" "}
