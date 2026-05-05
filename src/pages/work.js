@@ -70,7 +70,7 @@ function Work() {
             [design direction, design + development]. A deep dive into the
             fashion and history inside of late S.F. drag icon Heklina's closet.
             I led the design and development of this piece and built the page
-            out with the help of one other designer.
+            out with the help of one other designer/developer.
           </p>
         </div>
       </div>
@@ -183,10 +183,9 @@ function Work() {
           </p>
           <p className="project-description">
             [branding + design + development]. A data-driven guide to UC, CSU
-            and community college admissions. I helped Hearst DevHub’s director
-            of visual storytelling develop the overall design and organization
-            of the guide. I then built several features on this product
-            including a timeline that automatically updates. This project
+            and community college admissions. I helped develop the design
+            direction and system for the guide. I then built several features in
+            code including a timeline that automatically updates. This project
             received two awards of excellence at the Society for News Design
             Creative Competition in 2025.
           </p>

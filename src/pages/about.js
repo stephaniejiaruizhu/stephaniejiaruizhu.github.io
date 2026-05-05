@@ -33,11 +33,10 @@ function About() {
             {" "}
             I was most recently a designer and developer at San Francisco
             Chronicle working on digital news products and interactive stories.
-            My work there has been recognized at the Online Journalism Awards,
-            Pulitizer Prizes and Society for News Design Creative Competition.
-            Before that, I studied journalism, computer science and design at
-            Northwestern University. I’ve also designed for The Boston Globe and
-            CalMatters. <br />
+            My work there has been recognized by the Online News Association,
+            Society for News Design and Pulitzers. Before that, I studied
+            journalism, computer science and design at Northwestern University.
+            I’ve also designed for The Boston Globe and CalMatters. <br />
             <br /> Like every person with a journalism background ever, I tell
             people I love telling stories. But more specifically, I want to
             combine research and analysis skills I learned from journalism with
@@ -182,10 +181,9 @@ function About() {
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Lead Developer/Designer</p>
+              <p className={aboutStyles.awardTitle}>Developer/Designer</p>
               <p className={aboutStyles.awardGiver}>
-                Was lead developer and designer for a 2022 Pulitzer finalist
-                piece
+                Contributed to Pulitzer finalist pieces in 2023 and 2026
               </p>
             </div>
           </div>
