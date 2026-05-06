@@ -34,7 +34,7 @@ function About() {
             I was most recently a designer and developer at San Francisco
             Chronicle working on digital news products and interactive stories.
             My work there has been recognized by the Online News Association,
-            Society for News Design and Pulitzers. Before that, I studied
+            Society for News Design and Pulitzer Center. Before that, I studied
             journalism, computer science and design at Northwestern University.
             I’ve also designed for The Boston Globe and CalMatters. <br />
             <br /> Like every person with a journalism background ever, I tell
@@ -125,7 +125,7 @@ function About() {
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Award of Excellence (x5)</p>
+              <p className={aboutStyles.awardTitle}>Award of Excellence [x5]</p>
               <p className={aboutStyles.awardGiver}>
                 Society for News Design • Creative Competition 47
               </p>
@@ -141,13 +141,13 @@ function About() {
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Bronze Medal (x2)</p>
+              <p className={aboutStyles.awardTitle}>Bronze Medal [x2]</p>
               <p className={aboutStyles.awardGiver}>
                 Society for News Design • Creative Competition 46
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Award of Excellence (x4)</p>
+              <p className={aboutStyles.awardTitle}>Award of Excellence [x4]</p>
               <p className={aboutStyles.awardGiver}>
                 Society for News Design • Creative Competition 46
               </p>
@@ -169,13 +169,13 @@ function About() {
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Award of Excellence (x2)</p>
+              <p className={aboutStyles.awardTitle}>Award of Excellence [x2]</p>
               <p className={aboutStyles.awardGiver}>
                 Society for News Design • Creative Competition 45
               </p>
             </div>
             <div className={aboutStyles.award}>
-              <p className={aboutStyles.awardTitle}>Award of Excellence (x3)</p>
+              <p className={aboutStyles.awardTitle}>Award of Excellence [x3]</p>
               <p className={aboutStyles.awardGiver}>
                 Society for News Design • Creative Competition 44
               </p>
