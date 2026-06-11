@@ -31,12 +31,14 @@ function About() {
           </h3>
           <p className={aboutStyles.aboutIntroSubtext}>
             {" "}
-            I was most recently a designer and developer at San Francisco
-            Chronicle working on digital news products and interactive stories.
-            My work there has been recognized by the Online News Association,
-            Society for News Design and Pulitzer Center. Before that, I studied
-            journalism, computer science and design at Northwestern University.
-            I’ve also designed for The Boston Globe and CalMatters. <br />
+            I make data visualizations, interactive graphics and dashboards at
+            PitchBook. Before that I was a designer and developer at San
+            Francisco Chronicle working on digital news products and interactive
+            stories. My work there has been recognized by the Online News
+            Association, Society for News Design and Pulitzer Center. I’ve also
+            designed for The Boston Globe and CalMatters. Once upon a time, I
+            studied journalism, computer science and design at Northwestern
+            University. <br />
             <br /> Like every person with a journalism background ever, I tell
             people I love telling stories. But more specifically, I want to
             combine research and analysis skills I learned from journalism with
@@ -85,13 +87,13 @@ function About() {
             </a>{" "}
             <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/book/show/256008.Lonesome_Dove"
+              href="https://www.goodreads.com/en/book/show/49247757-a-little-devil-in-america"
               target="_blank"
               rel="noreferrer"
             >
-              <i>Lonesome Dove</i>
+              <i>A Little Devil in America</i>
             </a>{" "}
-            by Larry McMurtry <br />• documenting my eats through{" "}
+            by Hanif Abdurraqib <br />• documenting my eats through{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
