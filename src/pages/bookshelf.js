@@ -243,11 +243,11 @@ function Bookshelf() {
         </p>
       </div>
 
-      {active === "2026" && recommended === true ? (
+      {/*    {active === "2026" && recommended === true ? (
         <p className={bookshelfStyles.bookLater}>
           It's too early in the year for favorites! Come back later 😀.
         </p>
-      ) : null}
+      ) : null} */}
 
       {style === false ? (
         <div className={`${bookshelfStyles.bookWrapper2} book-wrapper-2`}>
