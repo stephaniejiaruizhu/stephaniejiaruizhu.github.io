@@ -77,23 +77,26 @@ function About() {
               jigsaw puzzles
             </a>{" "}
             and <span className={aboutStyles.aboutSpan}>bright colors</span>
-            <br /> • making questionable choices in{" "}
+            <br /> •{" "}
+            <span style={{ textDecoration: "line-through" }}>begging</span>{" "}
+            asking people to play{" "}
             <a
-              href="https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+              href="https://keymaster.fun/products/parks-2nd-edition"
               target="_blank"
               rel="noreferrer"
             >
-              Disco Elysium
+              this board game
             </a>{" "}
+            with me
             <br />• reading{" "}
             <a
-              href="https://www.goodreads.com/en/book/show/49247757-a-little-devil-in-america"
+              href="https://www.goodreads.com/en/book/show/17332218-words-of-radiance"
               target="_blank"
               rel="noreferrer"
             >
-              <i>A Little Devil in America</i>
+              <i>Words of Radiance</i>
             </a>{" "}
-            by Hanif Abdurraqib <br />• documenting my eats through{" "}
+            by Brandon Sanderson <br />• documenting my eats through{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
@@ -195,7 +198,7 @@ function About() {
             <div className={aboutStyles.award}>
               <p className={aboutStyles.awardTitle}>
                 <a
-                  href="https://docs.google.com/presentation/d/1viQfhsgAFj4AW-KXsWcSRDhNpnZysZbCyZImqKVq5PU/edit?usp=sharing"
+                  href="https://2023.srccon.org/schedule/#_session-avoid-innovation-burnout"
                   target="_blank"
                   rel="noreferrer"
                 >
