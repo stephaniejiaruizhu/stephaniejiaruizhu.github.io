@@ -32,13 +32,14 @@ function About() {
           <p className={aboutStyles.aboutIntroSubtext}>
             {" "}
             I make data visualizations, interactive graphics and dashboards at
-            PitchBook. Before that I was a designer and developer at San
-            Francisco Chronicle working on digital news products and interactive
-            stories. My work there has been recognized by the Online News
-            Association, Society for News Design and Pulitzer Center. I’ve also
-            designed for The Boston Globe and CalMatters. Once upon a time, I
-            studied journalism, computer science and design at Northwestern
-            University. <br />
+            PitchBook. I'm also a graduate student at UC Berkeley studying
+            information and data science. Before that I was a designer and
+            developer at San Francisco Chronicle working on digital news
+            products and interactive stories. My work there has been recognized
+            by the Online News Association, Society for News Design and Pulitzer
+            Center. I’ve also designed for The Boston Globe and CalMatters. Once
+            upon a time, I studied journalism, computer science and design at
+            Northwestern University. <br />
             <br /> Like every person with a journalism background ever, I tell
             people I love telling stories. But more specifically, I want to
             combine research and analysis skills I learned from journalism with
@@ -171,6 +172,15 @@ function About() {
               </p>
               <p className={aboutStyles.awardGiver}>
                 Online News Association • Online Journalism Awards 2024
+              </p>
+            </div>
+            <div className={aboutStyles.award}>
+              <p className={aboutStyles.awardTitle}>
+                2nd Place • Online Video Presentation and Innovation, Portfolio
+              </p>
+              <p className={aboutStyles.awardGiver}>
+                National Press Photographers Association • Best of
+                Photojournalism 2024
               </p>
             </div>
             <div className={aboutStyles.award}>
