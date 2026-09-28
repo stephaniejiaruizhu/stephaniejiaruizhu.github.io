@@ -12,6 +12,41 @@ function Work() {
         </span>
       </div>
       <div className="project-wrapper">
+        <video
+          className="video-cover"
+          id="PitchBook"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source
+            src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1790624862/project%20covers/Universities_p5qpbw.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support video playback.
+        </video>
+        <div className="project-text">
+          <p className="project-date">09.01.2026</p>
+          <p className="project-title">
+            <a
+              href="https://pitchbook.com/news/articles/pitchbook-university-rankings"
+              target="_blank"
+              className="project-link"
+            >
+              Top 100 Universities Ranked for Entrepreneurs <span>→</span>
+            </a>{" "}
+          </p>
+          <p className="project-description">
+            [design + development]. An interactive dashboard comparing
+            undergraduate and graduate programs by number of alumni
+            entrepreneurs. Compiled from PitchBook's analysis of over 222,000
+            VC-backed founders. Built using D3 and React.
+          </p>
+        </div>
+      </div>
+
+      <div className="project-wrapper">
         <video className="video-cover" autoPlay muted playsInline loop>
           <source
             src="https://res.cloudinary.com/dvjavf8xh/video/upload/v1775193090/project%20covers/Top100_wey9m6.mp4"
