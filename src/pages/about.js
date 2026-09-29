@@ -60,14 +60,7 @@ function About() {
               target="_blank"
               rel="noreferrer"
             >
-              whimsical{" "}
-            </a>
-            <a
-              href="https://www.wendymacnaughton.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              art
+              silly animals
             </a>
             , {""}
             <a
@@ -80,24 +73,31 @@ function About() {
             and <span className={aboutStyles.aboutSpan}>bright colors</span>
             <br /> •{" "}
             <span style={{ textDecoration: "line-through" }}>begging</span>{" "}
-            asking people to play{" "}
+            asking people nicely to play this{" "}
             <a
               href="https://keymaster.fun/products/parks-2nd-edition"
               target="_blank"
               rel="noreferrer"
             >
-              this board game
+              board game
             </a>{" "}
             with me
-            <br />• reading{" "}
+            <br />•{" "}
             <a
-              href="https://www.goodreads.com/en/book/show/17332218-words-of-radiance"
+              href="https://drive.google.com/file/d/1DKew8vGE3X2gys2UWWOPLNR2qF6qVuy2/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              <i>Words of Radiance</i>
+              crocheting
             </a>{" "}
-            by Brandon Sanderson <br />• documenting my eats through{" "}
+            <a
+              href="https://drive.google.com/file/d/15ozNQIn9gXi6lhujdIho-2ve7fj-L32x/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              through
+            </a>{" "}
+            my yarn stash <br />• documenting my eats through{" "}
             <a
               href="https://drive.google.com/file/d/1QfBozZCgxgp-8jjjkkoL8kAqaTkToT0X/view?usp=sharing"
               target="_blank"
