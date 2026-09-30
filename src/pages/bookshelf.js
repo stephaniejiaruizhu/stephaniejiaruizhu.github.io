@@ -12,8 +12,13 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import * as bookshelfStyles from "../styles/modules/bookshelf.module.less";
+import ReactGA from "react-ga4";
 
 function Bookshelf() {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  });
+
   const [items, setItems] = useState([]);
   const [copy, setCopy] = useState([]);
   const [active, setActive] = useState("2026");

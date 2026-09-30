@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import * as aboutStyles from "../styles/modules/about.module.less";
+import ReactGA from "react-ga4";
 
 function About() {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  });
+
   return (
     <div>
       <Navbar active="About" />
