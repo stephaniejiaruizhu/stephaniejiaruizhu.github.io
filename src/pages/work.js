@@ -11,7 +11,7 @@ function Work() {
           <FontAwesomeIcon icon={faArrowDown} />{" "}
         </span>
       </div>
-      <div className="project-wrapper">
+      {/* <div className="project-wrapper">
         <video
           className="video-cover"
           id="PitchBook"
@@ -44,7 +44,7 @@ function Work() {
             VC-backed founders. Built using D3 and React.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="project-wrapper">
         <video className="video-cover" autoPlay muted playsInline loop>
